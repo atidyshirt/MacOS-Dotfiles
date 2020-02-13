@@ -20,7 +20,7 @@ brew install sassc
 brew tap homebrew/cask-fonts
 brew cask install font-firacode-nerd-font 
 
-#PIP
+gPIP
 pip3 install pywal
 
 #CURL install OHMYYZSH
@@ -44,7 +44,7 @@ ln -s "${HOME}/Library/Application\ Support/Übersicht/widgets/pecan/pecan-style
 pecan-style --load medicine
 
 #notifications
-https://github.com/zzzeyez/xanthia.git "$HOME/Library/Application\ Support/Übersicht    /widgets/xanthia"
+https://github.com/zzzeyez/xanthia.git "$HOME/Library/Application\ Support/Übersicht/widgets/xanthia"
 ln -s "${HOME}/Library/Application\ Support/Übersicht/widgets/xanthia/notify-send" "/usr/local/bin/notify-send"
 
 source ~/.zshrc
