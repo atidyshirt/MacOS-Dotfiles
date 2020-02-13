@@ -1,0 +1,35 @@
+SCRIPTS AND COMMANDS
+  
+  cash        - currency converter
+  upload      - hidden/unrestricted filesharing service
+  send        - secure filesharing service through firefox
+  remove      - remove file
+  move        - move file 
+  fetch       - neofetch command 
+  networkScan - scans the network for connected devices
+  mypip       - shows my public ip address
+  wall        - sets pywal color scheme
+  extract     - extracts files from compressed state 
+  fullpath    - displays current fullpath 
+  backup      - creates a zip of selected folder and adds metadata
+  sn          - runs script to update spotify notification bar (Übersicht)
+
+  ALIASES
+
+    vi        - runs vim
+    svi       - runs vim as super user
+    install   - runs brew install manager
+    brc
+    prc
+    zrc
+    vrc       - opens config files for terminal applications
+    sortdl    - sorts downloads folder by extention and file locations
+    gc        - clones github repostiory to selected destination
+  
+
+DIRECTORY SHORTCUTS
+
+    files     - takes you to the files directory
+    scripts   - takes to the scripts directory 
+    root      - takes user to base of drive
+    
