@@ -8,10 +8,6 @@ ZSH_THEME="typewritten/typewritten"
 # path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-# filesystem navigation
-export APP="/Applications"
-export DF="$HOME/dotfiles"
-
 # Plugins to load
 plugins=(vi-mode git golang history-substring-search)
 
@@ -24,15 +20,13 @@ test -e "$HOME/.private.zsh" && source "$HOME/.private.zsh"
 # iterm integration config
 test -e "$HOME/.iterm2_shell_integration.zsh" && source "$HOME/.iterm2_shell_integration.zsh"
 
-# vim editor
-export TERM='xterm-256color'
 export EDITOR='nvim'
 
 alias firefox="open -a $APP/firefox.app"
 alias spotify="open -a $APP/spotify.app"
 
-export GOPATH=$HOME/go
-export PATH=$GOPATH/bin:$PATH
+# export GOPATH=$HOME/go
+# export PATH=$GOPATH/bin:$PATH
 
 ##########################################################################################
 
@@ -60,6 +54,7 @@ alias files='cd /Users/jordy/Documents/Files'
 alias root='cd / && clear'
 alias config='open /Users/jordy/TerminalConfig.rtf'
 alias Landscapes='cd ~/Pictures/wallpapers/Landscapes && ls'
+alias dotfiles='cd ~/scripts/MacOS-Dotfiles'
 #aias ffsend='send files to a URL for others to download'
 alias send='ffsend upload'
 alias fetch='echo "\n" && neofetch'  
