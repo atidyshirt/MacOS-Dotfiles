@@ -44,3 +44,4 @@ READ BEFORE INSTALL
       >  git clone https://github.com/atidyshirt/MacOS-Dotfiles.git
       >  cd MacOS-Dotfiles
       >  sh install.sh
+
