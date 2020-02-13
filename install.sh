@@ -18,7 +18,7 @@ brew install ffsend
 brew install khanhas/tap/spicetify-cli
 brew install sassc
 brew tap homebrew/cask-fonts
-brew cask install font-hack-nerd-font #dont abuse me for this font, it has all the symbols
+brew cask install font-firacode-nerd-font 
 
 #PIP
 pip3 install pywal

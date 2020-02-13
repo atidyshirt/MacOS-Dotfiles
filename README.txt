@@ -12,6 +12,7 @@ READ BEFORE INSTALL
     Other downloads needed (before install)
       
       iterm2    - terminal emulator
+                - use ligatures, change font > FiraCode Nerd Font
 
       Amythest  - window manager
                 - user will have to manually setup configuration
