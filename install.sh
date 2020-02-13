@@ -7,12 +7,10 @@ echo "We will need your password to change shell to zsh"
 chsh -s /bin/zsh
 
 #installing homebrew from Curl
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 #install important packages and dependencies for config
 #BREW
 brew install pip3
-brew install git
 brew install ranger
 brew install neofetch
 brew install nvim
