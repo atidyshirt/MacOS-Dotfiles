@@ -13,7 +13,7 @@ chsh -s /bin/zsh
 brew install pip3
 brew install ranger
 brew install neofetch
-brew install nvim
+brew install neovim
 brew install ffsend
 brew install khanhas/tap/spicetify-cli
 brew install sassc
