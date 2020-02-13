@@ -2,8 +2,8 @@ DOTFILES
 
 READ BEFORE INSTALL
 
-  for anyone going to install these, you may want to alter the install process, 
-  as the default install file will create directories through your documents folder
+  for anyone going to install these, you may want to alter the install file as
+  the default install file will create directories through your documents folder
 
 -----------------------------------------------------------------------------------------------
  
@@ -41,7 +41,6 @@ READ BEFORE INSTALL
 
       >  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
       >  brew install git
-
       >  git clone https://github.com/atidyshirt/MacOS-Dotfiles.git
       >  cd MacOS-Dotfiles
       >  sh install.sh
