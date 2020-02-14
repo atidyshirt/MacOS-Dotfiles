@@ -1,6 +1,3 @@
-#!/bin/bash
-# 0x0 - client for 0x0.str2
-
 me=${0##*/}
 host=https://0x0.st
 

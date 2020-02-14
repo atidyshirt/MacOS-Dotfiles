@@ -1,1 +1,2 @@
-Looks like I cant afford a 
+Change font for dotfiles in in install.sh
+brew cask install font-firacode-nerd-font
