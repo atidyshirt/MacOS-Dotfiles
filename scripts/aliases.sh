@@ -1,4 +1,3 @@
-
 #ALIASES
 
 #GENERAL SHORTCUTS
@@ -10,6 +9,7 @@ alias cs='scripts && clear && cat sheet.txt'
 alias vi='nvim'
 alias svi='sudo nvim'
 alias install='brew install'
+alias arc='vi ~/scripts/aliases.sh'
 alias brc='vi ~/.bashrc'
 alias prc='vi ~/.profile'
 alias zrc='vi ~/.zshrc'
