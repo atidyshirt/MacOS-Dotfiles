@@ -39,5 +39,4 @@ alias spottheme='spicetify config current_theme'
 alias sn='sh ~/scripts/spotifynotif.sh &'
 
 #python scripts
-alias sten='python ~/Documents/Files/Python/hide.py'
-alias sortdl='cd /Users/jordy/Documents/Files/Python && python3 folder_manager.py ~/Downloads && cd'
+alias sortdl='cd ~/scripts && python3 downloadsManager.py ~/Downloads && cd'
