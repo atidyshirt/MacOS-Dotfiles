@@ -14,9 +14,6 @@ READ BEFORE INSTALL
       iterm2    - terminal emulator
                 - use ligatures, change font > FiraCode Nerd Font
 
-      Amythest  - window manager
-                - user will have to manually setup configuration
-
       firefox   - browser
                 - download nighttab extention and setup
 
