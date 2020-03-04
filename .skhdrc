@@ -1,7 +1,7 @@
 # open terminal, vsocde, and safari with shortcuts
-cmd - return : open -a term
+cmd - return : open -a iterm2
 cmd + shift - return : code
-alt - return : open -a firefox 2
+alt - return : open -a firefox
 
 # focus window
 alt - left : yabai -m window --focus west
