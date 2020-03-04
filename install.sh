@@ -25,6 +25,7 @@ mv .config $HOME/.config
 mv bin $HOME/bin
 mv spicetify_data $HOME/spicetify_data
 mv .zshrc $HOME/.zshrc
+mv .skhdrc $HOME/.skhdrc
 mv wallpapers $HOME/Pictures
 mv Files $HOME/Documents
 #setting up OHMYZSH
@@ -50,3 +51,8 @@ ln -s "${HOME}/Library/Application\ Support/Übersicht/widgets/pecan/pecan-style
 source ~/.zshrc
 wall ~/Pictures/wallpapers/journey-man-1364190-unsplash-19.jpg
 echo "open vim and type :PlugInstall"
+echo "Change settings in iterm2 prefs"
+echo "    - enable powerline glyphs"
+echo "    - enable subpixel anti-aliasing"
+echo "    - use ligatures, anti-aliased"
+echo "    - change font to FiraCode Nerd Font"

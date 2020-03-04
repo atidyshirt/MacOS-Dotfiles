@@ -37,11 +37,7 @@ alias mypip='curl ipinfo.io/ip'
 #Pywal aliases
 alias wall='wal -q -b 13181b -i'
 alias walf='wal -q -i'
-alias nsfwwwall='wal -q -b 13181b -i ~/Pictures/wallpapers/Nice/nude-blonde-in-the-window-1280x720.jpg && spottheme Nord-Nude && spicetify apply && sa'
-alias nsfwbwall='wal -q -b 13181b -i ~/Pictures/wallpapers/Nice/sadie-gray-2-1280x720.jpg && spottheme Nord && spiceify apply && sa'
 alias mainwall='wal -q -b 13181b -i ~/Pictures/wallpapers/Landscapes/journey-man-1364190-unsplash-19.jpg && spotheme Nord && spicetify apply && sa'
-alias beachwall='wal -q -i ~/Pictures/wallpapers/david-rodrigo-LO14F1Yj0j0-unsplash.jpg && spotheme Nord-Beach && spicetify apply && sa'
-alias viowall='wal -q -i ~/Pictures/wallpapers/violet.png && spotheme Nord-Violet && spicetify apply && sa'
 
 #spotify aliases
 alias spottheme='spicetify config current_theme'
