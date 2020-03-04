@@ -13,6 +13,8 @@ brew cask install font-firacode-nerd-font
 brew install lazygit
 brew install lazydocker
 pip3 install pywal
+brew install koekeishiya/formulae/skhd
+brew install koekeishiya/formulae/yabai
 
 #CURL install OHMYYZSH
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

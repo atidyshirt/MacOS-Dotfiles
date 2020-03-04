@@ -1,9 +1,11 @@
+
 #ALIASES
 
 #GENERAL SHORTCUTS
 alias firefox="open -a $APP/firefox.app"
 alias spotify="open -a $APP/spotify.app"
-alias amythest='open -a $APP/amythest'
+alias amythest="open -a $APP/amythest"
+alias ubersicht="open -a $APP/Übersicht"
 alias ios='open -a Simulator'
 alias cs='scripts && clear && cat sheet.txt'
 alias vi='nvim'
@@ -13,6 +15,8 @@ alias arc='vi ~/scripts/aliases.sh'
 alias brc='vi ~/.bashrc'
 alias prc='vi ~/.profile'
 alias zrc='vi ~/.zshrc'
+alias src='vi ~/.skhdrc'
+alias yrc='vi ~/.config/yabai/yabairc'
 alias vrc='vi ~/.config/nvim/configs/mappings.vim'
 alias sa='source ~/.profile && source ~/.zshrc spicetify -q apply && sh ~/Library/Application\ Support/Übersicht/widgets/pecan/wal-set'
 alias gc='git clone'
@@ -23,9 +27,8 @@ alias files='cd /Users/jordy/Documents/Files'
 alias root='cd / && clear'
 alias config='open /Users/jordy/TerminalConfig.rtf'
 alias Landscapes='cd ~/Pictures/wallpapers/Landscapes && ls'
-alias dotfiles='cd ~/scripts/MacOS-Dotfiles'
-alias send='ffsend upload'
-alias upload='sh ~/scripts/upload.sh'
+alias dotfiles='cd ~/Documents/Files/Bash/MacOS-Dotfiles'
+alias send='ffsend --basic-auth=jordanpyott@gmail.com:Command0830 upload'
 alias fetch='echo "\n" && neofetch'  
 alias networkScan='sudo fing -r 1 -d true -o table,text'
 alias mypip='curl ipinfo.io/ip'
@@ -33,10 +36,17 @@ alias mypip='curl ipinfo.io/ip'
 
 #Pywal aliases
 alias wall='wal -q -b 13181b -i'
+alias walf='wal -q -i'
+alias nsfwwwall='wal -q -b 13181b -i ~/Pictures/wallpapers/Nice/nude-blonde-in-the-window-1280x720.jpg && spottheme Nord-Nude && spicetify apply && sa'
+alias nsfwbwall='wal -q -b 13181b -i ~/Pictures/wallpapers/Nice/sadie-gray-2-1280x720.jpg && spottheme Nord && spiceify apply && sa'
+alias mainwall='wal -q -b 13181b -i ~/Pictures/wallpapers/Landscapes/journey-man-1364190-unsplash-19.jpg && spotheme Nord && spicetify apply && sa'
+alias beachwall='wal -q -i ~/Pictures/wallpapers/david-rodrigo-LO14F1Yj0j0-unsplash.jpg && spotheme Nord-Beach && spicetify apply && sa'
+alias viowall='wal -q -i ~/Pictures/wallpapers/violet.png && spotheme Nord-Violet && spicetify apply && sa'
 
 #spotify aliases
 alias spottheme='spicetify config current_theme'
 alias sn='sh ~/scripts/spotifynotif.sh &'
 
 #python scripts
-alias sortdl='cd ~/scripts && python3 downloadsManager.py ~/Downloads && cd'
+alias sten='python ~/Documents/Files/Python/hide.py'
+alias sortdl='cd /Users/jordy/Documents/Files/Python && python3 folder_manager.py ~/Downloads && cd'

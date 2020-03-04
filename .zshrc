@@ -1,6 +1,5 @@
 #Startup scripts
 wal -R -q -n
-sortdl
 
 #Setting Neovim as default editor
 export EDITOR='nvim'
