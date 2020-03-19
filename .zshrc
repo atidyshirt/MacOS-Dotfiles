@@ -14,11 +14,7 @@ export PATH="/Users/jordy/.local/bin:$PATH"
 export PATH="$PATH:/Users/jordy/Development/tools/flutter/bin"
 
 #Sourcing scripts and aliases
-source ~/scripts/aliases.sh
-source ~/scripts/extractFunction.sh
-source ~/scripts/fullpath.sh
-source ~/scripts/backup.sh
-source ~/scripts/currencyConvert.sh
-source ~/scripts/notes.sh
-source ~/scripts/githubProjectDirectory.sh
+for f in ~/scripts/sourceScripts/*; do
+   source $f
+done
 

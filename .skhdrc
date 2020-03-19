@@ -1,7 +1,7 @@
 # open terminal, vsocde, and safari with shortcuts
-cmd - return : open -a iterm2
+cmd - return : open -a term
 cmd + shift - return : code
-alt - return : open -a firefox
+alt - return : open -a firefox\ 2
 
 # focus window
 alt - left : yabai -m window --focus west
@@ -10,16 +10,16 @@ alt - up : yabai -m window --focus north
 alt - right : yabai -m window --focus east
 
 # swap window
-shift + alt - left : yabai -m window --swap west
-shift + alt - down : yabai -m window --swap south
-shift + alt - up : yabai -m window --swap north
-shift + alt - right : yabai -m window --swap east
+shift + cmd - left : yabai -m window --swap west
+shift + cmd - down : yabai -m window --swap south
+shift + cmd - up : yabai -m window --swap north
+shift + cmd - right : yabai -m window --swap east
 
 # move window
-shift + cmd - left : yabai -m window --warp west
-shift + cmd - down : yabai -m window --warp south
-shift + cmd - up : yabai -m window --warp north
-shift + cmd - right : yabai -m window --warp east
+shift + alt - left : yabai -m window --warp west
+shift + alt- down : yabai -m window --warp south
+shift + alt - up : yabai -m window --warp north
+shift + alt - right : yabai -m window --warp east
 
 # balance size of windows
 shift + alt - 0 : yabai -m space --balance
@@ -47,21 +47,17 @@ cmd + alt - n : yabai -m space --create && \
 # destroy desktop
 # cmd + alt - w : yabai -m space --destroy
 
-# fast focus desktop
-cmd + alt - x : yabai -m space --focus recent
-cmd + alt - z : yabai -m space --focus prev
-cmd + alt - c : yabai -m space --focus next
-cmd + alt - 1 : yabai -m space --focus 1
-cmd + alt - 2 : yabai -m space --focus 2
-cmd + alt - 3 : yabai -m space --focus 3
-cmd + alt - 4 : yabai -m space --focus 4
-
-cmd + alt - 5 : yabai -m space --focus 5
-cmd + alt - 6 : yabai -m space --focus 6
-cmd + alt - 7 : yabai -m space --focus 7
-cmd + alt - 8 : yabai -m space --focus 8
-cmd + alt - 9 : yabai -m space --focus 9
-cmd + alt - 0 : yabai -m space --focus 10
+#focus space
+alt - 1 : yabai -m space --focus 1
+alt - 2 : yabai -m space --focus 2
+alt - 3 : yabai -m space --focus 3
+alt - 4 : yabai -m space --focus 4
+alt - 5 : yabai -m space --focus 5
+alt - 6 : yabai -m space --focus 6
+alt - 7 : yabai -m space --focus 7
+alt - 8 : yabai -m space --focus 8
+alt - 9 : yabai -m space --focus 9
+alt - 0 : yabai -m space --focus 10
 
 # send window to desktop and follow focus
 shift + cmd - x : yabai -m window --space recent; yabai -m space --focus recent
@@ -69,8 +65,8 @@ shift + cmd - z : yabai -m window --space prev; yabai -m space --focus prev
 shift + cmd - c : yabai -m window --space next; yabai -m space --focus next
 shift + cmd - 1 : yabai -m window --space  1; yabai -m space --focus 1
 shift + cmd - 2 : yabai -m window --space  2; yabai -m space --focus 2
-# shift + cmd - 3 : yabai -m window --space  3; yabai -m space --focus 3
-# shift + cmd - 4 : yabai -m window --space  4; yabai -m space --focus 4
+shift + cmd - 3 : yabai -m window --space  3; yabai -m space --focus 3
+shift + cmd - 4 : yabai -m window --space  4; yabai -m space --focus 4
 shift + cmd - 5 : yabai -m window --space  5; yabai -m space --focus 5
 shift + cmd - 6 : yabai -m window --space  6; yabai -m space --focus 6
 shift + cmd - 7 : yabai -m window --space  7; yabai -m space --focus 7
@@ -101,16 +97,16 @@ shift + ctrl - w : yabai -m window --move rel:0:-20
 shift + ctrl - d : yabai -m window --move rel:20:0
 
 # increase window size
-shift + alt - a : yabai -m window --resize left:-20:0
-shift + alt - s : yabai -m window --resize bottom:0:20
-shift + alt - w : yabai -m window --resize top:0:-20
-shift + alt - d : yabai -m window --resize right:20:0
+shift + alt - a : yabai -m window --resize left:-19:0
+shift + alt - s : yabai -m window --resize bottom:0:19
+shift + alt - w : yabai -m window --resize top:0:-19
+shift + alt - d : yabai -m window --resize right:19:0
 
 # decrease window size
-shift + cmd - a : yabai -m window --resize left:20:0
-shift + cmd - s : yabai -m window --resize bottom:0:-20
-shift + cmd - w : yabai -m window --resize top:0:20
-shift + cmd - d : yabai -m window --resize right:-20:0
+shift + cmd - a : yabai -m window --resize left:19:0
+shift + cmd - s : yabai -m window --resize bottom:0:-19
+shift + cmd - w : yabai -m window --resize top:0:19
+shift + cmd - d : yabai -m window --resize right:-19:0
 
 # set insertion point in focused container
 ctrl + alt - a : yabai -m window --insert west
@@ -137,7 +133,7 @@ alt - d : yabai -m window --toggle zoom-parent
 alt - f : yabai -m window --toggle zoom-fullscreen
 
 # toggle window native fullscreen
-# shift + alt - f : yabai -m window --toggle native-fullscreen
+shift + alt - f : yabai -m window --toggle native-fullscreen
 
 # toggle window border
 shift + alt - b : yabai -m window --toggle border
@@ -156,7 +152,9 @@ alt - t : yabai -m window --toggle float;\
 # alt - s : yabai -m window --toggle sticky
 
 # toggle sticky, float and resize to picture-in-picture size
-alt - p : yabai -m window --grid 5:5:4:0:1:1
+alt - p : yabai -m window --toggle float;\
+          yabai -m window --toggle sticky;\
+          yabai -m window --grid 4:4:4:4:5:5
 
 # change layout of desktop
 ctrl + alt - z : yabai -m space --layout bsp

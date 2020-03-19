@@ -1,7 +1,6 @@
 SCRIPTS AND COMMANDS
   
   cash        - currency converter
-  upload      - hidden/unrestricted filesharing service
   send        - secure filesharing service through firefox
   remove      - remove file
   move        - move file 
@@ -13,6 +12,9 @@ SCRIPTS AND COMMANDS
   fullpath    - displays current fullpath 
   backup      - creates a zip of selected folder and adds metadata
   sn          - runs script to update spotify notification bar (Übersicht)
+  qnote       - lets you write a quick note
+  vnote       - lets you view the quick note
+  cnote       - lets you clear the quick note panel
 
   ALIASES
 
@@ -21,6 +23,8 @@ SCRIPTS AND COMMANDS
     install   - runs brew install manager
     brc
     prc
+    src
+    yrc
     zrc
     vrc       - opens config files for terminal applications
     sortdl    - sorts downloads folder by extention and file locations

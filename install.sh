@@ -19,15 +19,26 @@ brew install koekeishiya/formulae/yabai
 #CURL install OHMYYZSH
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-#installing dots
+#installing dots NOTE: THIS WILL REMOVE FOLDERS BEFORE INSTALL
+rm -rf $HOME/.config
+rm -rf $HOME/scripts
+rm -rf $HOME/bin
+rm -rf $HOME/spicetify_data/Themes
+rm -rf $HOME/spicetify_data/config.ini
+rm -rf $HOME/.zshrc
+rm -rf $HOME/.skhdrc
+rm -rf $HOME/.Xresources
+
 mv scripts $HOME/scripts
 mv .config $HOME/.config
 mv bin $HOME/bin
 mv spicetify_data $HOME/spicetify_data
 mv .zshrc $HOME/.zshrc
 mv .skhdrc $HOME/.skhdrc
+mv .Xresources $HOME/.Xresources
 mv wallpapers $HOME/Pictures
 mv Files $HOME/Documents
+
 #setting up OHMYZSH
 git clone https://github.com/reobin/typewritten.git $ZSH_CUSTOM/themes/typewritten
 git clone https://github.com/GideonWolfe/vim.reaper.git

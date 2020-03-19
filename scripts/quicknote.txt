@@ -1,2 +1,10 @@
-Change font for dotfiles in in install.sh
-brew cask install font-firacode-nerd-font
+Due
+
+	Algorithms assessment
+	Math220 assessment
+	SENG201 test - Tuesday
+	Philosophy Essay - EOS
+
+To go to:
+
+	Thursday Tutorial - 11:00 or 13:00

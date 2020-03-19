@@ -36,14 +36,18 @@ def move_files(current_dir: 'Path', folder_name: 'str'):
         function to move files to directory of file type
             (i.e. "example.csv" to folder "csv")
     '''
-    python_folder = '../Documents/Files/Python'
-    bash_folder = '../Documents/Files/Bash'
+    python_folder = '~/Documents/Files/Python'
+    bash_folder = '~/Documents/Files/Bash'
+    java_folder = '~/Documents/Files/Java'
 
     for file in current_dir.glob("*."+folder_name):
         if folder_name == 'py':
             shutil.move(file.name, python_folder)
         elif folder_name == 'sh':
             shutil.move(file.name, bash_folder)
+        elif folder_name == 'java':
+            shutil.move(file.name, java_folder)
+
         else:
             shutil.move(file.name, folder_name+"/"+file.name)
     if verbose:
@@ -63,7 +67,7 @@ def del_folder_redirect(current_dir: 'Path', file_types: 'list'):
         directorys.append(dirnames)
         for directory in directorys:
             for i in directory:
-                if i == 'py' or i == 'sh':
+                if i == 'py' or i == 'sh' or i == 'java':
                     os.rmdir(i)
         break
 
