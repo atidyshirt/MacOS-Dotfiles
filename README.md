@@ -46,7 +46,7 @@ You're sections headers will be used to reference location of destination.
 #### Installation
 
 ```html
-    <p>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</p>
+   <p>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</p>
    <p>brew install git</p> 
    <p>git clone https://github.com/atidyshirt/MacOS-Dotfiles.git</p> 
    <p>cd MacOS-Dotfile</p> 
