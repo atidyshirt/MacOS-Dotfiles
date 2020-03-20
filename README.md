@@ -52,6 +52,7 @@ You're sections headers will be used to reference location of destination.
    <p>cd MacOS-Dotfile</p> 
    <p>sh install.sh</p> 
 ```
-[Back To The Top](#read-me-template)
+
+[Back To The Top](#read-me-template) 
 
 ---
