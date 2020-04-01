@@ -24,7 +24,8 @@ You're sections headers will be used to reference location of destination.
                 - use ligatures, change font > FiraCode Nerd Font
 
       firefox   - browser
-                - download nighttab extention and setup
+                - you will need the extention firefox color to change the top two corners
+                - download tabless extention to put the wallpaper as firefox startup
 
       spotify   - music player
 
