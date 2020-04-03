@@ -6,7 +6,6 @@ brew install ranger
 brew install neofetch
 brew install neovim
 brew install ffsend
-brew install khanhas/tap/spicetify-cli
 brew install sassc
 brew tap homebrew/cask-fonts
 brew cask install font-firacode-nerd-font 
@@ -22,7 +21,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 #installing dots NOTE: THIS WILL REMOVE FOLDERS BEFORE INSTALL
 rm -rf $HOME/.config
 rm -rf $HOME/scripts
-rm -rf $HOME/bin
 rm -rf $HOME/spicetify_data/Themes
 rm -rf $HOME/spicetify_data/config.ini
 rm -rf $HOME/.zshrc
@@ -31,7 +29,6 @@ rm -rf $HOME/.Xresources
 
 mv scripts $HOME/scripts
 mv .config $HOME/.config
-mv bin $HOME/bin
 mv spicetify_data $HOME/spicetify_data
 mv .zshrc $HOME/.zshrc
 mv .skhdrc $HOME/.skhdrc
@@ -60,7 +57,7 @@ ln -s "${HOME}/Library/Application\ Support/Übersicht/widgets/pecan/pecan-style
 
 #telling the user
 source ~/.zshrc
-wall ~/Pictures/wallpapers/journey-man-1364190-unsplash-19.jpg
+walset ~/Pictures/wallpapers/landscapes/journey-man-1364190-unsplash-19.jpg
 echo "open vim and type :PlugInstall"
 echo "Change settings in iterm2 prefs"
 echo "    - enable powerline glyphs"
