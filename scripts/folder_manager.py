@@ -36,9 +36,9 @@ def move_files(current_dir: 'Path', folder_name: 'str'):
         function to move files to directory of file type
             (i.e. "example.csv" to folder "csv")
     '''
-    python_folder = '~/Documents/Files/Python'
-    bash_folder = '~/Documents/Files/Bash'
-    java_folder = '~/Documents/Files/Java'
+    python_folder = '../Documents/Files/Python'
+    bash_folder = '../Documents/Files/Bash'
+    java_folder = '../Documents/Files/Java'
 
     for file in current_dir.glob("*."+folder_name):
         if folder_name == 'py':
@@ -107,3 +107,4 @@ if __name__ == "__main__":
 
     main(current_dir, file_types)
     del_folder_redirect(current_dir, file_types)
+

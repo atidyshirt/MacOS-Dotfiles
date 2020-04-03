@@ -1,10 +1,21 @@
-Due
+Missed lectures:
 
-	Algorithms assessment
-	Math220 assessment
-	SENG201 test - Tuesday
-	Philosophy Essay - EOS
+	Seng201, 3 lectures
+	Math220, 0 lectures
+	Cosc211, 1 lectures
+	Phil235, 0 lectures
 
-To go to:
+Due in holidays:
 
-	Thursday Tutorial - 11:00 or 13:00
+	Dynamic Programming labs
+	Phil235 Essay
+	Maths assessment
+	CompSci Assessment One
+
+Time Scale:
+
+	Get DP Labs & Seng labs completed
+	by the 14th April
+	Complete Essay by 20th April
+	Get Maths assignment done by 24th
+	April
