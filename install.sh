@@ -40,7 +40,7 @@ mv Files $HOME/Documents
 git clone https://github.com/reobin/typewritten.git $ZSH_CUSTOM/themes/typewritten
 git clone https://github.com/GideonWolfe/vim.reaper.git
 cd vim.reaper
-sh update_config.sh
+gh update_config.sh
 
 #setting up ubersicht
 #Pecan
@@ -57,7 +57,7 @@ ln -s "${HOME}/Library/Application\ Support/Übersicht/widgets/pecan/pecan-style
 
 #telling the user
 source ~/.zshrc
-walset ~/Pictures/wallpapers/landscapes/journey-man-1364190-unsplash-19.jpg
+walsetconstant ~/Pictures/wallpapers/landscapes journey-man-1364190-unsplash-19.jpg
 echo "open vim and type :PlugInstall"
 echo "Change settings in iterm2 prefs"
 echo "    - enable powerline glyphs"

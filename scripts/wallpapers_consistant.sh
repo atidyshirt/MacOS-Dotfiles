@@ -11,10 +11,10 @@ else
     if [ -z "$2" ]
     then
          ls $1 |sort -R |tail -1 |while read file; do
-            wal -q -i $1/$file
+            wal -q -b 13181b -i $1/$file
         done
     else    
-        wal -q -i $1/$2
+        wal -q -b 13181b -i $1/$2
     fi
 fi
 
