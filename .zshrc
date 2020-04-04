@@ -1,3 +1,4 @@
+# 2gNZ9U1Dyyop-jc_VX8o
 #Startup scripts
 wal -R -q -n
 
