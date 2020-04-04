@@ -40,12 +40,12 @@ mv Files $HOME/Documents
 git clone https://github.com/reobin/typewritten.git $ZSH_CUSTOM/themes/typewritten
 git clone https://github.com/GideonWolfe/vim.reaper.git
 cd vim.reaper
-gh update_config.sh
+sh update_config.sh
 
 #setting up ubersicht
 #Pecan
 git clone https://github.com/zzzeyez/pecan.git "$HOME/Library/Application\ Support/Übersicht/widgets/pecan"
-pecan-style --load medicine
+pecan-style --load developer
 
 #notifications
 https://github.com/zzzeyez/xanthia.git "$HOME/Library/Application\ Support/Übersicht/widgets/xanthia"
