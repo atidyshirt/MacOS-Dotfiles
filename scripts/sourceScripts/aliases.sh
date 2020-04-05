@@ -33,7 +33,7 @@ alias mypip='echo "Public IP: " && curl ipinfo.io/ip && echo "Default Gateway: "
 alias wall='wal -q -b 13181b -i'
 alias walset='sh ~/scripts/wallpapers.sh'
 alias walsetconstant='sh ~/scripts/wallpapers_consistant.sh'
-glias randland='walsetconstant ~/Pictures/CurrentWall/landscapes'
+alias randland='walsetconstant ~/Pictures/CurrentWall/landscapes'
 alias sn='sh ~/scripts/spotifynotif.sh &'
 #alias pecan-style -l developer/medicine
 
