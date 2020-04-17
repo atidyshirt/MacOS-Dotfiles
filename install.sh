@@ -36,7 +36,7 @@ mv .Xresources $HOME/.Xresources
 mv wallpapers $HOME/Pictures
 mv Files $HOME/Documents
 
-#setting up OHMYZSH
+gsetting up OHMYZSH
 git clone https://github.com/reobin/typewritten.git $ZSH_CUSTOM/themes/typewritten
 git clone https://github.com/GideonWolfe/vim.reaper.git
 cd vim.reaper
@@ -58,9 +58,11 @@ ln -s "${HOME}/Library/Application\ Support/Übersicht/widgets/pecan/pecan-style
 #telling the user
 source ~/.zshrc
 walsetconstant ~/Pictures/wallpapers/landscapes journey-man-1364190-unsplash-19.jpg
-echo "open vim and type :PlugInstall"
+echo "open neovim and type :PlugInstall"
 echo "Change settings in iterm2 prefs"
 echo "    - enable powerline glyphs"
 echo "    - enable subpixel anti-aliasing"
 echo "    - use ligatures, anti-aliased"
 echo "    - change font to FiraCode Nerd Font"
+echo "change Firefox, install firefox color and Tabless extention"
+echo "type sa to source all files (hopefully runs without errors)"
