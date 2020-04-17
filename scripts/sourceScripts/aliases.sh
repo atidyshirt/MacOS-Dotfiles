@@ -17,7 +17,7 @@ alias sa='source ~/.profile && source ~/.zshrc spicetify -q apply && sh ~/Librar
 alias qsa='source ~/.zshrc'
 alias gc='git clone'
 alias remove='rm -rf'
-alias move='mv'
+alias move='mv -f'
 alias scripts='~/scripts'
 alias files='cd /Users/jordy/Documents/Files'
 alias root='cd / && clear'
@@ -39,4 +39,4 @@ alias sn='sh ~/scripts/spotifynotif.sh &'
 
 
 #python scripts
-alias sortdl='cd ~/scripts && python3 folder_manager.py ~/Downloads && cd'
+alias sortdl='cd /Users/jordy/Documents/Files/Python && python3 folder_manager.py ~/Downloads && cd'

@@ -12,24 +12,29 @@ yabai -m config status_bar_space_icon        
 yabai -m config status_bar_clock_icon        
 
 # global settings
-# yabai -m config mouse_follows_focus          off
-# yabai -m config focus_follows_mouse          off
+yabai -m config mouse_follows_focus          off
+yabai -m config focus_follows_mouse          off
 yabai -m config window_placement             second_child
-yabai -m config window_topmost               on
+yabai -m config window_topmost               off
 yabai -m config window_opacity               off
-yabai -m config window_shadow                on
+yabai -m config window_opacity_duration      0.0
+yabai -m config window_shadow                off
 yabai -m config window_border                on
+yabai -m config window_border_placement      inset
 yabai -m config window_border_width          4
-yabai -m config active_window_border_color   0x00775759
-yabai -m config normal_window_border_color   0x00505050
+yabai -m config window_border_radius         -1.0
+yabai -m config active_window_border_topmost off
+yabai -m config active_window_border_color   0xff775759
+yabai -m config normal_window_border_color   0xff505050
 yabai -m config insert_window_border_color   0xffd75f5f
-# yabai -m config active_window_opacity        1.0
-# yabai -m config normal_window_opacity        0.90
+yabai -m config active_window_opacity        1.0
+yabai -m config normal_window_opacity        1.0
 yabai -m config split_ratio                  0.50
 yabai -m config auto_balance                 off
 yabai -m config mouse_modifier               fn
 yabai -m config mouse_action1                move
 yabai -m config mouse_action2                resize
+#
 # general space settings
 yabai -m config layout                       bsp
 yabai -m config top_padding                  40 
@@ -40,5 +45,13 @@ yabai -m config window_gap                   4
 
 # make sure emacs is tiled
 yabai -m rule --add app=neovim manage=on
+yabai -m rule --add app=Mail space=2
+yabai -m rule --add app=Safari space=3
+yabai -m rule --add app=Notes space=4
+yabai -m rule --add app=Transmission space=5
+yabai -m rule --add app=Spotify space=6
+yabai -m rule --add app=Discord space=7 grid=6:6:1:1:3:3
+yabai -m rule --add app=Steam space=7
+yabai -m rule --add app="^System Preferences$" manage=off
 
 echo "yabai configuration loaded.."
