@@ -26,9 +26,11 @@ rm -rf $HOME/spicetify_data/config.ini
 rm -rf $HOME/.zshrc
 rm -rf $HOME/.skhdrc
 rm -rf $HOME/.Xresources
+rm -rf $HOME/bin
 
 mv scripts $HOME/scripts
 mv .config $HOME/.config
+mv bin $HOME/bin
 mv spicetify_data $HOME/spicetify_data
 mv .zshrc $HOME/.zshrc
 mv .skhdrc $HOME/.skhdrc
