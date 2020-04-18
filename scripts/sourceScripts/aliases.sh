@@ -30,13 +30,12 @@ alias mypip='echo "Public IP: " && curl ipinfo.io/ip && echo "Default Gateway: "
 
 
 #Asthetic aliases
-alias wall='wal -q -b 13181b -i'
+alias wall='wal -q -i'
 alias walset='sh ~/scripts/wallpapers.sh'
 alias walsetconstant='sh ~/scripts/wallpapers_consistant.sh'
 alias randland='walsetconstant ~/Pictures/CurrentWall/landscapes'
-alias sn='sh ~/scripts/spotifynotif.sh &'
 #alias pecan-style -l developer/medicine
 
 
 #python scripts
-alias sortdl='cd /Users/jordy/Documents/Files/Python && python3 folder_manager.py ~/Downloads && cd'
+alias sortdl='cd /Users/jordy/scripts && python3 folder_manager.py ~/Downloads && cd'

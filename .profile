@@ -1,2 +1,4 @@
-brew services start skhd
-brew services start yabai
+brew services restart skhd
+brew services restart yabai
+
+~/scripts/wallpapers.sh ~/Pictures/StartupWalls
