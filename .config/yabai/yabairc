@@ -2,7 +2,7 @@
 source ~/.cache/wal/colors.sh
 
 #creating colors
-c1="${color3}:1}"
+c1="${color3:1}"
 c2="${color8:1}"
 c3="${color15:1}"
 
@@ -21,7 +21,7 @@ yabai -m config status_bar_clock_icon        
 yabai -m config mouse_follows_focus          off
 yabai -m config focus_follows_mouse          off
 yabai -m config window_placement             second_child
-yabai -m config window_topmost               off
+yabai -m config window_topmost               on
 yabai -m config window_opacity               off
 yabai -m config window_opacity_duration      0.0
 yabai -m config window_shadow                off
