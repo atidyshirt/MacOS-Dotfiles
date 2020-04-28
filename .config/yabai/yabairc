@@ -33,8 +33,8 @@ yabai -m config active_window_border_topmost on
 yabai -m config active_window_border_color   0xff$c1
 yabai -m config normal_window_border_color   0xff$c2
 yabai -m config insert_window_border_color   0xff$c3
-yabai -m config active_window_opacity        1.0
-yabai -m config normal_window_opacity        1.0
+yabai -m config active_window_opacity        0.9
+yabai -m config normal_window_opacity        0.9
 yabai -m config split_ratio                  0.50
 yabai -m config auto_balance                 off
 yabai -m config mouse_modifier               fn
@@ -43,13 +43,24 @@ yabai -m config mouse_action2                resize
 #
 # general space settings
 yabai -m config layout                       bsp
-yabai -m config top_padding                  55
+yabai -m config top_padding                  50
 yabai -m config bottom_padding               30
 yabai -m config left_padding                 30
 yabai -m config right_padding                30
 yabai -m config window_gap                   30
 yabai -m config --space 4 layout             float
 yabai -m config --space 4 window_boarder     off
+
+#Label space
+yabai -m space 1 --label 
+yabai -m space 2 --label 
+yabai -m space 3 --label 
+yabai -m space 4 --label 
+yabai -m space 5 --label 
+yabai -m space 6 --label 
+yabai -m space 7 --label 
+yabai -m space 8 --label 
+
 
 
 

@@ -22,5 +22,6 @@ fi
   xrdb -merge ~/.Xresources
   spicetify -q update
   sh ~/Library/Application\ Support/Übersicht/widgets/pecan/wal-set
-
+  brew services restart yabai
+  $(notify-send "Theme Applied - Pywal")
 
