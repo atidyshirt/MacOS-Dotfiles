@@ -12,12 +12,10 @@ source $ZSH/oh-my-zsh.sh
 #PATH
 export PATH="/Users/jordy/bin:$PATH"
 export PATH="$PATH:/Users/jordy/Development/tools/flutter/bin"
-export PYTHONPATH=/usr/local/lib/python2.7:$PYTHONPATH
-export PYTHONPATH=/usr/local/lib/python3.7:$PYTHONPATH
-export PYTHONPATH=/usr/local/lib/python3.8:$PYTHONPATH
-
+export PYTHONPATH="/User/jordy/library/python/3.7/lib/python/site-packages:$PYTHONPATH"
 
 for f in ~/scripts/sourceScripts/*; do
    source $f
 done
 
+bunnyfetch

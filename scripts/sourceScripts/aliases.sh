@@ -27,6 +27,9 @@ alias send='ffsend upload'
 alias fetch='echo "\n" && neofetch'  
 alias networkScan='sudo fing -r 1 -d true -o table,text'
 alias mypip='echo "Public IP: " && curl ipinfo.io/ip && echo "Default Gateway: " && route get default | grep gateway'
+alias enote='vi ~/scripts/quicknote.txt'
+alias piano='open /Users/jordy/Documents/Music/Setup\ -\ Midi/test\ Project/123.als'
+
 
 
 #Asthetic aliases
@@ -38,4 +41,6 @@ alias randland='walsetconstant ~/Pictures/CurrentWall/landscapes'
 
 
 #python scripts
+#This sets python to install directly into python3 not 2.7
+alias pip='python3 -m pip'
 alias sortdl='cd /Users/jordy/scripts && python3 folder_manager.py ~/Downloads && cd'

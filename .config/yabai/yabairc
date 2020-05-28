@@ -8,33 +8,25 @@ c3="${color15:1}"
 
 # bar settings
 yabai -m config status_bar                   off
-yabai -m config status_bar_text_font         "Helvetica Neue:Bold:12.0"
-yabai -m config status_bar_icon_font         "FontAwesome:Regular:12.0"
-yabai -m config status_bar_background_color  0xff202020
-yabai -m config status_bar_foreground_color  0xffa8a8a8
-yabai -m config status_bar_space_icon_strip  I II III IV V VI VII VIII IX X
-yabai -m config status_bar_power_icon_strip   
-yabai -m config status_bar_space_icon        
-yabai -m config status_bar_clock_icon        
 
 # global settings
 yabai -m config mouse_follows_focus          off
-yabai -m config focus_follows_mouse          off
+yabai -m config focus_follows_mouse          on
 yabai -m config window_placement             second_child
 yabai -m config window_topmost               on
 yabai -m config window_opacity               off
 yabai -m config window_opacity_duration      0.0
 yabai -m config window_shadow                off
-yabai -m config window_border                on
-yabai -m config window_border_placement      inset
-yabai -m config window_border_width          4
-yabai -m config window_border_radius         -1.0
-yabai -m config active_window_border_topmost on
-yabai -m config active_window_border_color   0xff$c1
-yabai -m config normal_window_border_color   0xff$c2
-yabai -m config insert_window_border_color   0xff$c3
-yabai -m config active_window_opacity        0.9
-yabai -m config normal_window_opacity        0.9
+# yabai -m config window_border                on
+# yabai -m config window_border_placement      inset
+# yabai -m config window_border_width          4
+# yabai -m config window_border_radius         -1.0
+# yabai -m config active_window_border_topmost on
+# yabai -m config active_window_border_color   0xff$c1
+# yabai -m config normal_window_border_color   0xff$c2
+# yabai -m config insert_window_border_color   0xff$c3
+yabai -m config active_window_opacity        0.75
+yabai -m config normal_window_opacity        0.80
 yabai -m config split_ratio                  0.50
 yabai -m config auto_balance                 off
 yabai -m config mouse_modifier               fn
@@ -48,33 +40,12 @@ yabai -m config bottom_padding               30
 yabai -m config left_padding                 30
 yabai -m config right_padding                30
 yabai -m config window_gap                   30
-yabai -m config --space 4 layout             float
-yabai -m config --space 4 window_boarder     off
 
-#Label space
-yabai -m space 1 --label 
-yabai -m space 2 --label 
-yabai -m space 3 --label 
-yabai -m space 4 --label 
-yabai -m space 5 --label 
-yabai -m space 6 --label 
-yabai -m space 7 --label 
-yabai -m space 8 --label 
+yabai -m config --space 5 layout             float
+yabai -m config --space 6 layout             float
 
-
-
-
-# make sure emacs is tiled
-yabai -m rule --add app=neovim manage=on
-yabai -m rule --add app=Mail space=3
-yabai -m rule --add app=Safari space=3
-yabai -m rule --add app=firefox space=3
-yabai -m rule --add app=Notes space=4
-yabai -m rule --add app=Transmission space=5
+# App rules
 yabai -m rule --add app=Spotify space=1
-yabai -m rule --add app=Discord space=7 grid=6:6:1:1:3:3
-yabai -m rule --add app=Steam space=7
 yabai -m rule --add app="^System Preferences$" manage=off
-yabai -m rule --add app=term space=2
 
 echo "yabai configuration loaded.."

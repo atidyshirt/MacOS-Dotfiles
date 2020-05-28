@@ -124,7 +124,7 @@ alt - y : yabai -m space --mirror y-axis
 alt - x : yabai -m space --mirror x-axis
 
 # toggle desktop offset
-alt - a : yabai -m space --toggle padding; yabai -m space --toggle gap
+alt - a : yabai -m space --toggle padding; yabai -m space --toggle gap; yabai -m window --toggle border
 
 # toggle window parent zoom
 alt - d : yabai -m window --toggle zoom-parent
@@ -154,7 +154,7 @@ alt - t : yabai -m window --toggle float;\
 # toggle sticky, float and resize to picture-in-picture size
 alt - p : yabai -m window --toggle float;\
           yabai -m window --toggle sticky;\
-          yabai -m window --grid 4:4:4:4:5:5
+          yabai -m window --grid 4:3:2:3:1:2
 
 # change layout of desktop
 ctrl + alt - z : yabai -m space --layout bsp
