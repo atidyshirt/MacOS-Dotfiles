@@ -1,13 +1,24 @@
 
-        PHIL235 - Task 6 (7th June)
         PHIL235 - Essay  (5th June)
-
-        COSC262 - Quiz 0 (29th May)
-
-        MATH220 - Ass  5 (29th May)
+        PHIL235 - Task 6 (7th June)
 
     COSC262 - Exam (10th June - 2:30pm)
     MATH220 - Exam (16th June - 9:30am)
     SENG201 - Exam (17th June - 2:30pm)
 
-owe Ru $37, Ru owes me $8, Cam owes me $13
+    Assumptions:
+    Possible to simulate consciousness
+
+    technoogical progress will not stop
+    any time in the near future
+
+    advanced civilizations dont
+    destroy themselves
+
+    that these civilizations are
+    interested in running simulations
+    (opposite to premise two)
+
+    that if these four things are true
+    that there are many more simulations
+    than realities
