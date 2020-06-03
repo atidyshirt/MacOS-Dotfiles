@@ -36,7 +36,9 @@ mv .zshrc $HOME/.zshrc
 mv .skhdrc $HOME/.skhdrc
 mv .Xresources $HOME/.Xresources
 mv wallpapers $HOME/Pictures
-mv Files $HOME/Documents
+
+# Uncomment this if you want it to create the corresponding directories (this is mainly for me)
+#mv Files $HOME/Documents
 
 gsetting up OHMYZSH
 git clone https://github.com/reobin/typewritten.git $ZSH_CUSTOM/themes/typewritten
@@ -46,6 +48,7 @@ sh update_config.sh
 
 #setting up ubersicht
 #Pecan
+#Can also use Affix
 git clone https://github.com/zzzeyez/pecan.git "$HOME/Library/Application\ Support/Übersicht/widgets/pecan"
 pecan-style --load developer
 
@@ -66,5 +69,5 @@ echo "    - enable powerline glyphs"
 echo "    - enable subpixel anti-aliasing"
 echo "    - use ligatures, anti-aliased"
 echo "    - change font to FiraCode Nerd Font"
-echo "change Firefox, install firefox color and Tabless extention"
+echo "change Firefox, install firefox color and Tabless extention use wal.css to grab colors"
 echo "type sa to source all files (hopefully runs without errors)"
