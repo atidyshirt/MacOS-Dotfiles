@@ -1,7 +1,10 @@
 
 #MacOS Dotfiles
 
-![Project Image](/Preview/Preview3.png)
+[Project Image](/Preview/Preview3.png)
+[Project Image](/Preview/Fullshow.png)
+[Project Image](/Preview/iterm2.png)
+
 
 > Here is my dotfiles, more previews are in the preview folder
 
