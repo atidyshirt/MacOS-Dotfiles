@@ -7,6 +7,7 @@ alias vi='nvim'
 alias svi='sudo nvim'
 alias install='brew install'
 alias arc='vi ~/scripts/sourceScripts/aliases.sh'
+alias trc='vi ~/.config/alacritty/alacritty.yml'
 alias brc='vi ~/.bashrc'
 alias prc='vi ~/.profile'
 alias zrc='vi ~/.zshrc'
@@ -29,6 +30,7 @@ alias networkScan='sudo fing -r 1 -d true -o table,text'
 alias mypip='echo "Public IP: " && curl ipinfo.io/ip && echo "Default Gateway: " && route get default | grep gateway'
 alias enote='vi ~/scripts/quicknote.txt'
 alias piano='open /Users/jordy/Documents/Music/Setup\ -\ Midi/test\ Project/123.als'
+alias iina='/Applications/IINA.app/Contents/MacOS/IINA'
 
 
 

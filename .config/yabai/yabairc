@@ -11,20 +11,12 @@ yabai -m config status_bar                   off
 
 # global settings
 yabai -m config mouse_follows_focus          off
-yabai -m config focus_follows_mouse          on
+yabai -m config focus_follows_mouse          off
 yabai -m config window_placement             second_child
 yabai -m config window_topmost               on
 yabai -m config window_opacity               off
 yabai -m config window_opacity_duration      0.0
 yabai -m config window_shadow                off
-# yabai -m config window_border                on
-# yabai -m config window_border_placement      inset
-# yabai -m config window_border_width          4
-# yabai -m config window_border_radius         -1.0
-# yabai -m config active_window_border_topmost on
-# yabai -m config active_window_border_color   0xff$c1
-# yabai -m config normal_window_border_color   0xff$c2
-# yabai -m config insert_window_border_color   0xff$c3
 yabai -m config active_window_opacity        0.75
 yabai -m config normal_window_opacity        0.80
 yabai -m config split_ratio                  0.50
@@ -35,11 +27,11 @@ yabai -m config mouse_action2                resize
 #
 # general space settings
 yabai -m config layout                       bsp
-yabai -m config top_padding                  50
-yabai -m config bottom_padding               30
-yabai -m config left_padding                 30
-yabai -m config right_padding                30
-yabai -m config window_gap                   30
+yabai -m config top_padding                  40    #50
+yabai -m config bottom_padding               10    #30
+yabai -m config left_padding                 10    #30
+yabai -m config right_padding                10    #30
+yabai -m config window_gap                   10    #30
 
 yabai -m config --space 5 layout             float
 yabai -m config --space 6 layout             float
@@ -47,5 +39,11 @@ yabai -m config --space 6 layout             float
 # App rules
 yabai -m rule --add app=Spotify space=1
 yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add app=Dashlane manage=off
+
+
+# yabai -m signal --add event=space_changed action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"simple-bar-spaces-jsx\"'"
+# yabai -m signal --add event=display_changed action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"simple-bar-spaces-jsx\"'"
+# yabai -m signal --add event=space_changed action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"simple-bar-processes-jsx\"'"
 
 echo "yabai configuration loaded.."

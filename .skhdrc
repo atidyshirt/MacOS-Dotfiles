@@ -1,5 +1,5 @@
 # open terminal, vsocde, and safari with shortcuts
-cmd - return : open -a term
+cmd - return : env WAYLAND_DISPLAY= alacritty
 cmd + shift - return : code
 alt - return : open -a firefox\ 2
 
@@ -159,3 +159,4 @@ alt - p : yabai -m window --toggle float;\
 # change layout of desktop
 ctrl + alt - z : yabai -m space --layout bsp
 ctrl + alt - x : yabai -m space --layout float
+

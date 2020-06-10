@@ -14,13 +14,13 @@ else
             wal -q -b 13181b -i $1/$file
         done
     else    
-        wal -q -b 13181b -i $1/$2
+        wal -q -l -i $1/$2
     fi
 fi
 
   #https://github.com/FilipLitwora/pywal-discord
   xrdb -merge ~/.Xresources
   spicetify -q update
-  sh ~/Library/Application\ Support/Übersicht/widgets/pecan/wal-set
-
+  sh ~/bin/script.sh ~/.config/alacritty/alacritty.yml
+  sh ~/scripts/setBarTheme.sh
 

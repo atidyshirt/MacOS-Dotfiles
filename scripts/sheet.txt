@@ -7,7 +7,7 @@ SCRIPTS AND COMMANDS
   fetch       - neofetch command 
   networkScan - scans the network for connected devices
   mypip       - shows my public ip address
-  wall        - sets pywal color scheme
+  walset      - sets pywal color scheme
   extract     - extracts files from compressed state 
   fullpath    - displays current fullpath 
   backup      - creates a zip of selected folder and adds metadata

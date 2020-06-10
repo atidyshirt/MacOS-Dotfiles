@@ -21,6 +21,5 @@ fi
   #https://github.com/FilipLitwora/pywal-discord
   xrdb -merge ~/.Xresources
   spicetify -q update
-  sh ~/Library/Application\ Support/Übersicht/widgets/pecan/wal-set
-  $(notify-send "Theme Applied - Pywal")
-
+  sh ~/bin/script.sh ~/.config/alacritty/alacritty.yml
+  sh ~/scripts/setBarTheme.sh

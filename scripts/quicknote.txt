@@ -1,24 +1,7 @@
 
-        PHIL235 - Essay  (5th June)
-        PHIL235 - Task 6 (7th June)
-
     COSC262 - Exam (10th June - 2:30pm)
     MATH220 - Exam (16th June - 9:30am)
     SENG201 - Exam (17th June - 2:30pm)
 
-    Assumptions:
-    Possible to simulate consciousness
-
-    technoogical progress will not stop
-    any time in the near future
-
-    advanced civilizations dont
-    destroy themselves
-
-    that these civilizations are
-    interested in running simulations
-    (opposite to premise two)
-
-    that if these four things are true
-    that there are many more simulations
-    than realities
+Fewest Junctions = BFS
+farthest apart with shortest route is floyds
