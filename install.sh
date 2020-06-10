@@ -49,25 +49,15 @@ sh update_config.sh
 #setting up ubersicht
 #Pecan
 #Can also use Affix
-git clone https://github.com/zzzeyez/pecan.git "$HOME/Library/Application\ Support/Übersicht/widgets/pecan"
-pecan-style --load developer
-
-#notifications
-https://github.com/zzzeyez/xanthia.git "$HOME/Library/Application\ Support/Übersicht/widgets/xanthia"
+git clone https://github.com/atidyshirt/simple-bar.git "$HOME/Library/Application\ Support/Übersicht/widgets/pecan"
 
 #linking files after installing
 ln -s "${HOME}/Library/Application\ Support/Übersicht/widgets/xanthia/notify-send" "/usr/local/bin/notify-send"
 ln -s "$ZSH_CUSTOM/themes/typewritten/typewritten.zsh-theme" "$ZSH_CUSTOM/themes/typewritten.zsh-theme"
-ln -s "${HOME}/Library/Application\ Support/Übersicht/widgets/pecan/pecan-style" "/usr/local/bin/pecan-style"
 
 #telling the user
 source ~/.zshrc
 walsetconstant ~/Pictures/wallpapers/landscapes journey-man-1364190-unsplash-19.jpg
 echo "open neovim and type :PlugInstall"
-echo "Change settings in iterm2 prefs"
-echo "    - enable powerline glyphs"
-echo "    - enable subpixel anti-aliasing"
-echo "    - use ligatures, anti-aliased"
-echo "    - change font to FiraCode Nerd Font"
 echo "change Firefox, install firefox color and Tabless extention use wal.css to grab colors"
 echo "type sa to source all files (hopefully runs without errors)"
