@@ -91,10 +91,10 @@ ctrl + cmd - 2  : yabai -m window --display 2; yabai -m display --focus 2
 ctrl + cmd - 3  : yabai -m window --display 3; yabai -m display --focus 3
 
 # move window
-shift + ctrl - a : yabai -m window --move rel:-20:0
-shift + ctrl - s : yabai -m window --move rel:0:20
-shift + ctrl - w : yabai -m window --move rel:0:-20
-shift + ctrl - d : yabai -m window --move rel:20:0
+shift + ctrl - a : yabai -m window --move rel:-30:0
+shift + ctrl - s : yabai -m window --move rel:0:30
+shift + ctrl - w : yabai -m window --move rel:0:-30
+shift + ctrl - d : yabai -m window --move rel:30:0
 
 # increase window size
 shift + alt - a : yabai -m window --resize left:-30:0
@@ -124,8 +124,7 @@ alt - y : yabai -m space --mirror y-axis
 alt - x : yabai -m space --mirror x-axis
 
 # toggle desktop offset
-alt - a : yabai -m space --toggle padding; yabai -m space --toggle gap; yabai -m window --toggle border
-
+alt - a : yabai -m space --toggle padding; yabai -m space --toggle gap
 # toggle window parent zoom
 alt - d : yabai -m window --toggle zoom-parent
 
@@ -148,15 +147,19 @@ shift + alt - t : yabai -m window --toggle float;\
 alt - t : yabai -m window --toggle float;\
           yabai -m window --grid 20:20:1:1:18:18
 
-# toggle sticky
-# alt - s : yabai -m window --toggle sticky
-
 # toggle sticky, float and resize to picture-in-picture size
-alt - p : yabai -m window --toggle float;\
-          yabai -m window --toggle sticky;\
-          yabai -m window --grid 4:3:2:3:1:2
+ alt - p : yabai -m window --toggle sticky;\
+           yabai -m window --grid 4:1:4:4:0:0
 
-# change layout of desktop
-ctrl + alt - z : yabai -m space --layout bsp
-ctrl + alt - x : yabai -m space --layout float
+# toggle back from picture in picture mode
+ shift + alt - p : yabai -m window --toggle float
 
+
+# prevents skhd from monitoring events for listed processes.
+
+.blacklist [
+    "terminal"
+    "qutebrowser"
+    "kitty"
+    "google chrome"
+]

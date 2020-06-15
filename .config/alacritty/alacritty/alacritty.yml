@@ -25,8 +25,6 @@ window:
 
   decorations: none
 
-  title: Terminal
-
   dynamic_title: true
 
   offset:
@@ -59,28 +57,28 @@ live_config_reload: true
 # BEGIN ACE
 colors:
   primary:
-    background: '0x212222'
-    foreground: '0xd2d4d8'
+    background: '0x18120f'
+    foreground: '0xe6e7df'
   cursor:
-    text:       '0x212222'
-    cursor:     '0xd2d4d8'
+    text:       '0x18120f'
+    cursor:     '0xe6e7df'
   normal:
-    black:      '0x212222'
-    red:        '0x7390A5'
-    green:      '0x8A9098'
-    yellow:     '0x8E9AA6'
-    blue:       '0x97A5AF'
-    magenta:    '0xADB1B7'
-    cyan:       '0x99AFC2'
-    white:      '0xd2d4d8'
+    black:      '0x18120f'
+    red:        '0x5A684F'
+    green:      '0x6A8838'
+    yellow:     '0x728968'
+    blue:       '0x86826A'
+    magenta:    '0x8F9B71'
+    cyan:       '0xB0BB9D'
+    white:      '0xe6e7df'
   bright:
-    black:      '0x939497'
-    red:        '0x7390A5'
-    green:      '0x8A9098'
-    yellow:     '0x8E9AA6'
-    blue:       '0x97A5AF'
-    magenta:    '0xADB1B7'
-    cyan:       '0x99AFC2'
-    white:      '0xd2d4d8'
+    black:      '0xa1a19c'
+    red:        '0x5A684F'
+    green:      '0x6A8838'
+    yellow:     '0x728968'
+    blue:       '0x86826A'
+    magenta:    '0x8F9B71'
+    cyan:       '0xB0BB9D'
+    white:      '0xe6e7df'
 
 # END ACE

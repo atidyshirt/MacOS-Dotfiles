@@ -1,7 +1,13 @@
 
-    COSC262 - Exam (10th June - 2:30pm)
     MATH220 - Exam (16th June - 9:30am)
     SENG201 - Exam (17th June - 2:30pm)
 
-Fewest Junctions = BFS
-farthest apart with shortest route is floyds
+    Changes:
+      - Fix fullscreen toggles
+      - Fix bar reception when in 'all mode'
+      - Fix picture in picture placement
+      - fix borders
+      x fix battery life issues
+      - fix spotify placement
+      - fix terminal speed (important)
+

@@ -1,13 +1,14 @@
 #!/usr/bin/env sh
 source ~/.cache/wal/colors.sh
 
-#creating colors
-c1="${color3:1}"
-c2="${color8:1}"
-c3="${color15:1}"
+#Passive colors
+p1="${color8:1}"
 
-# bar settings
-yabai -m config status_bar                   off
+#active colors - (same as position on bar)
+c1="${color15:1}"
+c3="${color3:1}"
+c4="${color9:1}"
+c5="${color5:1}"
 
 # global settings
 yabai -m config mouse_follows_focus          off
@@ -24,14 +25,23 @@ yabai -m config auto_balance                 off
 yabai -m config mouse_modifier               fn
 yabai -m config mouse_action1                move
 yabai -m config mouse_action2                resize
-#
+
+# Boarders 
+yabai -m config window_border on
+yabai -m config window_border_width 10
+yabai -m config active_window_border_color 0xff$c5
+yabai -m config normal_window_border_color 0xff$p1
+
 # general space settings
 yabai -m config layout                       bsp
-yabai -m config top_padding                  40    #50
-yabai -m config bottom_padding               10    #30
-yabai -m config left_padding                 10    #30
-yabai -m config right_padding                10    #30
-yabai -m config window_gap                   10    #30
+yabai -m config external_bar                 all:28:0
+yabai -m config top_padding                  30   #30
+yabai -m config bottom_padding               30   #30
+yabai -m config left_padding                 30   #30
+yabai -m config right_padding                30   #30
+yabai -m config window_gap                   30   #30
+
+# Running through float windows
 
 yabai -m config --space 5 layout             float
 yabai -m config --space 6 layout             float
@@ -40,10 +50,10 @@ yabai -m config --space 6 layout             float
 yabai -m rule --add app=Spotify space=1
 yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add app=Dashlane manage=off
+yabai -m rule --add app=Übersicht manage=off
 
-
-# yabai -m signal --add event=space_changed action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"simple-bar-spaces-jsx\"'"
-# yabai -m signal --add event=display_changed action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"simple-bar-spaces-jsx\"'"
-# yabai -m signal --add event=space_changed action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"simple-bar-processes-jsx\"'"
+yabai -m signal --add event=space_changed action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"simple-bar-spaces-jsx\"'"
+yabai -m signal --add event=display_changed action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"simple-bar-spaces-jsx\"'"
+yabai -m signal --add event=space_changed action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"simple-bar-processes-jsx\"'"
 
 echo "yabai configuration loaded.."
