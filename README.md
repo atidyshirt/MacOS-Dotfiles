@@ -3,7 +3,7 @@
 
 | Pywal Compliant | Float or Tile | Third Party App Support |
 |-----------------|---------------|-------------------------|
-| Color Scheme | | Floating preview | Markdown Live Preview |
+| Color Scheme | Floating preview | Markdown Live Preview |
 |![Wallpaper 1](/Preview/Background1.png)| ![Floating on workspace 5,6](/Preview/Float.png) | ![Markdown Preview](/Preview/Markdown.png) |
 | Tiling Preview | No Gaps Tiling | Spotify Theme |
 |![Wallpaper 2](/Preview/Background2.png)| ![Toggle No Gaps](/Preview/NoGapsToggle.png) | ![Spotify Preview](/Preview/Spotify.png) |
