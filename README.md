@@ -1,9 +1,11 @@
 
-#MacOS Dotfiles
+# MacOS Dotfiles
 
-![Project Image1](/Preview/Preview3.png)
-![Project Image2](/Preview/Fullshow.png)
-![Project Image3](/Preview/iterm2.png)
+| Pywal Compliant | Float or Tile | Third Party App Support |
+|-----------------|---------------|-------------------------|
+|![Wallpaper 1](/Preview/Background1.png)| ![Floating on workspace 5,6](/Preview/Float.png) | ![Markdown Preview](/Preview/Markdown.png) |
+|![Wallpaper 2](/Preview/Background2.png)| ![Toggle No Gaps](/Preview/NoGapsToggle.png) | ![Spotify Preview](/Preview/Spotify.png) |
+
 
 
 > Here is my dotfiles, more previews are in the preview folder
@@ -23,20 +25,20 @@ You're sections headers will be used to reference location of destination.
   REQUIREMENTS FOR INSTALL
 
       
-      iterm2    - terminal emulator
-                - use ligatures, change font > FiraCode Nerd Font
+      alacritty - terminal emulator
 
       firefox   - browser
-                - you will need the extention firefox color to change the top two corners
+                - you will need the extention firefox called pywalfox in order to theme
                 - download tabless extention to put the wallpaper as firefox startup
 
       spotify   - music player
 
       Übersicht - top bar (may require additional setup)
                 - will have to manually load widgets
+                - use my fork of Simplebar to get same bar as mine
 
       neovim    - will have to launch vim using 'vi' command, then type ':PlugInstall'
-                  once you do this all symbols should appear
+                  once you do this all symbols should appear, you will need to make sure you are using same font as me to load symbols
 
       vscode    - will have to install via download, and have to use wal theme
 

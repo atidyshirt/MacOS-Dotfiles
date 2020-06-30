@@ -5,7 +5,8 @@ source ~/.cache/wal/colors.sh
 p1="${color8:1}"
 
 #active colors - (same as position on bar)
-c1="${color15:1}"
+c1="${color2:1}"
+c2="${color4:1}"
 c3="${color3:1}"
 c4="${color9:1}"
 c5="${color5:1}"
@@ -29,7 +30,7 @@ yabai -m config mouse_action2                resize
 # Boarders 
 yabai -m config window_border on
 yabai -m config window_border_width 10
-yabai -m config active_window_border_color 0xff$c5
+yabai -m config active_window_border_color 0xff$c4
 yabai -m config normal_window_border_color 0xff$p1
 
 # general space settings

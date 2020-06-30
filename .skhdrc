@@ -1,25 +1,42 @@
 # open terminal, vsocde, and safari with shortcuts
 cmd - return : env WAYLAND_DISPLAY= alacritty
 cmd + shift - return : code
-alt - return : open -a firefox\ 2
+alt - return : open -a firefox
 
+# default keybinds
 # focus window
 alt - left : yabai -m window --focus west
 alt - down : yabai -m window --focus south
 alt - up : yabai -m window --focus north
 alt - right : yabai -m window --focus east
-
 # swap window
 shift + cmd - left : yabai -m window --swap west
 shift + cmd - down : yabai -m window --swap south
 shift + cmd - up : yabai -m window --swap north
 shift + cmd - right : yabai -m window --swap east
-
 # move window
 shift + alt - left : yabai -m window --warp west
 shift + alt- down : yabai -m window --warp south
 shift + alt - up : yabai -m window --warp north
 shift + alt - right : yabai -m window --warp east
+
+# # vim keybinds
+# alt - h : yabai -m window --focus west
+# alt - j : yabai -m window --focus south
+# alt - k : yabai -m window --focus north
+# alt - l : yabai -m window --focus east
+
+# shift + cmd - h : yabai -m window --swap west
+# shift + cmd - j : yabai -m window --swap south
+# shift + cmd - k : yabai -m window --swap north
+# shift + cmd - l : yabai -m window --swap east
+
+# shift + alt - h : yabai -m window --warp west
+# shift + alt- j : yabai -m window --warp south
+# shift + alt - k : yabai -m window --warp north
+# shift + alt - l : yabai -m window --warp east
+
+
 
 # balance size of windows
 shift + alt - 0 : yabai -m space --balance

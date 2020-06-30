@@ -17,6 +17,7 @@ alias vrc='vi ~/.config/nvim/configs/mappings.vim'
 alias sa='source ~/.profile && source ~/.zshrc spicetify -q apply && sh ~/Library/Application\ Support/Übersicht/widgets/pecan/wal-set'
 alias qsa='source ~/.zshrc'
 alias gc='git clone'
+alias toc='gh-md-toc'
 alias remove='rm -rf'
 alias move='mv -f'
 alias scripts='~/scripts'
@@ -31,18 +32,15 @@ alias mypip='echo "Public IP: " && curl ipinfo.io/ip && echo "Default Gateway: "
 alias enote='vi ~/scripts/quicknote.txt'
 alias piano='open /Users/jordy/Documents/Music/Setup\ -\ Midi/test\ Project/123.als'
 alias iina='/Applications/IINA.app/Contents/MacOS/IINA'
+alias batterytest='top -stats pid,command,cpu,idlew,power -o power -d'
 
 
 
 #Asthetic aliases
 alias wall='wal -q -i'
 alias walset='sh ~/scripts/wallpapers.sh'
-alias walsetconstant='sh ~/scripts/wallpapers_consistant.sh'
-alias randland='walsetconstant ~/Pictures/CurrentWall/landscapes'
-#alias pecan-style -l developer/medicine
-
 
 #python scripts
 #This sets python to install directly into python3 not 2.7
-alias pip='python3 -m pip'
+alias pipi='python3 -m pip'
 alias sortdl='cd /Users/jordy/scripts && python3 folder_manager.py ~/Downloads && cd'

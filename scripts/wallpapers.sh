@@ -18,7 +18,6 @@ else
     fi
 fi
 
-  #https://github.com/FilipLitwora/pywal-discord
   xrdb -merge ~/.Xresources
   spicetify -q update
   sh ~/bin/script.sh ~/.config/alacritty/alacritty.yml

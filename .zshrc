@@ -2,6 +2,7 @@
 ZSH_THEME="typewritten/typewritten"
 export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
+ZSH_THEME_TERM_TITLE_IDLE="Terminal"
 
 #PATH
 export PATH="/Users/jordy/bin:$PATH"
@@ -16,4 +17,6 @@ export EDITOR='nvim'
 for f in ~/scripts/sourceScripts/*; do
    source $f
 done
+
+# sortdl
 
