@@ -6,7 +6,7 @@
 | Color Scheme | Floating preview | Markdown Live Preview |
 |![Wallpaper 1](/Preview/Background1.png)| ![Floating on workspace 5,6](/Preview/Float.png) | ![Markdown Preview](/Preview/Markdown.png) |
 | Tiling Preview | No Gaps Tiling | Spotify Theme |
-|![Wallpaper 2](/Preview/Background2.png)| ![Toggle No Gaps](/Preview/NoGapsToggle.png) | ![Spotify Preview](/Preview/Spotify.png) |
+|![Wallpaper 2](/Preview/Background2.png)| ![Toggle No Gaps](/Preview/NoGapsToggle.gif) | ![Spotify Preview](/Preview/Spotify.png) |
 
 
 
@@ -36,6 +36,8 @@ You're sections headers will be used to reference location of destination.
 - Hotkeys (skhd)
 - ZSH Shell Config
 - Useful Shell Scripts
+- Picture in picture mode
+- toggle on and off gaps & borders
 
 yeah... I know, its pretty bloated
 
