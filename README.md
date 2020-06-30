@@ -15,10 +15,27 @@
 ### Table of Contents
 You're sections headers will be used to reference location of destination.
 
+- [Features](#features)
 - [Description](#description)
 - [How To Use](#how-to-use)
 
 ---
+
+## Features
+
+- Pywal Compliant
+- Full Vim Config
+- Übersicht Bar
+- Spotify Theme
+- Alacritty Theme
+- Firefox Theme
+- VSCode Theme
+- Tiling Window Manager (Yabai)
+- Hotkeys (skhd)
+- ZSH Shell Config
+- Useful Shell Scripts
+
+yeah... I know, its pretty bloated
 
 ## Description
 
@@ -49,7 +66,7 @@ You're sections headers will be used to reference location of destination.
 
 ## How To Use
 
-#### Installation
+#### Installation - NOTE - Has been temp removed (sorry)
 
 ```html
    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
