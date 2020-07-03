@@ -18,7 +18,9 @@ else
     fi
 fi
 
-  xrdb -merge ~/.Xresources
-  spicetify -q update
-  sh ~/bin/script.sh ~/.config/alacritty/alacritty.yml
-  sh ~/scripts/setBarTheme.sh
+xrdb -merge ~/.Xresources
+spicetify -q update
+sh ~/bin/script.sh ~/.config/alacritty/alacritty.yml
+sh ~/scripts/setBarTheme.sh
+brew services restart yabai
+osascript -e "tell application id \"tracesOf.Uebersicht\" to refresh"

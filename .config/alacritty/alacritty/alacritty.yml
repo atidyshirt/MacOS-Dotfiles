@@ -57,28 +57,28 @@ live_config_reload: true
 # BEGIN ACE
 colors:
   primary:
-    background: '0x212222'
-    foreground: '0xd2d4d8'
+    background: '0x0D1A20'
+    foreground: '0xa1c3ca'
   cursor:
-    text:       '0x212222'
-    cursor:     '0xd2d4d8'
+    text:       '0x0D1A20'
+    cursor:     '0xa1c3ca'
   normal:
-    black:      '0x212222'
-    red:        '0x7390A5'
-    green:      '0x8A9098'
-    yellow:     '0x8E9AA6'
-    blue:       '0x97A5AF'
-    magenta:    '0xADB1B7'
-    cyan:       '0x99AFC2'
-    white:      '0xd2d4d8'
+    black:      '0x0D1A20'
+    red:        '0x4A8371'
+    green:      '0x396B89'
+    yellow:     '0x5E6991'
+    blue:       '0x957299'
+    magenta:    '0xC57C8F'
+    cyan:       '0x3E9891'
+    white:      '0xa1c3ca'
   bright:
-    black:      '0x939497'
-    red:        '0x7390A5'
-    green:      '0x8A9098'
-    yellow:     '0x8E9AA6'
-    blue:       '0x97A5AF'
-    magenta:    '0xADB1B7'
-    cyan:       '0x99AFC2'
-    white:      '0xd2d4d8'
+    black:      '0x70888d'
+    red:        '0x4A8371'
+    green:      '0x396B89'
+    yellow:     '0x5E6991'
+    blue:       '0x957299'
+    magenta:    '0xC57C8F'
+    cyan:       '0x3E9891'
+    white:      '0xa1c3ca'
 
 # END ACE

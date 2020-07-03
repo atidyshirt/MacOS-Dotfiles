@@ -33,6 +33,7 @@ alias enote='vi ~/scripts/quicknote.txt'
 alias piano='open /Users/jordy/Documents/Music/Setup\ -\ Midi/test\ Project/123.als'
 alias iina='/Applications/IINA.app/Contents/MacOS/IINA'
 alias batterytest='top -stats pid,command,cpu,idlew,power -o power -d'
+alias refreshbar='osascript -e "tell application id \"tracesOf.Uebersicht\" to refresh"'
 
 
 

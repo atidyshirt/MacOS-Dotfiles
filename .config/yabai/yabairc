@@ -47,12 +47,13 @@ yabai -m config window_gap                   30   #30
 yabai -m config --space 5 layout             float
 yabai -m config --space 6 layout             float
 
-# App rules
+# Rules for specific apps to launch and be managed by yabai
 yabai -m rule --add app=Spotify space=1
 yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add app=Dashlane manage=off
 yabai -m rule --add app=Übersicht manage=off
 
+# Signals for when to update Übersicht
 yabai -m signal --add event=space_changed \
   action="osascript -e 'tell application id \"tracesOf.Uebersicht\" to refresh widget id \"simple-bar-spaces-jsx\"'"
 yabai -m signal --add event=space_changed \
@@ -61,6 +62,14 @@ yabai -m signal --add event=window_title_changed \
     action="osascript -e 'tell application id \"tracesOf.Uebersicht\" to refresh widget id \"simple-bar-process-jsx\"'"
 yabai -m signal --add event=application_activated \
     action="osascript -e 'tell application id \"tracesOf.Uebersicht\" to refresh widget id \"simple-bar-process-jsx\"'"
+yabai -m signal --add event=application_launched \
+    action="osascript -e 'tell application id \"tracesOf.Uebersicht\" to refresh widget id \"simple-bar-spaces-jsx\"'"
+yabai -m signal --add event=application_terminated \
+    action="osascript -e 'tell application id \"tracesOf.Uebersicht\" to refresh widget id \"simple-bar-spaces-jsx\"'"
+yabai -m signal --add event=window_destroyed \
+    action="osascript -e 'tell application id \"tracesOf.Uebersicht\" to refresh widget id \"simple-bar-spaces-jsx\"'"
+
+
 
 
 
