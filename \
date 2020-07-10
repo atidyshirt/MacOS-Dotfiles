@@ -1,0 +1,9 @@
+# This is an installer of all the dependencies and my dotfiles
+
+# Prerequisites to all of the files
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+brew install python3
+
+# Installing tiling Window Manager dependencies
+brew install yabai
+brew install skhd

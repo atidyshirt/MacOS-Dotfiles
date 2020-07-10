@@ -70,8 +70,7 @@ yeah... I know, its pretty bloated
 
 ## How To Use
 
-#### Installation - NOTE - Has been temp removed (sorry)
-
+#### Installation - I don't really know how to write one of these, so hopefully it works
 ```html
    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
    brew install git 
