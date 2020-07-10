@@ -2,7 +2,7 @@
 
 # Prerequisites to all of the files
 /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
+/bin/sh -c "$(curl -fsSl https://raw.githubusercontent.com/WarpWing/MacOS-Dotfiles/brewdepen.sh" && sudo chmod +x brewdepen.sh
 # Homebrew PKGs moved to brewdepen.sh
 
 #Clone bar into default Übersicht location
