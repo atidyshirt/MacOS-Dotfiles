@@ -16,6 +16,7 @@ brew cask install font-firacode-nerd-font
 brew install lazygit
 brew install lazydocker
 pip3 install pywal
+sudo pip3 install pywalfox
 brew cask install ubersicht
 brew install koekeishiya/formulae/skhd
 brew install koekeishiya/formulae/yabai
@@ -40,3 +41,5 @@ mv .zshrc $HOME/.zshrc
 mv .skhdrc $HOME/.skhdrc
 mv .Xresources $HOME/.Xresources
 mv wallpapers $HOME/Pictures
+
+sudo pywalfox setup

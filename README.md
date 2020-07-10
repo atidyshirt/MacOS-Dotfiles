@@ -76,7 +76,8 @@ yeah... I know, its pretty bloated
    brew install git 
    git clone https://github.com/atidyshirt/MacOS-Dotfiles.git 
    cd MacOS-Dotfiles
-   sh install.sh
+   chmod +x install.sh
+   sudo ./install.sh <!-- this will need root as on mac pywalfox most of the time needs this -->
 ```
 
 [Back To The Top](#read-me-template) 
