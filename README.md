@@ -72,7 +72,7 @@ yeah... I know, its pretty bloated
 
 #### Installation - I don't really know how to write one of these, so hopefully it works
 ```html
-   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/atidyshirt/MacOS-Dotfiles/install.sh)" 
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/WarpWing/MacOS-Dotfiles/master/install.sh)"
 ```
 
 [Back To The Top](#read-me-template) 
