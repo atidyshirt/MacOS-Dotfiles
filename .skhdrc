@@ -1,8 +1,7 @@
 # open terminal, vsocde, and safari with shortcuts
 cmd - return : env WAYLAND_DISPLAY= alacritty
 cmd + shift - return : code
-alt - return : open -a firefox
-
+alt - return : open -a '/Applications/Firefox.app'
 # default keybinds
 # focus window
 alt - left : yabai -m window --focus west
@@ -51,6 +50,7 @@ shift + cmd - n : yabai -m space --create && \
 cmd + alt - n : yabai -m space --create && \
                  index="$(yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index')" && \
                  yabai -m space --focus "${index}"
+                 
 
 # destroy desktop
 cmd + alt - w : yabai -m space --destroy

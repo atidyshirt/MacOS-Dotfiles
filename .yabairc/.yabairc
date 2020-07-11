@@ -30,7 +30,7 @@ yabai -m config mouse_action2                resize
 # Boarders 
 yabai -m config window_border on
 yabai -m config window_border_width 10
-yabai -m config active_window_border_color 0xff$c5
+yabai -m config active_window_border_color 0xff$c4
 yabai -m config normal_window_border_color 0xff$p1
 
 # general space settings
@@ -43,7 +43,6 @@ yabai -m config right_padding                30   #30
 yabai -m config window_gap                   30   #30
 
 # Running through float windows
-
 yabai -m config --space 5 layout             float
 yabai -m config --space 6 layout             float
 

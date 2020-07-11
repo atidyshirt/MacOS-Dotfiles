@@ -23,7 +23,6 @@ alias svi='sudo nvim'
 alias toc='gh-md-toc'
 
 # Package Management
-alias install='brew install'
 alias gc='git clone'
 alias pipi='python3 -m pip' # makes sure path doesnt get fucked on Mac when installing with pip
 
@@ -46,7 +45,7 @@ alias networkScan='sudo fing -r 1 -d true -o table,text'
 alias mypip='echo "Public IP: " && curl ipinfo.io/ip && echo "Default Gateway: " && route get default | grep gateway'
 
 #Asthetic aliases
-alias wall='sh ~/scripts/wallpapers.sh $PWD'
+alias wall='sh ~/scripts/wallpapers.sh ./'
 alias refreshbar='osascript -e "tell application id \"tracesOf.Uebersicht\" to refresh"'
 
 # Python Scripts

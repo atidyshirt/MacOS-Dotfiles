@@ -1,3 +1,5 @@
+export PATH="/Users/jordy/bin:$PATH"
+
 #starts yabai
 brew services restart skhd
 brew services restart yabai
