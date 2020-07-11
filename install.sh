@@ -1,5 +1,4 @@
 # This is an installer of all the dependencies and my dotfiles
-
 # Prerequisites to all of the files
 /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # Homebrew PKGs moved to brewdepen.sh
@@ -22,10 +21,11 @@ sudo pip3 install pywalfox
 brew cask install ubersicht
 brew install koekeishiya/formulae/skhd
 brew install koekeishiya/formulae/yabai 
-
+#Clone Dotfile Repo 
+git clone https://github.com/atidyshirt/MacOS-Dotfiles.git 
 #Clone bar into default Übersicht location
 git clone https://github.com/atidyshirt/simple-bar.git $HOME/Library/Application\ Support/Übersicht/widgets/simple-bar
-
+ cd MacOS-Dotfiles
 rm -rf $HOME/.config
 rm -rf $HOME/scripts
 rm -rf $HOME/spicetify_data/Themes

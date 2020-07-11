@@ -72,12 +72,7 @@ yeah... I know, its pretty bloated
 
 #### Installation - I don't really know how to write one of these, so hopefully it works
 ```html
-   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-   brew install git 
-   git clone https://github.com/atidyshirt/MacOS-Dotfiles.git 
-   cd MacOS-Dotfiles
-   chmod +x *.sh
-   sudo ./install.sh <!-- this will need root as on mac pywalfox most of the time needs this -->
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/atidyshirt/MacOS-Dotfiles/install.sh)" s
 ```
 
 [Back To The Top](#read-me-template) 
