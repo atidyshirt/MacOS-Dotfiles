@@ -6,6 +6,7 @@
 echo "Installing Homebrew and it's custom packages" 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" 
 #Installing Homebrew Depends
+brew install python
 brew install pip3
 brew install ranger
 brew install neofetch
@@ -33,6 +34,7 @@ rm -rf $HOME/.zshrc
 rm -rf $HOME/.skhdrc
 rm -rf $HOME/.Xresources
 rm -rf $HOME/bin
+rm -rf $HOME/.yabairc 
 
 mv scripts $HOME/scripts
 mv .config $HOME/.config
@@ -42,5 +44,6 @@ mv .zshrc $HOME/.zshrc
 mv .skhdrc $HOME/.skhdrc
 mv .Xresources $HOME/.Xresources
 mv wallpapers $HOME/Pictures
+mv .yabairc $HOME/.yabairc 
 
 sudo pywalfox setup
