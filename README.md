@@ -70,9 +70,9 @@ yeah... I know, its pretty bloated
 
 ## How To Use
 
-#### Installation - I don't really know how to write one of these, so hopefully it works
+#### Installation - A work in progress, thanks a heap to @WarpWing for the effort to fix this
 ```html
-   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/WarpWing/MacOS-Dotfiles/master/install.sh)"
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/atidyshirt/MacOS-Dotfiles/master/install.sh)"
 ```
 
 [Back To The Top](#read-me-template) 
