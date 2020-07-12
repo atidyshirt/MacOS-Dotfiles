@@ -1,4 +1,4 @@
-export PATH="/Users/jordy/bin:$PATH"
+export PATH="~/bin:$PATH"
 
 #starts yabai
 brew services restart skhd

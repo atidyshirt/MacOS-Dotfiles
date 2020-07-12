@@ -1,6 +1,4 @@
 #!/bin/bash
-#wal -q -b 13181b -i
-#wal -q -i
 
 #find random wallpaper from ~/wallpapers and set it as wallpaper using pywal
 if [ -z "$1" ] 
