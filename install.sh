@@ -30,7 +30,30 @@ git clone https://github.com/atidyshirt/MacOS-Dotfiles.git
 git clone https://github.com/atidyshirt/simple-bar.git $HOME/Library/Application\ Support/Übersicht/widgets/simple-bar
  cd MacOS-Dotfiles
 
- echo "Clearing old dotfiles"
+echo "Creating a backup of all configs in ~/config_backup"
+
+mkdir $HOME/config_backup
+
+# following code is stolen from here: https://blog.sleeplessbeastie.eu/2013/03/12/simple-shell-script-to-backup-selected-directories/
+# Parent backup directory
+backup_parent_dir="$HOME/config_backup"
+
+# Directories to backup
+backup_me="$HOME/scripts/ $HOME/ .config/ $HOME/bin/ $HOME/spicetify_data/ $HOME/.zshrc $HOME/.skhdrc $HOME/.Xresources $HOME/Pictures $HOME/.yabairc"
+
+# Check and create backup directory
+backup_date=`date +%Y_%m_%d_%H_%M`
+backup_dir=${backup_parent_dir}/configs_${backup_date}
+mkdir -p $backup_dir
+
+# Perform backup
+for directory in $backup_me
+do
+        archive_name=`echo ${directory} | sed s/^\\\/// | sed s/\\\//_/g`
+        tar pcfzP ${backup_dir}/${archive_name}.tgz ${directory} 2>&1 | tee > ${backup_dir}/${archive_name}.log
+done
+
+echo "Clearing old dotfiles"
 rm -rf $HOME/.config
 rm -rf $HOME/scripts
 rm -rf $HOME/spicetify_data/Themes
