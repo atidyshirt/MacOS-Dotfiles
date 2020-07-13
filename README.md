@@ -19,7 +19,7 @@ You're sections headers will be used to reference location of destination.
 
 - [Features](#features)
 - [Bindings](#bindings)
-- [Description](#description)
+- [Pre-Install](#pre-install)
 - [How To Use](#how-to-use)
 
 ---
@@ -105,7 +105,7 @@ In the config, you can uncomment if you want to have vim bindings for these basi
 | fullscreen         | alt + f         | fills the screen and respects gaps and bar                          |
 | Stock fullscreen   | shift + alt + f | fills screen with mac's maximise method                             |
 
-## Description
+## Pre-Install
 
   REQUIREMENTS FOR INSTALL
 
