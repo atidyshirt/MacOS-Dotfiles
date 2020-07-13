@@ -4,7 +4,7 @@
 # Music Production, Iphone emulator
 alias piano='open ~/Documents/Music/Setup\ -\ Midi/test\ Project/123.als'
 alias ios='open -a Simulator'
-
+alias vmd='markserv'
 # General shortcuts
 alias copy='cp-improved'
 alias remove='rm -rf'
@@ -14,6 +14,7 @@ alias send='ffsend upload'
 # Location / Navigation
 alias root='cd / && clear'
 alias files='cd ~/Documents/Files'
+alias uni='cd ~/Documents/Files/University'
 alias scripts='~/scripts'
 alias dotfiles='cd ~/Documents/Files/Bash/MacOS-Dotfiles'
 
@@ -33,7 +34,7 @@ alias brc='vi ~/.bashrc'
 alias prc='vi ~/.profile'
 alias zrc='vi ~/.zshrc'
 alias src='vi ~/.skhdrc'
-alias yrc='vi ~/.config/.yabairc'
+alias yrc='vi ~/.yabairc'
 alias vrc='vi ~/.config/nvim/configs/mappings.vim'
 
 # Sourcing Info

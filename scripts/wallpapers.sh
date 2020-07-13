@@ -16,13 +16,14 @@ else
     fi
 fi
 
-xrdb -merge ~/.Xresources
 
 spicetify -q update
 
 sh ~/bin/script.sh ~/.config/alacritty/alacritty.yml
 
 sh ~/scripts/setBarTheme.sh
+
+xrdb -merge ~/.Xresources
 
 brew services restart skhd
 
