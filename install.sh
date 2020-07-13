@@ -28,7 +28,7 @@ echo "Cloning Dotfiles"
 git clone https://github.com/atidyshirt/MacOS-Dotfiles.git 
 #Clone bar into default Übersicht location
 git clone https://github.com/atidyshirt/simple-bar.git $HOME/Library/Application\ Support/Übersicht/widgets/simple-bar
- cd MacOS-Dotfiles
+cd MacOS-Dotfiles
 
 echo "Creating a backup of all configs in ~/config_backup"
 
@@ -53,27 +53,16 @@ do
         tar pcfzP ${backup_dir}/${archive_name}.tgz ${directory} 2>&1 | tee > ${backup_dir}/${archive_name}.log
 done
 
-echo "Clearing old dotfiles"
-rm -rf $HOME/.config
-rm -rf $HOME/scripts
-rm -rf $HOME/spicetify_data/Themes
-rm -rf $HOME/spicetify_data/config.ini
-rm -rf $HOME/.zshrc
-rm -rf $HOME/.skhdrc
-rm -rf $HOME/.Xresources
-rm -rf $HOME/bin
-rm -rf $HOME/.yabairc 
-
-echo "Installing Dotfiles from Cloned Repo"
-mv scripts $HOME/scripts
-mv .config $HOME/.config
-mv bin $HOME/bin
-mv spicetify_data $HOME/spicetify_data
-mv .zshrc $HOME/.zshrc
-mv .skhdrc $HOME/.skhdrc
-mv .Xresources $HOME/.Xresources
-mv wallpapers $HOME/Pictures
-mv .yabairc $HOME/.yabairc 
+echo "Installing Dotfiles from Cloned Repository"
+cp scripts $HOME/scripts
+cp .config $HOME/.config
+cp bin $HOME/bin
+cp spicetify_data $HOME/spicetify_data
+cp .zshrc $HOME/.zshrc
+cp .skhdrc $HOME/.skhdrc
+cp .Xresources $HOME/.Xresources
+cp wallpapers $HOME/Pictures
+cp .yabairc $HOME/.yabairc 
 
 echo "Starting pywalfox setup"
 sudo pywalfox setup
