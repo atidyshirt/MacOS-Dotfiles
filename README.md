@@ -89,6 +89,20 @@ refer to the [Vim Reaper Repository](https://github.com/GideonWolfe/vim.reaper).
 | move up        | shift + ctrl + w | move floating window up             |
 | move down      | shift + ctrl + s | move floating window down           | 
 
+### Tmux Bindings
+
+We will use leader + x to indicate that we are wanting both to be pressed at the same time, and use
+leader - x to indicate that we press leader and then the following key
+
+| Bind             | Key Map             | Description                                                        |
+| ----             | -------             | -----------                                                        |
+| leader key       | ctrl + space        | this is the first key pressed ti initiate tmux binds (like neovim) |
+| new window       | leader - c          | this will spawn a shell on a new 'tab/buffer'                      |
+| next window      | leader - n          | goes to the next buffer in the cycle                               |
+| previous window  | leader - p          | goes to the last buffer in the cycle                               |
+| horizontal split | leader - shift + \  | will create a vertical line and split into two shells              |
+| vertical split   | leader - -          | will create a horizontal line and split vertically                 |
+| resize pane      | leader + arrow keys | to resize in all directions                                        |
 
 In the config, you can uncomment if you want to have vim bindings for these basic movements
 
