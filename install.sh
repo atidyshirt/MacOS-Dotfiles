@@ -6,6 +6,9 @@ echo "Installing ohmyzsh"
 echo "Installing Homebrew and it's custom packages" 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" 
 #Installing Homebrew Depends
+brew tap homebrew/cask-fonts
+brew cask install font-firacode-nerd-font 
+brew cask install ubersicht
 brew install python
 brew install pip3
 brew install ranger
@@ -13,18 +16,16 @@ brew install neofetch
 brew install neovim
 brew install ffsend
 brew install sassc
-brew tap homebrew/cask-fonts
-brew cask install font-firacode-nerd-font 
 brew install khanhas/tap/spicetify-cli
 brew install lazygit
 brew install lazydocker
-pip3 install pywal
-sudo pip3 install pywalfox
-brew cask install ubersicht
 brew install koekeishiya/formulae/skhd
 brew install koekeishiya/formulae/yabai  
+sudo pip3 install pywal
+sudo pip3 install pywalfox
 brew services start yabai
 brew update
+brew services restart --all
 #Clone Dotfile Repo 
 echo "Cloning Dotfiles"
 git clone https://github.com/atidyshirt/MacOS-Dotfiles.git 
