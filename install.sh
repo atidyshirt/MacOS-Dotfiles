@@ -22,7 +22,9 @@ pip3 install pywal
 sudo pip3 install pywalfox
 brew cask install ubersicht
 brew install koekeishiya/formulae/skhd
-brew install koekeishiya/formulae/yabai 
+brew install koekeishiya/formulae/yabai  
+brew services start yabai
+brew update
 #Clone Dotfile Repo 
 echo "Cloning Dotfiles"
 git clone https://github.com/atidyshirt/MacOS-Dotfiles.git 
