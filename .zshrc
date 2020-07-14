@@ -41,6 +41,7 @@ export PATH="$PATH:/Users/jordy/Development/tools/flutter/bin"
 export PATH="$HOME/Library/Python/3.7/bin:$PATH"
 export NODE_PATH='/usr/local/lib/node_modules'
 export PATH="$PATH:/opt/yarn-[version]/bin"
+export PATH="$PATH:/usr/local/bin/"
 
 # Setting Neovim as default editor
 export EDITOR='nvim'
@@ -51,7 +52,7 @@ for f in ~/scripts/sourceScripts/*; do
 done
 
 # Running tmux 
-TERM="xterm"
+TERM="xterm-256color"
 export TERM
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux
