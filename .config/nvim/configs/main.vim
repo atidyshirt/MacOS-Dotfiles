@@ -21,7 +21,7 @@ augroup END
 " Compiling and running programs from vim
 augroup compile_run
 autocmd filetype python nnoremap <buffer> <Leader>C :w <bar> :call ToggleRun('python3 '. @%)<CR>
-autocmd filetype c nnoremap <buffer> <Leader>C :w <bar>:call ToggleRun('gcc '. @% . ' -o ' . @%< ' && ./' . @%<)<CR>
+autocmd filetype c nnoremap <buffer> <Leader>C :w <bar>:!gcc % -o %< <CR> :call ToggleRun('./*')<CR>
 augroup END
 
 " Longer leader key timeout
@@ -59,9 +59,9 @@ set cmdheight=1
 
 " Tab Settings
 set expandtab
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set smarttab
 set autoindent
 set smartindent
