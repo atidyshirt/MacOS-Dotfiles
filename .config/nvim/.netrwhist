@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/Users/jordy/Documents/Files/Bash/MacOS-Dotfiles/.tmux.conf'
+let g:netrw_dirhist_6='/Users/jordy/Documents/Files/C/HelloWorld'
+let g:netrw_dirhist_5='/Users/jordy/Documents/Files/Python/test'
+let g:netrw_dirhist_4='/Users/jordy/scripts/scripts'
+let g:netrw_dirhist_3='/Users/jordy/Documents/Files/Python'
+let g:netrw_dirhist_2='/Users/jordy/Documents/Files/Python/test'
+let g:netrw_dirhist_1='/Users/jordy/Documents/Files/Flutter/NoteApp/note_app/lib'

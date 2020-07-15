@@ -5,11 +5,13 @@
 alias piano='open ~/Documents/Music/Setup\ -\ Midi/test\ Project/123.als'
 alias ios='open -a Simulator'
 alias vmd='markserv'
+
 # General shortcuts
 alias copy='cp-improved'
 alias remove='rm -rf'
 alias move='mv -f'
 alias send='ffsend upload'
+alias zz='exit' 
 
 # Location / Navigation
 alias root='cd / && clear'
