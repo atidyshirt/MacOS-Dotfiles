@@ -68,3 +68,10 @@ echo "Starting pywalfox setup"
 sudo pywalfox setup
 
 echo "Done!"
+
+echo "                Further User Setup                   "
+echo "-----------------------------------------------------"
+echo "Open vim and use :PlugInstall to install plugins     "
+echo "Make sure spotify is themed, if not use the following"
+echo "                 >>> spicetify apply                 "
+echo "       Thats it, thanks for downloading, enjoy :)    "
