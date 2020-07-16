@@ -5,6 +5,7 @@
 alias piano='open ~/Documents/Music/Setup\ -\ Midi/test\ Project/123.als'
 alias ios='open -a Simulator'
 alias vmd='markserv'
+eval $(thefuck --alias)
 
 # General shortcuts
 alias copy='cp-improved'

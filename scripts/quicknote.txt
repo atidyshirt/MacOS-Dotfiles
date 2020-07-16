@@ -1,10 +1,3 @@
-Every algorithm:
-	- https://github.com/TheAlgorithms/
-
-List:
-	aroura.jpg
-	nomanssky2.jpg
-	post
-	thelastofus1
-	view
-	nomanssky1.png (secondary)
+Assessments On The Go
+- COSC264 Lab1 - 10th November 2020
+- ENCE260 Quiz -  23rd July 2020
