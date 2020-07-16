@@ -162,7 +162,7 @@ nnoremap  <Leader>ft  :Vista finder coc<cr>
 nmap <F8> :Vista!!<CR>
 
 " Ranger in Vim
-map <leader>fr :call ToggleRanger()<CR>
+map <leader>toggleTerm(fr :RnvimrToggle)<CR>
 
 " Grab zsh in vim
 map <leader>z :call ToggleShell()<CR>

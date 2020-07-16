@@ -87,6 +87,9 @@ Plug 'junegunn/vim-emoji'
 " goyo distraction free mode
 Plug 'junegunn/goyo.vim'
 
+" Ranger
+Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+
 " LaTeX support
 Plug 'lervag/vimtex'
 

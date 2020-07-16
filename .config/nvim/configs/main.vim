@@ -18,10 +18,15 @@ augroup specify_filetype
     autocmd BufRead,BufNewFile *.txt set filetype=text
 augroup END
 
-" Compiling and running programs from vim
+" Compiling programs and running interpreted programs from vim
 augroup compile_run
 autocmd filetype python nnoremap <buffer> <Leader>C :w <bar> :call ToggleRun('python3 '. @%)<CR>
-autocmd filetype c nnoremap <buffer> <Leader>C :w <bar>:!gcc % -o %< <CR> :call ToggleRun('./*')<CR>
+autocmd filetype c nnoremap <buffer> <Leader>C :w <bar>:!gcc % -o %< <CR>
+augroup END
+
+" Running compiled languages from vim
+augroup run_run
+autocmd filetype c nnoremap <leader>R :call ToggleRun('./*') <CR>
 augroup END
 
 " Longer leader key timeout
