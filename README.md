@@ -12,7 +12,6 @@
 
 > Here is my dotfiles, more previews are in the preview folder
 
----
 
 ### Table of Contents
 You're sections headers will be used to reference location of destination.
@@ -22,7 +21,6 @@ You're sections headers will be used to reference location of destination.
 - [Pre-Install](#pre-install)
 - [How To Use](#how-to-use)
 
----
 
 ## Features
 
@@ -119,7 +117,7 @@ In the config, you can uncomment if you want to have vim bindings for these basi
 | fullscreen         | alt + f         | fills the screen and respects gaps and bar                          |
 | Stock fullscreen   | shift + alt + f | fills screen with mac's maximise method                             |
 
-## Pre-Install
+## Dependencies
 
   REQUIREMENTS FOR INSTALL
 
@@ -144,15 +142,29 @@ In the config, you can uncomment if you want to have vim bindings for these basi
 
 [Back To The Top](#read-me-template)
 
----
 
-## How To Use
+## Installation and Usage
 
-#### Installation - A work in progress, thanks a heap to @WarpWing for the effort to fix this
+#### Installation - Thanks a heap to @WarpWing for streamlining this
 ```html
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/atidyshirt/MacOS-Dotfiles/master/install.sh)"
 ```
 
+#### Usage
+
+In order to apply themes using pywal, we must use the script found in `~/scripts/wallpaper.sh`.
+This is because the theme needs to be applied to many different things and restart Yabai in order
+to get applied, we can do this with the following command (assuming you are using my aliases in ~/.zshrc): 
+
+```
+    wall ~/path/to/image.jpg
+```
+
+---
+<center>
+
 [Back To The Top](#read-me-template) 
+
+</center>
 
 ---
