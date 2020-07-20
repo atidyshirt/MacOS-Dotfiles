@@ -21,12 +21,12 @@ augroup END
 " Compiling programs and running interpreted programs from vim
 augroup compile_run
 autocmd filetype python nnoremap <buffer> <Leader>C :w <bar> :call ToggleRun('python3 '. @%)<CR>
-autocmd filetype c nnoremap <buffer> <Leader>C :w <bar>:!gcc % -o %< <CR>
+autocmd filetype c nnoremap <buffer> <Leader>C :w <bar>:!gcc % -Werror -o %< <CR>
 augroup END
 
 " Running compiled languages from vim
 augroup run_run
-autocmd filetype c nnoremap <leader>R :call ToggleRun('./*') <CR>
+autocmd filetype c nnoremap <leader>cr :call ToggleRun('./*') <CR>
 augroup END
 
 " Longer leader key timeout

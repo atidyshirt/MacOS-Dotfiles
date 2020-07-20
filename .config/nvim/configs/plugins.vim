@@ -49,7 +49,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Smart completion (to work with CoC)
-"Plug 'zxqfl/tabnine-vim'
+" Plug 'zxqfl/tabnine-vim'
 
 " Custom start page
 Plug 'mhinz/vim-startify'
