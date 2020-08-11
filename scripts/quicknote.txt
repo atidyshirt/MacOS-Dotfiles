@@ -1,2 +1,24 @@
-Assessments On The Go
-- COSC264 Lab1 - 10th November 2020
+Assessments On The Go:
+- COSC264 Assessment (16th, 15%)
+- ENCE260 Super Quiz (12th - 4%)
+- COSC265 Database (15th - P2)
+- SCIE101 Quiz (16th - 7.5%)
+
+- ENCE260 Lab 4, 5
+- ENCE260 C Architecture quiz
+- COSC265 Database quiz 2 (10th)
+- COSC264 Quiz
+
+
+Lectures to complete:
+COSC264
+Friday Lecture (2w ago)
+Tuesday - Friday
+SCIE101
+Tuesday - Friday
+COSC265
+Friday Lecture (2w ago)
+Tuesday - Friday
+ENCE260
+Tuesday - Friday
+Week Videos

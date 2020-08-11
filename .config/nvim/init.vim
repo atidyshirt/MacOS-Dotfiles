@@ -8,3 +8,9 @@ runtime configs/plugin-settings.vim
 runtime configs/mappings.vim
 " This script contains functions
 runtime configs/functions.vim
+
+" Italics in comments
+" set t_ZH=^[[3m
+" set t_ZR=^[[23m
+" highlight Comment cterm=italic
+

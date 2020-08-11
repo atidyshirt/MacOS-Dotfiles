@@ -72,6 +72,7 @@ set autoindent
 set smartindent
 set shiftround
 
+" Italics
 
 " Enable syntax highlighting
 syntax on

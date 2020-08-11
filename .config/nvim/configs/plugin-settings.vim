@@ -275,11 +275,9 @@ let g:coc_snippet_prev = '<S-TAB>'
 " coc-ccls needs ccls (available on aur)
 " coc-eslint needs eslint npm package installed globally
 let g:coc_global_extensions = [
-      \'coc-html', 
       \'coc-xml', 
       \'coc-java', 
       \'coc-ccls', 
-      \'coc-powershell', 
       \'coc-r-lsp', 
       \'coc-vimlsp', 
       \'coc-lua', 
@@ -288,10 +286,8 @@ let g:coc_global_extensions = [
       \'coc-css', 
       \'coc-sh', 
       \'coc-snippets',
-      \'coc-prettier',
       \'coc-eslint',
       \'coc-emmet',
-      \'coc-tsserver',
       \'coc-translator',
       \'coc-fish',
       \'coc-docker',
@@ -307,9 +303,7 @@ let g:coc_global_extensions = [
       \'coc-lists',
       \'coc-post',
       \'coc-stylelint',
-      \'coc-yaml',
       \'coc-template',
-      \'coc-utils'
       \]
 
 augroup MyAutoCmd
@@ -411,6 +405,7 @@ let g:rnvimr_presets = [
 " Markdown Preview "
 """"""""""""""""""""
 " Contains CSS for markdown + page + higlight
+let g:mkdp_browser = 'firefox'
 let g:mkdp_markdown_css = '/Users/jordy/.config/nvim/static/markdown-preview/customStyle.css' 
 " Trick plugin into hosting colors.css so we get nice themes
 let g:mkdp_highlight_css = '/Users/jordy/.cache/wal/colors.css'

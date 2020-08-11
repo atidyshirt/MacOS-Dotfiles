@@ -49,7 +49,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Smart completion (to work with CoC)
-" Plug 'zxqfl/tabnine-vim'
+Plug 'zxqfl/tabnine-vim'
 
 " Custom start page
 Plug 'mhinz/vim-startify'
@@ -108,6 +108,6 @@ Plug 'etdev/vim-hexcolor'
 
 " codi interactive scratchpad
 " Temporary repo, may be deprecated
-Plug 'ChristianChiarulli/codi.vim'
+" Plug 'ChristianChiarulli/codi.vim'
 
 call plug#end()

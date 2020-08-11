@@ -19,8 +19,8 @@ yabai -m config window_topmost               on
 yabai -m config window_opacity               off
 yabai -m config window_opacity_duration      0.0
 yabai -m config window_shadow                off
-yabai -m config active_window_opacity        0.75
-yabai -m config normal_window_opacity        0.80
+yabai -m config active_window_opacity        0.95
+yabai -m config normal_window_opacity        0.95
 yabai -m config split_ratio                  0.50
 yabai -m config auto_balance                 off
 yabai -m config mouse_modifier               fn
