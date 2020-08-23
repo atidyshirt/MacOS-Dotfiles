@@ -409,12 +409,7 @@ let g:mkdp_browser = 'firefox'
 let g:mkdp_markdown_css = '/Users/jordy/.config/nvim/static/markdown-preview/customStyle.css' 
 " Trick plugin into hosting colors.css so we get nice themes
 let g:mkdp_highlight_css = '/Users/jordy/.cache/wal/colors.css'
-let g:mkdp_port = '3456'
-
-
-""""""""
-" Codi "
-""""""""
+let g:mkdp_port = '5084'
 
 
 

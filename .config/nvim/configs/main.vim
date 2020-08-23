@@ -21,7 +21,7 @@ augroup END
 " Compiling programs and running interpreted programs from vim
 augroup compile_run
 autocmd filetype python nnoremap <buffer> <Leader>C :w <bar> :call ToggleRun('python3 '. @%)<CR>
-autocmd filetype c nnoremap <buffer> <Leader>C :w <bar>:!gcc % -Werror -o %< <CR>
+autocmd filetype c nnoremap <buffer> <Leader>C :w <bar>:!gcc % -std=c99 -Wall -Werror -g -o %< <CR>
 augroup END
 
 " Running compiled languages from vim

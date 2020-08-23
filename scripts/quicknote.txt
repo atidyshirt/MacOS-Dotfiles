@@ -1,24 +1,29 @@
 Assessments On The Go:
-- COSC264 Assessment (16th, 15%)
-- ENCE260 Super Quiz (12th - 4%)
-- COSC265 Database (15th - P2)
-- SCIE101 Quiz (16th - 7.5%)
-
-- ENCE260 Lab 4, 5
-- ENCE260 C Architecture quiz
-- COSC265 Database quiz 2 (10th)
-- COSC264 Quiz
-
+- COSC264 Lab Quiz - 24th August
+- ENCE260 Lab Quiz - 26th August
+- SCIE101 Mihi  - 26th August
 
 Lectures to complete:
 COSC264
-Friday Lecture (2w ago)
-Tuesday - Friday
+- Lecture 19th August
+
 SCIE101
-Tuesday - Friday
+- Lecture 17th August
+- Lecture 19th August
+
 COSC265
-Friday Lecture (2w ago)
-Tuesday - Friday
+
+
 ENCE260
-Tuesday - Friday
-Week Videos
+- Lecture 12th August
+- CA Tut  18th August
+- Lecture 19th August
+
+Goals Over Midterm:
+- Get all tutorials done from ENCE260
+- Learn Logic Gates
+- Write Basic Server for home computer
+- Understand Linked Lists
+- Brew Beer
+- Fix Sleep Pattern
+

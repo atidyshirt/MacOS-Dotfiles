@@ -53,7 +53,7 @@ for f in ~/scripts/sourceScripts/*; do
 done
 
 # Running tmux 
-export TERM="xterm-256color"
+export TERM=xterm-256color
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec tmux
+  exec env TERM=screen-256color tmux
 fi

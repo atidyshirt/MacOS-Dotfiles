@@ -21,6 +21,10 @@ alias uni='cd ~/Documents/Files/University'
 alias scripts='~/scripts'
 alias dotfiles='cd ~/Documents/Files/Bash/MacOS-Dotfiles'
 
+## `cd` changes
+alias ..='cd ..'
+alias ...='cd ../..'
+
 # Neovim + Coding
 alias vi='nvim'
 alias svi='sudo nvim'

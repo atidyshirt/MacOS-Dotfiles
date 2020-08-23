@@ -97,6 +97,9 @@ Plug 'lervag/vimtex'
 Plug 'dylanaraps/wal.vim'
 Plug 'deviantfero/wpgtk.vim'
 
+" Syntax Highlighting Fix
+Plug 'sheerun/vim-polyglot'
+
 " Translator
 Plug 'voldikss/vim-translator'
 

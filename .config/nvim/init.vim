@@ -10,7 +10,8 @@ runtime configs/mappings.vim
 runtime configs/functions.vim
 
 " Italics in comments
-" set t_ZH=^[[3m
-" set t_ZR=^[[23m
-" highlight Comment cterm=italic
+set t_ZH=^[[3m
+set t_ZR=^[[23m
+highlight Comment cterm=italic
+au Colorscheme wal :hi Keyword gui=italic cterm=italic
 

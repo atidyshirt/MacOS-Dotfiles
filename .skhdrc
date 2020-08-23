@@ -20,20 +20,20 @@ shift + alt - up : yabai -m window --warp north
 shift + alt - right : yabai -m window --warp east
 
 # # vim keybinds
-# alt - h : yabai -m window --focus west
-# alt - j : yabai -m window --focus south
-# alt - k : yabai -m window --focus north
-# alt - l : yabai -m window --focus east
+alt - h : yabai -m window --focus west
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north
+alt - l : yabai -m window --focus east
 
-# shift + cmd - h : yabai -m window --swap west
-# shift + cmd - j : yabai -m window --swap south
-# shift + cmd - k : yabai -m window --swap north
-# shift + cmd - l : yabai -m window --swap east
+shift + cmd - h : yabai -m window --swap west
+shift + cmd - j : yabai -m window --swap south
+shift + cmd - k : yabai -m window --swap north
+shift + cmd - l : yabai -m window --swap east
 
-# shift + alt - h : yabai -m window --warp west
-# shift + alt- j : yabai -m window --warp south
-# shift + alt - k : yabai -m window --warp north
-# shift + alt - l : yabai -m window --warp east
+shift + alt - h : yabai -m window --warp west
+shift + alt- j : yabai -m window --warp south
+shift + alt - k : yabai -m window --warp north
+shift + alt - l : yabai -m window --warp east
 
 
 

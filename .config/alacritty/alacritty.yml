@@ -11,7 +11,7 @@ font:
     style: Bold
 
   italic:
-    family: FiraCode Nerd Font
+    family: jetbrains-mono Nerd Font
     style: Italic
 
 window:
@@ -57,28 +57,28 @@ live_config_reload: true
 # BEGIN ACE
 colors:
   primary:
-    background: '0x0D1A20'
-    foreground: '0xa1c3ca'
+    background: '0x201f1f'
+    foreground: '0xdedad2'
   cursor:
-    text:       '0x0D1A20'
-    cursor:     '0xa1c3ca'
+    text:       '0x201f1f'
+    cursor:     '0xdedad2'
   normal:
-    black:      '0x0D1A20'
-    red:        '0x4A8371'
-    green:      '0x396B89'
-    yellow:     '0x5E6991'
-    blue:       '0x957299'
-    magenta:    '0xC57C8F'
-    cyan:       '0x3E9891'
-    white:      '0xa1c3ca'
+    black:      '0x201f1f'
+    red:        '0xA76E3A'
+    green:      '0x8D6C52'
+    yellow:     '0x7B837B'
+    blue:       '0xAD8D70'
+    magenta:    '0xC7B9A2'
+    cyan:       '0xC8C1B1'
+    white:      '0xdedad2'
   bright:
-    black:      '0x70888d'
-    red:        '0x4A8371'
-    green:      '0x396B89'
-    yellow:     '0x5E6991'
-    blue:       '0x957299'
-    magenta:    '0xC57C8F'
-    cyan:       '0x3E9891'
-    white:      '0xa1c3ca'
+    black:      '0x9b9893'
+    red:        '0xA76E3A'
+    green:      '0x8D6C52'
+    yellow:     '0x7B837B'
+    blue:       '0xAD8D70'
+    magenta:    '0xC7B9A2'
+    cyan:       '0xC8C1B1'
+    white:      '0xdedad2'
 
 # END ACE
