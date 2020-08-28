@@ -1,15 +1,12 @@
 Assessments On The Go:
-- COSC264 Lab Quiz - 24th August
-- ENCE260 Lab Quiz - 26th August
-- SCIE101 Mihi  - 26th August
+- ENCE260 Super Quiz
+- 
 
 Lectures to complete:
 COSC264
-- Lecture 19th August
+- Lecture 21st August
 
 SCIE101
-- Lecture 17th August
-- Lecture 19th August
 
 COSC265
 
@@ -21,9 +18,8 @@ ENCE260
 
 Goals Over Midterm:
 - Get all tutorials done from ENCE260
+- Labs from COSC265
 - Learn Logic Gates
-- Write Basic Server for home computer
-- Understand Linked Lists
 - Brew Beer
 - Fix Sleep Pattern
 

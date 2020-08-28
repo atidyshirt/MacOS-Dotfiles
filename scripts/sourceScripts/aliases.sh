@@ -28,7 +28,7 @@ alias ...='cd ../..'
 # Neovim + Coding
 alias vi='nvim'
 alias svi='sudo nvim'
-alias toc='gh-md-toc'
+alias lg='doctoc . && lazygit'
 
 # Package Management
 alias gc='git clone'
@@ -58,3 +58,6 @@ alias refreshbar='osascript -e "tell application id \"tracesOf.Uebersicht\" to r
 
 # Python Scripts
 alias sortdl='cd ~/scripts && python3 folder_manager.py ~/Downloads && cd'
+
+# This is a private alias file for SSH (because I dont want to give anyone using my dots all my information :) 
+source ~/.privateAliases.sh

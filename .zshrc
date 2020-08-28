@@ -38,11 +38,17 @@ done
 # PATH
 export PATH="$HOME/bin:$PATH"
 export PATH="$PATH:/Users/jordy/Development/tools/flutter/bin"
-export PATH="$HOME/Library/Python/3.7/bin:$PATH"
 export NODE_PATH='/usr/local/lib/node_modules'
 export PATH="$PATH:/opt/yarn-[version]/bin"
 export PATH="$PATH:/usr/local/bin/"
+export PATH="/usr/local/share/python@3.8:$PATH"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
+export PATH="/usr/local/opt/python@3.8/libexec/bin:$PATH"
+export PATH="/usr/local/lib/python@3.8/site-packages:$PATH"
+
+export PYTHONPATH="/usr/local/opt/python@3.8/libexec/bin:$PYTHONPATH"
+export PYTHONPATH="/usr/local/lib/python@3.8/site-packages:$PYTHONPATH"
+
 
 # Setting Neovim as default editor
 export EDITOR='nvim'
@@ -57,3 +63,5 @@ export TERM=xterm-256color
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec env TERM=screen-256color tmux
 fi
+export PATH="/usr/local/opt/binutils/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"

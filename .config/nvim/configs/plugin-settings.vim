@@ -266,7 +266,7 @@ hi! LineNr ctermfg=NONE guibg=NONE
 
 " KEY REMAPS ""
 set updatetime=300
-let g:ycm_server_python_interpreter = '/usr/bin/python3'
+let g:ycm_server_python_interpreter = '/usr/local/opt/python@3.8/libexec/bin/python'
 let g:coc_snippet_next = '<TAB>'
 let g:coc_snippet_prev = '<S-TAB>'
 

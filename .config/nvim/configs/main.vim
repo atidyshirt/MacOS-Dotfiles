@@ -71,6 +71,7 @@ set smarttab
 set autoindent
 set smartindent
 set shiftround
+set noswapfile
 
 " Italics
 
