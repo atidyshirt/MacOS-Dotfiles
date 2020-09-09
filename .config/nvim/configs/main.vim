@@ -11,6 +11,7 @@
 
 " Colorscheme
 colorscheme wal
+set background=dark
 
 augroup specify_filetype
     autocmd!
@@ -19,14 +20,15 @@ augroup specify_filetype
 augroup END
 
 " Compiling programs and running interpreted programs from vim
-augroup compile_run
-autocmd filetype python nnoremap <buffer> <Leader>C :w <bar> :call ToggleRun('python3 '. @%)<CR>
-autocmd filetype c nnoremap <buffer> <Leader>C :w <bar>:!gcc % -std=c99 -Wall -Werror -g -o %< <CR>
+augroup run
+    autocmd filetype python nnoremap <buffer> <Leader>cR :w <bar> :call ToggleRun('python3 '. @%)<CR>
+    autocmd filetype java nnoremap <buffer> <leader>cR <bar> :!java shellescape(%<)<CR>
+    autocmd filetype c nnoremap <leader>cR :call ToggleRun('./*') <CR>
 augroup END
 
-" Running compiled languages from vim
-augroup run_run
-autocmd filetype c nnoremap <leader>cr :call ToggleRun('./*') <CR>
+augroup compile
+    autocmd filetype java nnoremap <buffer> <leader>cC <bar> :!javac shellescape(%)<CR>
+    autocmd filetype c nnoremap <buffer> <Leader>cC :w <bar>:!gcc % -std=c99 -Wall -Werror -g -o %< <CR>
 augroup END
 
 " Longer leader key timeout
@@ -41,6 +43,8 @@ autocmd FileType text,markdown,tex setlocal textwidth=180
 " Don't automatically collapse markdown and Latex
 set conceallevel=0
 let g:tex_conceal = ""
+let g:python_host_skip_check = 1
+let g:python3_host_skip_check = 1
 
 " Don't display mode in command line (airline already shows it)
 set noshowmode
@@ -83,12 +87,6 @@ set printoptions+=syntax:y
 
 " Matching braces/tags
 set showmatch
-
-" Keep a backup file.
-"set backup
-
-" Save undo tree.
-"set undofile
 
 " Do not back up temporary files.
 set backupskip=/tmp/*,/private/tmp/*"

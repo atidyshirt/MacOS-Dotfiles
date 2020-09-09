@@ -9,7 +9,7 @@ def run():
     videoTypes = ["mp4", "m4v", "avi", "webm", "mkv", "quicktime"]
     documentTypes = ["docx", "rtf", "md", "pdf", "txt"]
     imageTypes = ["png", "jpg", "jpeg", "gif", "raw"]
-    os.chdir("/Users/jordy/Downloads")
+    os.chdir("/Users/jordy/Desktop")
     while True:
         files = os.listdir("./")
 
@@ -27,7 +27,7 @@ def run():
                     shutil.move(file, "Audio/" + file)
                 else:
                     shutil.move(file, "Other/" + file)
-        time.sleep(86400)
+        time.sleep(1)
 
 
 print("Starting process")

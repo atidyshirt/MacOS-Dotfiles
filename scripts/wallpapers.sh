@@ -1,5 +1,6 @@
 #!/bin/bash
 
+alias pybar='cd ~/Library/ApplicationSupport/Übersicht/widgets/simple-bar/lib/styles && ./pywal-gen.sh'
 #find random wallpaper from ~/wallpapers and set it as wallpaper using pywal
 if [ -z "$1" ] 
 then
@@ -18,13 +19,13 @@ fi
 
 sh ~/bin/script.sh ~/.config/alacritty/alacritty.yml
 
-sh ~/scripts/setBarTheme.sh
-
 xrdb -merge ~/.Xresources
 
 brew services restart skhd
 
 brew services restart yabai
+
+pybar
 
 spicetify -q update
 

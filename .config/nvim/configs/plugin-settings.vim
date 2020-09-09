@@ -20,36 +20,6 @@ let g:gitgutter_enabled = 1
 let g:gitgutter_grep=''
 
 """""""""""
-" VimTex  "
-"""""""""""
-let g:latex_view_general_viewer = "zathura"
-let g:vimtex_view_method = "zathura"
-let g:tex_flavor = "latex"
-let g:vimtex_quickfix_open_on_warning = 0
-let g:vimtex_quickfix_mode = 2
-let g:vimtex_compiler_method = "latexmk"
-let g:vimtex_compiler_progname = 'nvr'
-let g:vimtex_compiler_latexmk = {
-    \ 'background' : 1,
-    \ 'build_dir' : '',
-    \ 'callback' : 1,
-    \ 'continuous' : 1,
-    \ 'executable' : 'latexmk',
-    \ 'options' : [
-    \   '-verbose',
-    \   '-file-line-error',
-    \   '-synctex=1',
-    \   '-interaction=nonstopmode',
-    \ ],
-    \}
-
-"""""""""""
-" Goyo    "
-"""""""""""
-nmap <F6> :Goyo<CR>
-
-
-"""""""""""
 " Vista  "
 """""""""""
 let g:vista_executive_for = {
@@ -64,7 +34,6 @@ let g:vista_sidebar_width = 50
 """"""""""""
 " if nerdtree is only window, kill nerdtree so buffer can die
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | :bdelete | endif
-map <F7> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 0
 let NERDTreeShowHidden=1
 let NERDChristmasTree=1
@@ -151,14 +120,6 @@ let g:WebDevIconsUnicodeGlyphDoubleWidth = 1
 let g:WebDevIconsUnicodeDecorateFolderNodesDefaultSymbol = ''
 let g:DevIconsDefaultFolderOpenSymbol = ''
 
-"""""""""""""""""
-"Comfy-Scroll   "
-"""""""""""""""""
-noremap <silent> <ScrollWheelDown> :call comfortable_motion#flick(40)<CR>
-noremap <silent> <ScrollWheelUp>   :call comfortable_motion#flick(-40)<CR>
-let g:comfortable_motion_friction = 50.0
-let g:comfortable_motion_air_drag = 1.0
-
 """"""""""
 " Emoji  "
 """"""""""
@@ -187,15 +148,6 @@ let g:indentLine_fileTypeExclude = [
 """""""""""""
 let g:AutoPairsFlyMode = 0
 let g:AutoPairsMultilineClose = 0
-
-"""""""""""""
-"Ultinsips  "
-"""""""""""""
-" These were interfering with coc.nvims completion keybinds
-"let g:UltiSnipsExpandTrigger="<tab>"
-"let g:UltiSnipsJumpForwardTrigger="<c-b>"
-"let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-"let g:UltiSnipsListSnippets="<c-tab>"
 
 """"""""""""
 "Startify  "
@@ -335,7 +287,7 @@ let g:fzf_colors =
 \ { 'fg':      ['bg', 'Normal'],
 \ 'bg':      ['bg', 'Normal'],
 \ 'hl':      ['fg', 'Comment'],
-\ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+\ 'fg+':     ['fg', 'Exception', 'CursorColumn', 'Normal'],
 \ 'bg+':     ['fg', 'CursorLine', 'CursorColumn'],
 \ 'hl+':     ['fg', 'Statement'],
 \ 'info':    ['fg', 'PreProc'],
@@ -361,11 +313,6 @@ let g:fzf_layout = { 'window': 'call CreateCenteredFloatingWindow()' }
 let g:auto_save        = 0
 let g:auto_save_silent = 1
 let g:auto_save_events = ["InsertLeave", "TextChanged", "FocusLost"]
-
-"""""""""""""""""
-" Translator    "
-"""""""""""""""""
-let g:translator_target_lang = "fr"
 
 """"""""""
 " Ranger "
@@ -409,7 +356,4 @@ let g:mkdp_browser = 'firefox'
 let g:mkdp_markdown_css = '/Users/jordy/.config/nvim/static/markdown-preview/customStyle.css' 
 " Trick plugin into hosting colors.css so we get nice themes
 let g:mkdp_highlight_css = '/Users/jordy/.cache/wal/colors.css'
-let g:mkdp_port = '5084'
-
-
-
+let g:mkdp_port = '6797'

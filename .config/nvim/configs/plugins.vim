@@ -67,9 +67,6 @@ Plug 'vim-airline/vim-airline-themes'
 " Tabular auto-align
 Plug 'godlygeek/tabular'
 
-" Comfy scroll
-Plug 'yuttie/comfortable-motion.vim'
-
 " Add DevIcons
 Plug 'ryanoasis/vim-devicons'
 
@@ -90,8 +87,8 @@ Plug 'junegunn/goyo.vim'
 " Ranger
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
-" LaTeX support
-Plug 'lervag/vimtex'
+" Which key?
+Plug 'liuchengxu/vim-which-key'
 
 " Wal theme
 Plug 'dylanaraps/wal.vim'
@@ -100,17 +97,10 @@ Plug 'deviantfero/wpgtk.vim'
 " Syntax Highlighting Fix
 Plug 'sheerun/vim-polyglot'
 
-" Translator
-Plug 'voldikss/vim-translator'
-
 " Markdown Preview
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 " vim-hexcolor
 Plug 'etdev/vim-hexcolor'
-
-" codi interactive scratchpad
-" Temporary repo, may be deprecated
-" Plug 'ChristianChiarulli/codi.vim'
 
 call plug#end()

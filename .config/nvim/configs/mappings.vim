@@ -17,9 +17,9 @@
 
 " Set leader to space bar
 let mapleader = " "
-let maplocalleader = " "
+let maplocalleader = "?"
 
-" Window Navigation
+" Windows
 " Navigate to left window.
 nnoremap <C-h> <C-w>h
 " Navigate to down window.
@@ -36,9 +36,7 @@ nnoremap <Leader>\| <C-w>v<C-w>l
 nnoremap<silent> <Tab> :bnext<CR>
 nnoremap<silent> <S-Tab> :bprevious<CR>
 " Kill buffer with Space+bk
-nnoremap<silent> <Space>bk :bdelete<CR> 
-
-" Compiling C in Neovim
+nnoremap <leader>bk :bdelete<CR>
 
 "Faster ESC.
 inoremap jk <ESC>
@@ -107,7 +105,6 @@ endfunction
 " Enter to confirm completion
 inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
 
-
 " Git keybinds
 " Git status
 nnoremap  <Leader>gs  :Gstatus<cr>
@@ -133,8 +130,6 @@ nnoremap  <Leader>gh  :CocCommand git.chunkInfo<cr>
 nnoremap  <Leader>gsc  :CocCommand git.showCommit<cr>
 " Toggle git gutter sign columns
 nnoremap  <Leader>gg  :CocCommand git.toggleGutters<cr>
-" Lazygit
-nnoremap <silent> <Leader>lg :call ToggleLazyGit()<CR>
 
 
 " NERD Commenter
@@ -155,38 +150,84 @@ nnoremap <leader>nc :call NERDComment(0,"comment")<cr>
 vnoremap <leader>nc :call NERDComment(1,"comment")<cr>
 "
 
-" Vista
+" TOGGLES
+" Opens tagbar on right side of screen
+nmap <leader>tv :Vista!!<CR>
+" Markdown preview
+nmap <Leader>tp <Plug>MarkdownPreviewToggle
+" Lazygit
+nnoremap <silent> <Leader>tg :call ToggleLazyGit()<CR>
+" Lazydocker
+nnoremap <silent> <Leader>td :call ToggleLazyDocker()<CR>
+" Quick Shell (zz) to exit
+map <leader>tz :call ToggleShell()<CR>
+" Nerd tree
+nnoremap <leader>tn :NERDTreeToggle<CR>
+
+" Finding info
 " Floating tag finder
 nnoremap  <Leader>ft  :Vista finder coc<cr>
-" Opens tagbar on right side of screen
-nmap <F8> :Vista!!<CR>
-
-" Ranger in Vim
+" FILE location
+nmap <Leader>ff :FZF<cr>
 map <leader>fr :RnvimrToggle<CR>
 
-" Grab zsh in vim
-map <leader>z :call ToggleShell()<CR>
 
-" Lazydocker
-nnoremap <silent> <Leader>ld :call ToggleLazyDocker()<CR>
+""""""""""""""
+" Which Key? "
+""""""""""""""
+let g:which_key_map =  {}
 
-" vim-translator
-" Echo translation in the cmdline
-vmap <silent> <Leader>t <Plug>TranslateV
-" Display translation in a window
-nmap <silent> <Leader>tw <Plug>TranslateW
-vmap <silent> <Leader>tw <Plug>TranslateWV
-" Replace the text with translation
-nmap <silent> <Leader>tr <Plug>TranslateR
-vmap <silent> <Leader>tr <Plug>TranslateRV
+" Folders
+let g:which_key_map.A = { 
+    \ 'name' : '+Alignment',
+    \ 'c'    : ['center', 'center'],
+    \ 'l'    : ['left', 'left'],
+    \ 'r'    : ['right', 'right'],
+\ }
+let g:which_key_map.f = { 
+    \ 'name' : '+Find',
+    \ 'f'    : ['fuzzy-file-finder', 'fuzzy-file-finder'],
+    \ 'r'    : ['ranger', 'ranger'],
+    \ 't'    : ['find-tags', 'find-tags'],
+\ }
 
-" Vimtex
-nmap <silent> <Leader>lc :VimtexCompile<cr>
-vmap <silent> <Leader>ls :VimtexCompileSelected<cr>
-nmap <silent> <Leader>li :VimtexInfo<cr>
-nmap <silent> <Leader>lt :VimtexTocToggle<cr>
-nmap <silent> <Leader>lv :VimtexView<cr>
+let g:which_key_map.g = { 
+    \ 'name' : '+Git',
+    \ 'b'    : ['browse-file', 'browse-file'],
+    \ 'bl'   : ['browse-line', 'browse-line'],
+    \ 'c'    : ['commit', 'commit'],
+    \ 'h'    : ['chunk-info', 'chunk-info'],
+    \ 'p'    : ['pull', 'pull'],
+    \ 'P'    : ['push', 'push'],
+    \ 'm'    : ['move', 'move'],
+    \ 'M'    : ['merge', 'merge'],
+    \ 's'    : ['status', 'status'],
+    \ 'sc'   : ['show-commit', 'show-commit'],
+    \ 'gg'   : ['toggle-gutters', 'toggle-gutters'],
+\ }
+let g:which_key_map.n = { 
+    \ 'name' : '+NerdComment',
+    \ 'a'    : ['append-comment', 'append-comment'],
+    \ 'c'    : ['comment', 'comment'],
+    \ 'i'    : ['invert-comment', 'invert-comment'],
+    \ 's'    : ['sexy-comment', 'sexy-comment'],
+    \ 'u'    : ['remove-comment', 'remove-comment'],
+\ }
+let g:which_key_map.t = {
+    \ 'name' : '+Toggle',
+    \ 'd'    : ['lazydocker', 'lazydocker'],
+    \ 'g'    : ['lazygit', 'lazygit'],
+    \ 'n'    : ['nerd-tree', 'nerd-tree'],
+    \ 'p'    : ['markdown-preview', 'markdown-preview'],
+    \ 'v'    : ['vista', 'vista'],
+    \ 'z'    : ['shell', 'shell'],
+\ }
 
+let g:which_key_map.c = {
+    \ 'name' : '+Compile',
+    \ 'R'    : ['run-code', 'run-code'],
+    \ 'C'    : ['run-compiler', 'run-compiler'],
+\ }
 
-" Markdown preview
-nmap <Leader>md <Plug>MarkdownPreviewToggle
+nnoremap <silent> ? :WhichKey! which_key_map<CR>
+

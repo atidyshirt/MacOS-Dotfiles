@@ -1,20 +1,20 @@
 Assessments On The Go:
-- ENCE260 Super Quiz
-- 
+- COSC264 Midterm 11th September (25%)
+- COSC265 Quiz 11th September (4%)
+- SCIE101 Group Project 20th September (20%)
+- COSC264 Quiz 7 21st September (2%)
+- COSC265 Lab Test (20%)
+- COSC264 Lab Test October 9th (17%)
+- ENCE260 Assignment 2 October 12th (10%)
 
 Lectures to complete:
 COSC264
-- Lecture 21st August
 
 SCIE101
 
 COSC265
 
-
 ENCE260
-- Lecture 12th August
-- CA Tut  18th August
-- Lecture 19th August
 
 Goals Over Midterm:
 - Get all tutorials done from ENCE260
@@ -23,3 +23,9 @@ Goals Over Midterm:
 - Brew Beer
 - Fix Sleep Pattern
 
+TODO (Today)
+- Complete COSC264 Study
+- Clean windowsill
+- Finish Lectures
+- Relational Algebra Quiz
+- SQL Tutor
