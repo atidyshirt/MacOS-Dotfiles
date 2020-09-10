@@ -9,7 +9,7 @@ echo "Installing Homebrew and it's custom packages"
 brew tap homebrew/cask-fonts
 brew cask install font-firacode-nerd-font 
 brew cask install ubersicht
-brew install python
+brew install python@3.8
 brew install pip3
 brew install ranger
 brew install neofetch
@@ -30,7 +30,7 @@ brew services restart --all
 echo "Cloning Dotfiles"
 git clone https://github.com/atidyshirt/MacOS-Dotfiles.git 
 #Clone bar into default Übersicht location
-git clone https://github.com/atidyshirt/simple-bar.git $HOME/Library/Application\ Support/Übersicht/widgets/simple-bar
+git clone git@github.com:Jean-Tinland/simple-bar.git $HOME/Library/Application\ Support/Übersicht/widgets/simple-bar
 cd MacOS-Dotfiles
 
 echo "Creating a backup of all configs in ~/config_backup"
