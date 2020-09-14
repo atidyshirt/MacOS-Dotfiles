@@ -20,6 +20,7 @@ alias files='cd ~/Documents/Files'
 alias uni='cd ~/Documents/Files/University'
 alias scripts='~/scripts'
 alias dotfiles='cd ~/Documents/Files/Bash/MacOS-Dotfiles'
+alias bar='cd ~/library/ApplicationSupport/Übersicht/widgets && ls'
 
 ## `cd` changes
 alias ..='cd ..'
@@ -53,8 +54,7 @@ alias networkScan='sudo fing -r 1 -d true -o table,text'
 alias mypip='echo "Public IP: " && curl ipinfo.io/ip && echo "Default Gateway: " && route get default | grep gateway'
 
 #Asthetic aliases
-alias wall='sh ~/scripts/wallpapers.sh ./'
-alias ffwall='sh ~/scripts/wallpapers.sh ~/.wallpaper `ls -d ~/.wallpaper/* | fzf`'
+alias wall='cd ~/.wallpaper && sh ~/scripts/wallpapers.sh ./ `ls -d ~/.wallpaper/* | xargs -n 1 basename | fzf`'
 alias pybar='cd ~/Library/ApplicationSupport/Übersicht/widgets/simple-bar/lib/styles && ./pywal-gen.sh'
 alias refreshbar='osascript -e "tell application id \"tracesOf.Uebersicht\" to refresh"'
 

@@ -121,6 +121,7 @@ alt - y : yabai -m space --mirror y-axis
 
 # toggle desktop offset
 alt - a : yabai -m space --toggle padding; yabai -m space --toggle gap
+
 # toggle window parent zoom
 alt - d : yabai -m window --toggle zoom-parent
 
@@ -151,7 +152,6 @@ alt - t : yabai -m window --toggle float;\
  shift + alt - p : yabai -m window --toggle float
 
 # prevents skhd from monitoring events for listed processes.
-
 .blacklist [
     "terminal"
     "qutebrowser"

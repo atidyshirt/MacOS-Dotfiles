@@ -8,7 +8,7 @@ set encoding=utf-8                      " The encoding displayed
 set pumheight=10                        " Makes popup menu smaller
 set fileencoding=utf-8                  " The encoding written to file
 set ruler              			            " Show the cursor position all the time
-set cmdheight=4                         " More space for displaying messages
+set cmdheight=2                         " More space for displaying messages
 set mouse=a                             " Enable your mouse
 set splitbelow                          " Horizontal splits will automatically be below
 set splitright                          " Vertical splits will automatically be to the right
@@ -20,11 +20,11 @@ set smarttab                            " Makes tabbing smarter will realize you
 set expandtab                           " Converts tabs to spaces
 set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
-set laststatus=4                        " Always display the status line
+set laststatus=1                        " Always display the status line
 set number                              " Line numbers
 set cursorline                          " Enable highlighting of the current line
 set background=dark                     " tell vim what the background color looks like
-set showtabline=4                       " Always show tabs
+set showtabline=1                       " Always show tabs
 set noshowmode                          " We don't need to see things like -- INSERT -- anymore
 set nobackup                            " This is recommended by coc
 set nowritebackup                       " This is recommended by coc
@@ -33,16 +33,29 @@ set signcolumn=yes                      " Always show the signcolumn, otherwise 
 set updatetime=300                      " Faster completion
 set timeoutlen=100                      " By default timeoutlen is 1000 ms
 set clipboard=unnamedplus               " Copy paste between vim and everything else
+set noswapfile
 set incsearch
 set guifont=Fira\ Code\ Nerd\ Font
+set statusline+=%F
+filetype plugin indent on
 augroup numbertoggle
   autocmd!
   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
+
+augroup specify_filetype
+    autocmd!
+    autocmd BufRead,BufNewFile *.md set filetype=markdown
+    autocmd BufRead,BufNewFile *.txt set filetype=text
+augroup END
+
+autocmd FileType text,markdown setlocal spell
+
 autocmd InsertEnter * set nocul
 autocmd InsertLeave * set cul
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+
+" let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 " set mmp=1300
 " set autochdir                           " Your working directory will always be the same as your working directory
 " set foldcolumn=2                        " Folding abilities
