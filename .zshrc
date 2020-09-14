@@ -45,7 +45,7 @@ export PATH="/usr/local/share/python@3.8:$PATH"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="/usr/local/opt/python@3.8/libexec/bin:$PATH"
 export PATH="/usr/local/lib/python@3.8/site-packages:$PATH"
-
+export PATH="/Users/jordy/,local/bin:$PATH"
 export PYTHONPATH="/usr/local/opt/python@3.8/libexec/bin:$PYTHONPATH"
 export PYTHONPATH="/usr/local/lib/python@3.8/site-packages:$PYTHONPATH"
 

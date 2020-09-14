@@ -54,6 +54,7 @@ alias mypip='echo "Public IP: " && curl ipinfo.io/ip && echo "Default Gateway: "
 
 #Asthetic aliases
 alias wall='sh ~/scripts/wallpapers.sh ./'
+alias ffwall='sh ~/scripts/wallpapers.sh ~/.wallpaper `ls -d ~/.wallpaper/* | fzf`'
 alias pybar='cd ~/Library/ApplicationSupport/Übersicht/widgets/simple-bar/lib/styles && ./pywal-gen.sh'
 alias refreshbar='osascript -e "tell application id \"tracesOf.Uebersicht\" to refresh"'
 
