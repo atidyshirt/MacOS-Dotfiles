@@ -36,7 +36,6 @@ let g:which_key_map[';'] = [ ':Commands'                          , 'commands' ]
 let g:which_key_map['='] = [ '<C-W>='                             , 'balance windows' ]
 let g:which_key_map['d'] = [ ':Bdelete'                           , 'delete buffer']
 let g:which_key_map['e'] = [ ':CocCommand explorer'               , 'explorer' ]
-" let g:which_key_map['f'] = [ ':Farr'                              , 'find and replace' ]
 let g:which_key_map['h'] = [ '<C-W>s'                             , 'split below']
 let g:which_key_map['m'] = [ ':call WindowSwap#EasyWindowSwap()'  , 'move window' ]
 let g:which_key_map['p'] = [ ':Files'                             , 'search files' ]
@@ -44,6 +43,7 @@ let g:which_key_map['q'] = [ 'q'                                  , 'quit' ]
 let g:which_key_map['r'] = [ ':RnvimrToggle'                      , 'ranger' ]
 let g:which_key_map['u'] = [ ':UndotreeToggle'                    , 'undo tree']
 let g:which_key_map['v'] = [ '<C-W>v'                             , 'split right']
+let g:which_key_map['V'] = [ ':Vista!!'                           , 'vista']
 let g:which_key_map['W'] = [ 'w'                                  , 'write' ]
 let g:which_key_map['z'] = [ 'Goyo'                               , 'zen' ]
 
@@ -92,6 +92,7 @@ let g:which_key_map.f = {
 let g:which_key_map.k = {
       \ 'name' : '+task' ,
       \ 'c' : [':AsyncTask file-compile'      , 'compile file'],
+      \ 'C' : [':make program'                , 'make program'],
       \ 'b' : [':AsyncTask project-build'     , 'build project'],
       \ 'e' : [':AsyncTaskEdit'               , 'edit local tasks'],
       \ 'f' : [':AsyncTaskFzf'                , 'find task'],

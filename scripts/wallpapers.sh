@@ -17,6 +17,8 @@ else
     fi
 fi
 
+echo "source $HOME/.config/nvim/themes/pywal.vim" > $HOME/.config/nvim/themes/theme.vim
+
 sh ~/bin/script.sh ~/.config/alacritty/alacritty.yml
 
 xrdb -merge ~/.Xresources

@@ -41,6 +41,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'airblade/vim-rooter'
     " auto set indent settings
     Plug 'tpope/vim-sleuth'
+    Plug 'Yggdroot/indentLine'
     " Better Syntax Support
     " Plug 'nvim-treesitter/nvim-treesitter'
     Plug 'sheerun/vim-polyglot'
@@ -78,6 +79,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'liuchengxu/vim-which-key'
     " Zen mode
     Plug 'junegunn/goyo.vim'
+    " Plug "junegunn/limelight.vim"
     " Snippets
     Plug 'honza/vim-snippets'
     Plug 'mattn/emmet-vim'
@@ -109,7 +111,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mattn/vim-gist'
     Plug 'mattn/webapi-vim'
     " Colorizer
-    Plug 'norcalli/nvim-colorizer.lua'
+    " Plug 'norcalli/nvim-colorizer.lua'
     " Rainbow brackets
     " Plug 'luochen1990/rainbow'
     " Async Linting Engine
@@ -130,10 +132,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Typescript syntax
     " Plug 'HerringtonDarkholme/yats.vim'
     " Multiple Cursors
-    " Plug 'terryma/vim-multiple-cursors'
-    " Plug 'kaicataldo/material.vim'
-    " Plug 'NLKNguyen/papercolor-theme'
-    " Plug 'tomasiser/vim-code-dark'
+    Plug 'joshdick/onedark.vim'
+    Plug 'terryma/vim-multiple-cursors'
+    Plug 'kaicataldo/material.vim'
+    Plug 'NLKNguyen/papercolor-theme'
+    Plug 'tomasiser/vim-code-dark'
+    Plug 'morhetz/gruvbox'
     " Vim Wiki
     " Plug 'https://github.com/vimwiki/vimwiki.git'
     " Better Comments
@@ -142,8 +146,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'Shougo/echodoc.vim'
     " Plug 'hardcoreplayers/spaceline.vim'
     " Plug 'vim-airline/vim-airline-themes'
-    " Plug 'kaicataldo/material.vim', { 'branch': 'main' }
-    " Plug 'arcticicestudio/nord-vim'
+    Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+    Plug 'arcticicestudio/nord-vim'
     " Ranger
     " Plug 'francoiscabrol/ranger.vim'
     " Plug 'rbgrouleff/bclose.vim'

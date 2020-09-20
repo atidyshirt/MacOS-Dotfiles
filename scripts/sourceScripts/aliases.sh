@@ -29,7 +29,7 @@ alias ...='cd ../..'
 # Neovim + Coding
 alias vi='nvim'
 alias svi='sudo nvim'
-alias lg='doctoc . && lazygit'
+alias lg='lazygit'
 
 # Package Management
 alias gc='git clone'
@@ -49,12 +49,18 @@ alias vrc='vi ~/.config/nvim/configs/mappings.vim'
 alias sa='source ~/.profile && source ~/.zshrc spicetify -q apply'
 alias qsa='source ~/.zshrc'
 
+# Music
+alias lofi='mpv --no-video "https://www.youtube.com/watch?v=tKMmMHyLBCE&list=PLLdleXd4xjowk41Umvu46QEu9oboRw1lp"'
+
 # Networking
 alias networkScan='sudo fing -r 1 -d true -o table,text'
 alias mypip='echo "Public IP: " && curl ipinfo.io/ip && echo "Default Gateway: " && route get default | grep gateway'
 
 #Asthetic aliases
-alias wall='cd ~/.wallpaper && sh ~/scripts/wallpapers.sh ./ `ls -d ~/.wallpaper/* | xargs -n 1 basename | fzf`'
+alias wall='cd ~/.wallpaper && sh ~/scripts/wallpapers.sh ./ `ls -d ~/.wallpaper/* | xargs -n 1 basename | fzf` && cd -'
+alias nwall='cd ~/.wallpaper && sh ~/scripts/nordTheme.sh ./ `ls -d ~/.wallpaper/* | xargs -n 1 basename | fzf` && cd -'
+alias gwall='cd ~/.wallpaper && sh ~/scripts/gruvTheme.sh ./ `ls -d ~/.wallpaper/* | xargs -n 1 basename | fzf` && cd -'
+alias fwall='sh ~/scripts/wallpapers.sh ./ '
 alias pybar='cd ~/Library/ApplicationSupport/Übersicht/widgets/simple-bar/lib/styles && ./pywal-gen.sh'
 alias refreshbar='osascript -e "tell application id \"tracesOf.Uebersicht\" to refresh"'
 

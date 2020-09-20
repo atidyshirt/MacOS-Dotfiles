@@ -24,8 +24,8 @@ else
 
   " Themes
   source $HOME/.config/nvim/themes/syntax.vim
-  source $HOME/.config/nvim/themes/pywal.vim
-  source $HOME/.config/nvim/themes/myline.vim
+  source $HOME/.config/nvim/themes/theme.vim
+  source $HOME/.config/nvim/themes/airline.vim
 
   " Plugin Configuration
   source $HOME/.config/nvim/keys/which-key.vim
@@ -53,7 +53,8 @@ else
   source $HOME/.config/nvim/plug-config/asynctask.vim
   source $HOME/.config/nvim/plug-config/window-swap.vim
   source $HOME/.config/nvim/plug-config/markdown-preview.vim
-  luafile $HOME/.config/nvim/lua/plug-colorizer.lua
+  " luafile $HOME/.config/nvim/lua/plug-colorizer.lua
+  source $HOME/.config/nvim/plug-config/indent.vim
   " source $HOME/.config/nvim/plug-config/vimspector.vim " Uncomment if you want to use Vimspector
   " source $HOME/.config/nvim/plug-config/ale.vim
 endif
@@ -63,7 +64,6 @@ if !empty(glob("~/.config/nvim/paths.vim"))
   source $HOME/.config/nvim/paths.vim
 endif
 
-" Better nav for omnicomplete TODO figure out why this is being overridden
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
 

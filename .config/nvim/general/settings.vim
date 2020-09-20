@@ -22,6 +22,7 @@ set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
 set laststatus=1                        " Always display the status line
 set number                              " Line numbers
+set relativenumber
 set cursorline                          " Enable highlighting of the current line
 set background=dark                     " tell vim what the background color looks like
 set showtabline=1                       " Always show tabs
@@ -35,14 +36,15 @@ set timeoutlen=100                      " By default timeoutlen is 1000 ms
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set noswapfile
 set incsearch
-set guifont=Fira\ Code\ Nerd\ Font
-set statusline+=%F
+" set guifont=Fira\ Code\ Nerd\ Font
+" set statusline+=%F
 filetype plugin indent on
-augroup numbertoggle
-  autocmd!
-  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
-augroup END
+
+" augroup numbertoggle
+"   autocmd!
+"   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+"   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+" augroup END
 
 augroup specify_filetype
     autocmd!
@@ -50,6 +52,17 @@ augroup specify_filetype
     autocmd BufRead,BufNewFile *.txt set filetype=text
 augroup END
 
+inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
+function! s:align()
+  let p = '^\s*|\s.*\s|\s*$'
+  if exists(':Tabularize') && getline('.') =~# '^\s*|' && (getline(line('.')-1) =~# p || getline(line('.')+1) =~# p)
+    let column = strlen(substitute(getline('.')[0:col('.')],'[^|]','','g'))
+    let position = strlen(matchstr(getline('.')[0:col('.')],'.*|\s*\zs.*'))
+    Tabularize/|/l1
+    normal! 0
+    call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
+  endif
+endfunction
 autocmd FileType text,markdown setlocal spell
 
 autocmd InsertEnter * set nocul

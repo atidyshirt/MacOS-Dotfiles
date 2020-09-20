@@ -1,4 +1,4 @@
-# Pywal theme
+" Pywal theme
 hi Comment cterm=italic
 let g:nvcode_hide_endofbuffer=1
 let g:nvcode_terminal_italics=1

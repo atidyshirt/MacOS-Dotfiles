@@ -13,6 +13,8 @@ nnoremap <Space> <Nop>
 vnoremap < <gv
 vnoremap > >gv
 
+inoremap  <leader>kC :make program<CR>
+
 if exists('g:vscode')
 
   " Simulate same TAB behavior in VSCode
@@ -28,10 +30,6 @@ else
   " I hate escape more than anything else
   inoremap jk <Esc>
   inoremap kj <Esc>
-
-  " Easy CAPS
-  " inoremap <c-u> <ESC>viwUi
-  " nnoremap <c-u> viwU<Esc>
 
   " TAB in general mode will move to text buffer
   nnoremap <silent> <TAB> :bnext<CR>

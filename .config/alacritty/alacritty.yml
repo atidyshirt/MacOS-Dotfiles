@@ -36,8 +36,8 @@ window:
     y: 1
 
   padding:
-    x: 25
-    y: 25
+    x: 20
+    y: 20
 
   dynamic_padding: true
 
@@ -54,28 +54,28 @@ live_config_reload: true
 # BEGIN ACE
 colors:
   primary:
-    background: '0x121f18'
-    foreground: '0xb8b6b7'
+    background: '0x2E3440'
+    foreground: '0xe3e6ea'
   cursor:
-    text:       '0x121f18'
-    cursor:     '0xb8b6b7'
+    text:       '0x2E3440'
+    cursor:     '0xe3e6ea'
   normal:
-    black:      '0x121f18'
-    red:        '0x6D574A'
-    green:      '0x655E54'
-    yellow:     '0x894D3B'
-    blue:       '0x8D6952'
-    magenta:    '0x8D766E'
-    cyan:       '0x958375'
-    white:      '0xb8b6b7'
+    black:      '0x2E3440'
+    red:        '0x6C7487'
+    green:      '0x78898D'
+    yellow:     '0x678EB8'
+    blue:       '0x799AC3'
+    magenta:    '0x99A48E'
+    cyan:       '0xA8B2B4'
+    white:      '0xe3e6ea'
   bright:
-    black:      '0x807f80'
-    red:        '0x6D574A'
-    green:      '0x655E54'
-    yellow:     '0x894D3B'
-    blue:       '0x8D6952'
-    magenta:    '0x8D766E'
-    cyan:       '0x958375'
-    white:      '0xb8b6b7'
+    black:      '0x9ea1a3'
+    red:        '0x6C7487'
+    green:      '0x78898D'
+    yellow:     '0x678EB8'
+    blue:       '0x799AC3'
+    magenta:    '0x99A48E'
+    cyan:       '0xA8B2B4'
+    white:      '0xe3e6ea'
 
 # END ACE
