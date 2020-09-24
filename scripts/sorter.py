@@ -9,7 +9,7 @@ def run():
     videoTypes = ["mp4", "m4v", "avi", "webm", "mkv", "quicktime"]
     documentTypes = ["docx", "rtf", "md", "pdf", "txt"]
     imageTypes = ["png", "jpg", "jpeg", "gif", "raw"]
-    os.chdir("/Users/jordy/Desktop")
+    os.chdir("/Users/jordy/Downloads")
     while True:
         files = os.listdir("./")
 
@@ -35,6 +35,5 @@ try:
     with pidfile.PIDFile():
         print("Process started")
         run()
-        time.sleep(30)
 except pidfile.AlreadyRunningError:
     print("Already running.")

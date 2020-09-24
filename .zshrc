@@ -1,12 +1,12 @@
 # ZSH theme
 
 # This is the typewritten theme
-# fpath+=$HOME/.zsh/typewritten
-# autoload -U promptinit; promptinit
-# prompt typewritten
+fpath+=$HOME/.zsh/typewritten
+autoload -U promptinit; promptinit
+prompt typewritten
 
 # On trial atm (seems a litle faster?)
-ZSH_THEME="bira" 
+# ZSH_THEME="bira" 
 
 export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
@@ -61,9 +61,10 @@ done
 # Running tmux 
 export TERM=xterm-256color
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec env TERM=screen-256color tmux
+  exec env TERM=screen-256color-bce tmux
 fi
 
+tmux set-option -ga terminal-overrides ",xterm-256color:Tc"
 
 export PATH="/usr/local/opt/binutils/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"

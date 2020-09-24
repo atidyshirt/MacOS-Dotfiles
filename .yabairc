@@ -1,9 +1,14 @@
 #!/usr/bin/env sh
 source ~/.cache/wal/colors.sh
 
+# Übersicht
+# yabai -m config external_bar                 main:28:0
+
 #Passive colors
 p1="${color8:1}"
-
+nordActive=81a1c1
+nordActive2=8fbcbb
+nordInactive=4c566a
 #active colors - (same as position on bar)
 c1="${color2:1}"
 c2="${color4:1}"
@@ -30,12 +35,11 @@ yabai -m config mouse_action2                resize
 # Boarders 
 yabai -m config window_border on
 yabai -m config window_border_width 10
-yabai -m config active_window_border_color 0xff$c4
-yabai -m config normal_window_border_color 0xff$p1
+yabai -m config active_window_border_color 0xff$nordActive
+yabai -m config normal_window_border_color 0xff$nordInactive
 
 # general space settings
 yabai -m config layout                       bsp
-yabai -m config external_bar                 all:28:0
 yabai -m config top_padding                  30   #30
 yabai -m config bottom_padding               30   #30
 yabai -m config left_padding                 30   #30

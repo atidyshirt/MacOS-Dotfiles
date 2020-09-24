@@ -4,7 +4,6 @@
 # Music Production, Iphone emulator
 alias piano='open ~/Documents/Music/Setup\ -\ Midi/test\ Project/123.als'
 alias ios='open -a Simulator'
-alias vmd='markserv'
 eval $(thefuck --alias)
 
 # General shortcuts
@@ -29,7 +28,7 @@ alias ...='cd ../..'
 # Neovim + Coding
 alias vi='nvim'
 alias svi='sudo nvim'
-alias lg='lazygit'
+alias tg='lazygit'
 
 # Package Management
 alias gc='git clone'
@@ -43,14 +42,11 @@ alias prc='vi ~/.profile'
 alias zrc='vi ~/.zshrc'
 alias src='vi ~/.skhdrc'
 alias yrc='vi ~/.yabairc'
-alias vrc='vi ~/.config/nvim/configs/mappings.vim'
+alias vrc='vi ~/.config/nvim/keys/which-key.vim ~/.config/nvim/general/settings.vim ~/.config/nvim/init.vim'
 
 # Sourcing Info
 alias sa='source ~/.profile && source ~/.zshrc spicetify -q apply'
 alias qsa='source ~/.zshrc'
-
-# Music
-alias lofi='mpv --no-video "https://www.youtube.com/watch?v=tKMmMHyLBCE&list=PLLdleXd4xjowk41Umvu46QEu9oboRw1lp"'
 
 # Networking
 alias networkScan='sudo fing -r 1 -d true -o table,text'

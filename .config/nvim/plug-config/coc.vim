@@ -16,6 +16,7 @@
     \ 'coc-cssmodules',
     \ 'coc-yaml',
     \ 'coc-python',
+    \ 'coc-ccls',
     \ 'coc-pyright',
     \ 'coc-explorer',
     \ 'coc-svg',
@@ -26,8 +27,6 @@
     \ 'coc-json',
     \ 'coc-marketplace',
     \ ]
-    " \ 'coc-tabnine',
-    " \ 'coc-highlight',
 
 " Use tab for trigger completion with characters ahead and navigate.
 inoremap <silent><expr> <TAB>
@@ -51,12 +50,6 @@ if exists('*complete_info')
 else
   imap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 endif
-
-" GoTo code navigation.
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
 
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call <SID>show_documentation()<CR>
@@ -95,10 +88,10 @@ augroup end
 
 " Introduce function text object
 " NOTE: Requires 'textDocument.documentSymbol' support from the language server.
-xmap if <Plug>(coc-funcobj-i)
-xmap af <Plug>(coc-funcobj-a)
-omap if <Plug>(coc-funcobj-i)
-omap af <Plug>(coc-funcobj-a)
+" xmap if <Plug>(coc-funcobj-i)
+" xmap af <Plug>(coc-funcobj-a)
+" omap if <Plug>(coc-funcobj-i)
+" omap af <Plug>(coc-funcobj-a)
 
 " Use <TAB> for selections ranges.
 " NOTE: Requires 'textDocument/selectionRange' support from the language server.
