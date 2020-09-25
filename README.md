@@ -41,8 +41,7 @@ yeah... I know, its pretty bloated
 ## Bindings
 
 #### Vim Bindings
-For neovim, I use the extremely well made [Vim Reaper](https://github.com/GideonWolfe/vim.reaper) bindings, made by GideonWolfe, for information about binds within vim, please
-refer to the [Vim Reaper Repository](https://github.com/GideonWolfe/vim.reaper).
+For neovim, I have inspired my setup by the extremely well made [Vim Reaper](https://github.com/GideonWolfe/vim.reaper) made by GideonWolfe, and the following vim config I found [nvim config](https://github.com/ChristianChiarulli/nvim) made by [Christian Chiarulli](https://github.com/ChristianChiarulli), the keybinds are displayed in vim.
 
 #### Launch App
 | App           | Key Map              |
