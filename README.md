@@ -1,12 +1,10 @@
 
 # MacOS Dotfiles
 
-| Pywal Compliant | Float or Tile | Third Party App Support |
-|-----------------|---------------|-------------------------|
-| Color Scheme | Floating preview | Spotify Theme |
-|![Wallpaper 1](/Preview/Background.png)| ![Floating on workspace 5,6](/Preview/Float.png) | ![Spotify Preview](/Preview/Spotify.png) |
-| Tiling Preview | No Gaps Tiling | Markdown Live Preview |
-|![Wallpaper 2](/Preview/TilingPreview.gif)| ![Toggle No Gaps](/Preview/NoGapsToggle.gif) | ![Markdown Preview](/Preview/Markdown.gif) |
+| Vim-gruvbox                              | Tile                                                      | Third Party App Support                          |
+|------------------------------------------|-----------------------------------------------------------|--------------------------------------------------|
+| Color Scheme                             | Floating preview                                          | Spotify Theme                                    |
+| ![Wallpaper 1](/Preview/gruvbox-vim.png) | ![Floating on workspace 5,6](/Preview/gruvbox-tiling.png) | ![Spotify Preview](/Preview/gruvbox-spotify.png) |
 
 
 
@@ -145,7 +143,7 @@ In the config, you can uncomment if you want to have vim bindings for these basi
 
 ## Installation and Usage
 
-#### Installation - Thanks a heap to @WarpWing for streamlining this
+#### Installation - This wont work for themes outside of the master branch
 ```html
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/atidyshirt/MacOS-Dotfiles/master/install.sh)"
 ```
