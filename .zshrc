@@ -1,12 +1,7 @@
 # ZSH theme
 
-# This is the typewritten theme
-fpath+=$HOME/.zsh/typewritten
-autoload -U promptinit; promptinit
-prompt typewritten
-
 # On trial atm (seems a litle faster?)
-# ZSH_THEME="bira" 
+ZSH_THEME="bira" 
 
 export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh

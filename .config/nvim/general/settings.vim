@@ -1,4 +1,4 @@
-syntax enable                           " Enables syntax highlighing
+syntax on                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
 set statusline+=%F

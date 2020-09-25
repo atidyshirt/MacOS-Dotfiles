@@ -177,6 +177,7 @@ let g:which_key_map.l = {
 " t is for terminal
 let g:which_key_map.t = {
       \ 'name' : '+toggle' ,
+      \ ';' : [':FloatermNew --wintype=normal --height=10'        , 'console'],
       \ 'd' : [':FloatermNew lazydocker'                        , 'docker'],
       \ 'f' : [':FloatermNew fzf'                               , 'fzf'],
       \ 'g' : [':FloatermNew lazygit'                           , 'git'],
@@ -185,7 +186,7 @@ let g:which_key_map.t = {
       \ 'N' : [':FloatermNew nnn'                               , 'nnn'],
       \ 'p' : [':FloatermNew python'                            , 'python'],
       \ 'r' : [':FloatermNew ranger'                            , 'ranger'],
-      \ 't' : [':FloatermToggle'                                , 'toggle'],
+      \ 't' : [':FloatermToggle'                                , 'float terminal'],
       \ 'v' : [':Vista!!'                            , 'tag viewer'],
       \ }
 

@@ -10,7 +10,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
   if exists('g:vscode')
     " Easy motion for VSCode
-    Plug 'asvetliakov/vim-easymotion'
+    " Plug 'asvetliakov/vim-easymotion'
   else
     " Pywal
     Plug 'dylanaraps/wal.vim'
@@ -36,7 +36,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
     Plug 'alvan/vim-closetag'
     " Themes
-    Plug 'christianchiarulli/nvcode.vim'
     Plug 'morhetz/gruvbox'
     Plug 'arcticicestudio/nord-vim'
     " Intellisense
@@ -71,10 +70,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'dhruvasagar/vim-table-mode'
     " Better Whitespace
     Plug 'ntpeters/vim-better-whitespace'
-    " Multiple Cursors
-    Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-    Plug 'moll/vim-bbye'
-    " Plug 'terryma/vim-multiple-cursors'
   endif
 
 call plug#end()
