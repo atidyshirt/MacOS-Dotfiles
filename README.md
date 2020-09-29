@@ -166,7 +166,8 @@ We can also use the following to use fzf of the .wallpaper directory for gruvbox
     gwall
     nwall
     wall
-    ```
+```
+
 ---
 <center>
 
