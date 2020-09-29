@@ -157,9 +157,16 @@ This is because the theme needs to be applied to many different things and resta
 to get applied, we can do this with the following command (assuming you are using my aliases in ~/.zshrc): 
 
 ```
-    wall ~/path/to/image.jpg
+    fwall ~/source/to/image.ext
 ```
 
+We can also use the following to use fzf of the .wallpaper directory for gruvbox, nord and pywal
+
+```
+    gwall
+    nwall
+    wall
+    ```
 ---
 <center>
 

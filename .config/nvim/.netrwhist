@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/Users/jordy/Documents/Files/Repos/Farm Simulator Submission/src/main'
+let g:netrw_dirhist_4='/Users/jordy/.config/nvim/vim-plug'
+let g:netrw_dirhist_3='/Users/jordy/.vim'
+let g:netrw_dirhist_2='/Users/jordy/Documents/Files/University/COSC264'
+let g:netrw_dirhist_1='/Users/jordy/.config/nvim/vim-plug'

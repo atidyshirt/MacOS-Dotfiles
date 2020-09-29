@@ -12,10 +12,10 @@
     \ 'coc-floaterm',
     \ 'coc-html',
     \ 'coc-css',
-    \ 'coc-emoji',
     \ 'coc-cssmodules',
     \ 'coc-yaml',
     \ 'coc-python',
+    \ 'coc-ccls',
     \ 'coc-pyright',
     \ 'coc-explorer',
     \ 'coc-svg',
@@ -26,8 +26,6 @@
     \ 'coc-json',
     \ 'coc-marketplace',
     \ ]
-    " \ 'coc-tabnine',
-    " \ 'coc-highlight',
 
 " Use tab for trigger completion with characters ahead and navigate.
 inoremap <silent><expr> <TAB>
@@ -51,12 +49,6 @@ if exists('*complete_info')
 else
   imap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 endif
-
-" GoTo code navigation.
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
 
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call <SID>show_documentation()<CR>
@@ -95,10 +87,10 @@ augroup end
 
 " Introduce function text object
 " NOTE: Requires 'textDocument.documentSymbol' support from the language server.
-xmap if <Plug>(coc-funcobj-i)
-xmap af <Plug>(coc-funcobj-a)
-omap if <Plug>(coc-funcobj-i)
-omap af <Plug>(coc-funcobj-a)
+" xmap if <Plug>(coc-funcobj-i)
+" xmap af <Plug>(coc-funcobj-a)
+" omap if <Plug>(coc-funcobj-i)
+" omap af <Plug>(coc-funcobj-a)
 
 " Use <TAB> for selections ranges.
 " NOTE: Requires 'textDocument/selectionRange' support from the language server.
@@ -118,7 +110,7 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 " Add (Neo)Vim's native statusline support.
 " NOTE: Please see `:h coc-status` for integrations with external plugins that
 " provide custom statusline: lightline.vim, vim-airline.
-set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+" set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " Mappings using CoCList:
 " Show all diagnostics.
@@ -182,11 +174,10 @@ imap <C-j> <Plug>(coc-snippets-expand-jump)
 """""""
 "COC  "
 """""""
-
 " Define Error Symbols and colors
 let g:coc_status_warning_sign = ''
 let g:coc_status_error_sign = ''
-hi CocWarningSign ctermfg=blue 
+hi CocWarningSign ctermfg=blue
 hi CocErrorSign ctermfg=red
 hi CocInfoSign ctermfg=yellow
 hi CocHintSign ctermfg=green

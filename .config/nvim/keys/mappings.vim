@@ -36,6 +36,9 @@ else
   " SHIFT-TAB will go back
   nnoremap <silent> <S-TAB> :bprevious<CR>
 
+  " Markdown tables alignment
+  au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
+
   " Move selected line / block of text in visual mode
   " shift + k to move up
   " shift + j to move down

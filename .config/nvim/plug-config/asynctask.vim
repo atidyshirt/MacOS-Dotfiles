@@ -5,6 +5,7 @@ let g:asynctasks_term_pos = 'bottom'
 " let g:asynctasks_term_pos = 'external'
 let g:asynctasks_extra_config = ['~/.config/nvim/utils/tasks.ini']
 " let current_tasks = asynctasks#list("")
+let g:asyncrun_rootmarks = ['.git', '.svn', '.root', '.project', '.hg']
 
 function! s:fzf_sink(what)
 	let p1 = stridx(a:what, '<')

@@ -1,6 +1,24 @@
 /* @import url("file:///home/jordy/.config/nvim/configs/colors.css"); */
 
-body { background-color: var(--background); }
+body { 
+  background-color: var(--background); 
+  --color10: #cc241d;
+  --color4: #b8bb26;
+  --color3: #d79921;
+  --color2: #458588;
+  --color5: #b16286;
+  --color6: #689d6a;
+  --color7: #a89984;
+  --color8: #928374;
+  --color12: #fb4934;
+  --color1: #98971a;
+  --color11: #fabd2f;
+  --color9: #83a598;
+  --color13: #d3869b;
+  --color14: #8ec07c;
+  --color15: #ebdbb2;
+
+}
 
 .markdown-body ol ol,
 .markdown-body ul ol,
