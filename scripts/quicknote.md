@@ -7,14 +7,15 @@
 
 Assessments On The Go:
 
-- COSC265 Lab Test October 1st(20%)
-- ENCE260 Quiz (Architecture) October 2nd (0.8%)
+- SCIE101 Quiz October 7th (7.5%)
 - COSC264 Lab Test October 9th (17%)
-- SCIE101 Quiz October 11th (7.5%)
 - ENCE260 Assignment October 12th (10%)
 - ENCE260 Quiz (Architecture) 12th (0.8%)
 
 Lectures to complete:
+
+**MANY**
+
 _COSC264_
 
 _SCIE101_

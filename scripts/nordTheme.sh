@@ -19,6 +19,8 @@ fi
 
 sh ~/bin/script.sh ~/.config/alacritty/alacritty.yml
 
+pywal-discord -t abou
+
 echo "source $HOME/.config/nvim/themes/nord.vim" > $HOME/.config/nvim/themes/theme.vim
 
 xrdb -merge ~/.Xresources

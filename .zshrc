@@ -1,8 +1,6 @@
 # ZSH theme
-
 # On trial atm (seems a litle faster?)
 ZSH_THEME="bira"
-
 export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 ZSH_THEME_TERM_TITLE_IDLE="Terminal"
@@ -54,9 +52,9 @@ for f in ~/scripts/sourceScripts/*; do
 done
 
 # Running tmux
-# if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  # exec env TERM=screen-256color-bce tmux
-# fi
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec env tmux
+fi
 
 export PATH="/usr/local/opt/binutils/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"

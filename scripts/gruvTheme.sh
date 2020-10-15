@@ -21,6 +21,8 @@ sh ~/bin/script.sh ~/.config/alacritty/alacritty.yml
 
 echo "source $HOME/.config/nvim/themes/gruvbox.vim" > $HOME/.config/nvim/themes/theme.vim
 
+pywal-discord -t abou
+
 xrdb -merge ~/.Xresources
 
 pybar

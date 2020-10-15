@@ -1,79 +1,46 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Home</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-	<body>
-		<div class="container">
-
-            <div class="head">
-                <div class="logo"><img src="icons/fox.svg"/></div>
-                <div class="search_box">
-                    <form action="https://www.google.com/search" method="get">
-                        <input class="input_box" type="text" name="q" placeholder="Search with Google"/>
-                    <input class="button" src="icons/search.svg" name="submit" type="image"/>
-                    </form>
-                </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>startpage</title>
+    <!--Json Editor-->
+    <link rel="stylesheet" href="css/jsoneditor.min.css" type="text/css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="settings" class="settings-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>
+                Edit the config.json below. Check <a href="https://github.com/deepjyoti30/startpage#settings">this</a> for details
+            </h2>
+            <div id="jsoneditor" style="width: 100%;height: 80%;"></div>
+        </div>
+    </div>
+    <div id="main" class="main">
+        <div id="message">
+            <h1 id="message-text">Good Morning!</h1>
+        </div>
+        <div id="search-bar">
+            <input id="search-bar-input"></input>
+            <div class="autocomplete-items-container">
             </div>
-
-            <div class="bookmark">
-                <div class="category">
-                    <div class="icon"><img src="icons/code.svg"/></div>
-                    <div class="bookmarks">
-                        <li><a class="bm" href="https://github.com/atidyshirt">Github</a></li>
-                        <li><a class="bm" href="https://docs.oracle.com/javase/7/docs/api/">Java</a></li>
-                        <li><a class="bm" href="https://docs.python.org/3.7/library/index.html">Python</a></li>
-                        <li><a class="bm" href="https://www.hackerrank.com/dashboard">Hacker Rank</a></li>
-                        <li><a class="bm" href="https://stackoverflow.com/">Stackoverflow</a></li>
-                    </div>
-                </div>
-
-                <div class="category">
-                    <div class="icon"><img src="icons/docs.svg"/></div>
-                    <div class="bookmarks">
-                        <li><a class="bm" href="https://learn.canterbury.ac.nz/my/">Learn</a></li>
-                        <li><a class="bm" href="https://github.com/atidyshirt/University">Notes</a></li>
-                        <li><a class="bm" href="https://mytimetable.canterbury.ac.nz/aplus/student?ss=9cce319595d7438ca760243312fe56fa">Timetable</a></li>
-                        <li><a class="bm" href="https://quiz2020.csse.canterbury.ac.nz/">Quiz Server</a></li>
-                        <li><a class="bm" href="https://outlook.office.com/mail/inbox">Student Email</a></li>
-                    </div>
-                </div>
-
-                <div class="category">
-                    <div class="icon"><img src="icons/entertainment.svg"/></div>
-                    <div class="bookmarks">
-                        <li><a class="bm" href="https://mail.google.com/mail/u/0/#inbox">Gmail</a></li>
-                        <li><a class="bm" href="https://www.netflix.com/browse">Netflix</a></li>
-                        <li><a class="bm" href="https://www.youtube.com/">Youtube</a></li>
-                        <li><a class="bm" href="https://ww5.fmovie.sc/">Movies</a></li>
-                        <li><a class="bm" href="https://www.primevideo.com/region/fe/storefront/home/ref=atv_nb_sf_hm">Amazon Prime</a></li>
-                    </div>
-                </div>
-
-                <div class="category">
-                    <div class="icon"><img src="icons/music.svg"/></div>
-                    <div class="bookmarks">
-                        <li><a class="bm" href="https://developer.spotify.com/documentation/web-api/">Spotify</a></li>
-                        <li><a class="bm" href="https://www.youtube.com/watch?v=taqtBn4LTFs&list=PLLdleXd4xjowk41Umvu46QEu9oboRw1lp&index=8">Lofi</a></li>
-                        <li><a class="bm" href="https://soundcloud.com/jordy-pyott">Soundcloud</a></li>
-                        <li><a class="bm" href="https://www.twitch.tv/">Twitch</a></li>
-                        <li><a class="bm" href="https://www.chess.com/">Chess</a></li>
-                    </div>
-                </div>
-
-                <div class="category">
-                    <div class="icon"><img src="icons/art.svg"/></div>
-                    <div class="bookmarks">
-                        <li><a class="bm" href="https://www.facebook.com/">Facebook</a></li>
-                        <li><a class="bm" href="https://www.messenger.com/">Messenger</a></li>
-                        <li><a class="bm" href="https://www.instagram.com/?hl=en">Instagram</a></li>
-                        <li><a class="bm" href="https://unsplash.com/">Unsplash</a></li>
-                        <li><a class="bm" href="https://www.reddit.com/">Reddit</a></li>
-                    </div>
-                </div>
-
-            </div>
-		</div>
-	</body>
+        </div>
+        <div id="other-content">
+        </div>
+        <svg id="settings-cog" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings" viewBox="0 0 24 24" stroke-width="1.5" stroke="#607D8B" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z"/>
+            <path class="cog" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+            <circle cx="12" cy="12" r="3" />
+        </svg>
+    </div>
+    <!--JSON Editor-->
+    <script src="js/jsoneditor.min.js"></script>
+    <!--Custom JS-->
+    <script src="js/settings.js"></script>
+    <script src="js/autocomplete.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>
