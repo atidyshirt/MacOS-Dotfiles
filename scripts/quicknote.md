@@ -1,4 +1,5 @@
 #2E3440: Nord
+#282a36: Dracula
 #282828: Gruvbox
 #182534: Rocky-shore
 #121f18: Miramare

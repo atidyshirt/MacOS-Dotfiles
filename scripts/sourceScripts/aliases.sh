@@ -53,9 +53,10 @@ alias networkScan='sudo fing -r 1 -d true -o table,text'
 alias mypip='echo "Public IP: " && curl ipinfo.io/ip && echo "Default Gateway: " && route get default | grep gateway'
 
 #Asthetic aliases
-alias wall='cd ~/.wallpaper && sh ~/scripts/wallpapers.sh ./ `ls -d ~/.wallpaper/* | xargs -n 1 basename | fzf` && cd -'
-alias nwall='cd ~/.wallpaper && sh ~/scripts/nordTheme.sh ./ `ls -d ~/.wallpaper/* | xargs -n 1 basename | fzf` && cd -'
-alias gwall='cd ~/.wallpaper && sh ~/scripts/gruvTheme.sh ./ `ls -d ~/.wallpaper/* | xargs -n 1 basename | fzf` && cd -'
+alias wall='cd ~/.wallpaper && sh ~/scripts/themeScripts/wallpapers.sh ./ `ls -d ~/.wallpaper/* | xargs -n 1 basename | fzf` && cd -'
+alias nwall='cd ~/.wallpaper && sh ~/scripts//themeScripts/nordTheme.sh ./ `ls -d ~/.wallpaper/* | xargs -n 1 basename | fzf` && cd -'
+alias gwall='cd ~/.wallpaper && sh ~/scripts/themeScripts/gruvTheme.sh ./ `ls -d ~/.wallpaper/* | xargs -n 1 basename | fzf` && cd -'
+alias dwall='cd ~/.wallpaper && sh ~/scripts/themeScripts/dracTheme.sh ./ `ls -d ~/.wallpaper/* | xargs -n 1 basename | fzf` && cd -'
 alias fwall='sh ~/scripts/wallpapers.sh ./ '
 alias pybar='cd ~/Library/ApplicationSupport/Übersicht/widgets/simple-bar/lib/styles && ./pywal-gen.sh'
 alias refreshbar='osascript -e "tell application id \"tracesOf.Uebersicht\" to refresh"'

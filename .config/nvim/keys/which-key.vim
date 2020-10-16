@@ -40,6 +40,8 @@ let g:which_key_map['.'] = [ ':e $MYVIMRC'                        , 'open init' 
 let g:which_key_map[';'] = [ ':Commands'                          , 'commands' ]
 let g:which_key_map['='] = [ '<C-W>='                             , 'balance windows' ]
 let g:which_key_map['d'] = [ ':bd'                                , 'delete buffer']
+let g:which_key_map['q'] = [ ':wqa!'                              , 'save and quit' ]
+let g:which_key_map['w'] = [ ':w!'                                , 'write' ]
 let g:which_key_map['e'] = [ ':CocCommand explorer'               , 'explorer' ]
 let g:which_key_map['f'] = [ ':GFiles'                            , 'search files' ]
 let g:which_key_map['h'] = [ '<C-W>s'                             , 'split below']
@@ -70,14 +72,6 @@ let g:which_key_map.b = {
       \ 'n' : ['bnext'     , 'next-buffer'],
       \ 'p' : ['bprevious' , 'previous-buffer'],
       \ '?' : ['Buffers'   , 'fzf-buffer'],
-      \ }
-
-" f is for find and replace
-let g:which_key_map.r = {
-      \ 'name' : '+replace' ,
-      \ 'b' : [':Farr --source=vimgrep'    , 'buffer'],
-      \ 'p' : [':Farr --source=rgnvim'     , 'project'],
-      \ 'r' : [':Fargo'                    , 'Replace']
       \ }
 
 " g is for git

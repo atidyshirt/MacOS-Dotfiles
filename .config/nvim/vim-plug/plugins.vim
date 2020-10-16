@@ -12,61 +12,32 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Easy motion for VSCode
     " Plug 'asvetliakov/vim-easymotion'
   else
-    " Pywal
     Plug 'dylanaraps/wal.vim'
     Plug 'deviantfero/wpgtk.vim'
-    " comments
+    Plug 'morhetz/gruvbox'
     Plug 'preservim/nerdcommenter'
-    " Convert binary, hex, etc..
-    Plug 'glts/vim-radical'
-    " Surround
     Plug 'tpope/vim-surround'
-    " Have the file system follow you around
     Plug 'airblade/vim-rooter'
-    " auto set indent settings **CHANGE TO OLD ONE
     Plug 'Yggdroot/indentLine'
-    " Plug 'zxqfl/tabnine-vim'
-    "Github
     Plug 'tpope/vim-fugitive'
-    " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
-    " Cool Icons
     Plug 'ryanoasis/vim-devicons'
-    " Auto pairs for '(' '[' '{' && <Tags>
     Plug 'jiangmiao/auto-pairs'
     Plug 'alvan/vim-closetag'
-    " Themes
-    Plug 'morhetz/gruvbox'
-    Plug 'arcticicestudio/nord-vim'
-    " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    " Status Line
     Plug 'vim-airline/vim-airline'
-    " FZF
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
-    " Terminal
     Plug 'voldikss/vim-floaterm'
-    " Vista
     Plug 'liuchengxu/vista.vim'
-    " See what keys do like in emacs
     Plug 'liuchengxu/vim-which-key'
-    " Zen mode
     Plug 'junegunn/goyo.vim'
-    " Snippets
     Plug 'honza/vim-snippets'
-    " Find and replace
-    Plug 'ChristianChiarulli/far.vim'
-    " tags
     Plug 'AndrewRadev/tagalong.vim'
-    " async tasks
     Plug 'skywind3000/asynctasks.vim'
     Plug 'skywind3000/asyncrun.vim'
-    " Markdown Preview
     Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
-    " Align markdown tables
     Plug 'dhruvasagar/vim-table-mode'
-    " Better Whitespace
     Plug 'ntpeters/vim-better-whitespace'
   endif
 

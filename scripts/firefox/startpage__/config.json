@@ -1,0 +1,55 @@
+{
+  "squares": [
+    {
+      "name": "media",
+      "color": "red",
+      "links": [
+        { "name": "Movies", "url": "https://ww5.fmovie.sc/" },
+        { "name": "Amazon Prime", "url": "https://www.primevideo.com/" },
+        { "name": "Netflix", "url": "https://netflix.com" },
+        { "name": "Youtube", "url": "https://youtube.com" }
+      ]
+    },
+    {
+      "name": "work",
+      "color": "#26A69A",
+      "links": [
+        { "name": "Github", "url": "https://github.com" },
+        { "name": "Learn", "url": "https://learn.canterbury.ac.nz/login/index.php" },
+        { "name": "Quiz Server", "url": "https://quiz2020.csse.canterbury.ac.nz/" },
+        { "name": "Mail", "url": "https://outlook.office.com/mail/inbox" }
+      ]
+    },
+    {
+      "name": "social",
+      "links": [
+        { "name": "Reddit", "url": "https://reddit.com" },
+        { "name": "Messenger", "url": "https://www.messenger.com/" },
+        { "name": "Gmail", "url": "http://gmail.com/" },
+        { "name": "r/unixporn", "url": "https://www.reddit.com/r/unixporn/" }
+      ]
+    },
+    {
+      "name": "other",
+      "links": [
+        { "name": "Lofi", "url": "https://www.youtube.com/watch?v=EYPGdiqfEZU&list=PLLdleXd4xjoyOsXTN_xrbKdukGsCba7fa" },
+        { "name": "Hacker Rank", "url": "https://www.hackerrank.com/dashboard" },
+        { "name": "Wallhaven", "url": "https://wallhaven.cc/" },
+        { "name": "Chess", "url": "https://www.chess.com/home" }
+      ]
+    }
+  ],
+  "searchEngine": "Google",
+  "user": "atidyshirt",
+  "disableMessage": false,
+  "disableDate": false,
+  "disableSearchBar": false,
+  "disable24Hour": true,
+  "disableWeather": true,
+  "timeZone": "New_Zealand/Auckland",
+  "weatherConf": {
+    "location": "New Zealand",
+    "unit": "deg"
+  },
+  "settingsIcon": false
+}

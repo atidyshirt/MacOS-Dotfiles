@@ -3,27 +3,28 @@ cmd - return : env WAYLAND_DISPLAY= alacritty
 cmd + shift - return : code
 alt - return : open -a '/Applications/Firefox.app'
 # default keybinds
-# focus window
-alt - left : yabai -m window --focus west
-alt - down : yabai -m window --focus south
-alt - up : yabai -m window --focus north
-alt - right : yabai -m window --focus east
-# swap window
-shift + cmd - left : yabai -m window --swap west
-shift + cmd - down : yabai -m window --swap south
-shift + cmd - up : yabai -m window --swap north
-shift + cmd - right : yabai -m window --swap east
-# move window
-shift + alt - left : yabai -m window --warp west
-shift + alt- down : yabai -m window --warp south
-shift + alt - up : yabai -m window --warp north
-shift + alt - right : yabai -m window --warp east
 
-# # vim keybinds
-alt - h : yabai -m window --focus west
-alt - j : yabai -m window --focus south
-alt - k : yabai -m window --focus north
-alt - l : yabai -m window --focus east
+# vim keybinds (focus tmux and yabai with alt key)
+alt - h [
+    *           : yabai -m window --focus west
+    "Alacritty" : if [ $(tmux display-message -p '#{pane_at_left}') -ne 1 ]; then tmux select-pane -L; else yabai -m window --focus west || true; fi
+]
+
+alt - j [
+    *           : yabai -m window --focus south
+    "Alacritty" : if [ $(tmux display-message -p '#{pane_at_bottom}') -ne 1 ]; then tmux select-pane -D; else yabai -m window --focus south || true; fi
+]
+
+alt - k [
+    *           : yabai -m window --focus north
+    "Alacritty" : if [ $(tmux display-message -p '#{pane_at_top}') -ne 1 ]; then tmux select-pane -U; else yabai -m window --focus north || true; fi
+]
+
+alt - l [
+    *           : yabai -m window --focus east
+    "Alacritty" : if [ $(tmux display-message -p '#{pane_at_right}') -ne 1 ]; then tmux select-pane -R; else yabai -m window --focus east || true; fi
+]
+
 
 shift + cmd - h : yabai -m window --swap west
 shift + cmd - j : yabai -m window --swap south
@@ -80,9 +81,9 @@ shift + cmd - 9 : yabai -m window --space  9; yabai -m space --focus 9
 shift + cmd - 0 : yabai -m window --space 10; yabai -m space --focus 10
 
 # focus monitor
-# ctrl + alt - 1  : yabai -m display --focus 1
-# ctrl + alt - 2  : yabai -m display --focus 2
-# ctrl + alt - 3  : yabai -m display --focus 3
+ctrl + alt - 1  : yabai -m display --focus 1
+ctrl + alt - 2  : yabai -m display --focus 2
+ctrl + alt - 3  : yabai -m display --focus 3
 
 # send window to monitor and follow focus
 ctrl + cmd - 1  : yabai -m window --display 1; yabai -m display --focus 1
@@ -123,10 +124,10 @@ alt - y : yabai -m space --mirror y-axis
 alt - a : yabai -m space --toggle padding; yabai -m space --toggle gap
 
 # toggle window parent zoom
-alt - d : yabai -m window --toggle zoom-parent
+alt - d : yabai -m window --toggle zoom-parent; \
 
 # toggle window fullscreen zoom
-alt - f : yabai -m window --toggle zoom-fullscreen
+alt - f : yabai -m window --toggle zoom-fullscreen; \
 
 # toggle window native fullscreen
 shift + alt - f : yabai -m window --toggle native-fullscreen
@@ -154,7 +155,4 @@ alt - t : yabai -m window --toggle float;\
 # prevents skhd from monitoring events for listed processes.
 .blacklist [
     "terminal"
-    "qutebrowser"
-    "kitty"
-    "google chrome"
 ]
