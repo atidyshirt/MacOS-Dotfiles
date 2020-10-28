@@ -2,6 +2,7 @@
 cmd - return : env WAYLAND_DISPLAY= alacritty
 cmd + shift - return : code
 alt - return : open -a '/Applications/Firefox.app'
+
 # default keybinds
 
 # vim keybinds (focus tmux and yabai with alt key)
@@ -117,6 +118,9 @@ ctrl + alt - d : yabai -m window --insert east
 # rotate tree
 alt - r : yabai -m space --rotate 90
 
+# cycle float and tiled windows on space (back and forwards)
+alt - tab : yabai -m window --focus "$(yabai -m query --windows --space | jq -re "[sort_by(.id, .frame) | reverse | .[] | select(.role == \"AXWindow\" and .subrole == \"AXStandardWindow\") | .id] | nth(index($(yabai -m query --windows --window | jq -re ".id")) - 1)")"
+alt + shift - tab : yabai -m window --focus "$(yabai -m query --windows --space | jq -re "[sort_by(.id, .frame) | .[] | select(.role == \"AXWindow\" and .subrole == \"AXStandardWindow\") | .id] | nth(index($(yabai -m query --windows --window | jq -re ".id")) - 1)")"
 # mirror tree y-axis
 alt - y : yabai -m space --mirror y-axis
 
@@ -146,11 +150,11 @@ alt - t : yabai -m window --toggle float;\
           yabai -m window --grid 20:20:1:1:18:18
 
 # toggle sticky, float and resize to picture-in-picture size
- alt - p : yabai -m window --toggle sticky;\
-           yabai -m window --grid 4:1:4:4:0:0
+ alt - p : yabai -m window --toggle sticky; \
+           yabai -m window --grid 4:1:2:4:4:0; \
 
 # toggle back from picture in picture mode
- shift + alt - p : yabai -m window --toggle float
+ shift + alt - p : yabai -m window --toggle float; \
 
 # prevents skhd from monitoring events for listed processes.
 .blacklist [

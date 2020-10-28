@@ -13,6 +13,9 @@ alias move='mv -f'
 alias send='ffsend upload'
 alias zz='exit' 
 
+# Updates all package managers at once
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; brew cask cleanup; brew prune; npm update -g npm; npm update -g; sudo gem update --system; gem update; gem cleanup; pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U; meteor update; sudo composer self-update; composer global update;'
+
 # Location / Navigation
 alias root='cd / && clear'
 alias files='cd ~/Documents/Files'

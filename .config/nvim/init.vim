@@ -21,9 +21,7 @@ else
 
   " Themes
   source $HOME/.config/nvim/themes/syntax.vim
-  source $HOME/.config/nvim/colors/koe.vim
   source $HOME/.config/nvim/themes/theme.vim
-  source $HOME/.config/nvim/themes/airline_koe.vim
 
   " Plugin Configuration
   source $HOME/.config/nvim/keys/which-key.vim

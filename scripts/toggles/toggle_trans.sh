@@ -1,9 +1,19 @@
 #!/bin/sh
+# TOGGLE=$HOME/.config/.toggle
+# if [ ! -e $TOGGLE ]; then
+    # touch $TOGGLE
+    # yabai -m query --windows | jq '.[].id' | xargs -I{} yabai -m window {} --opacity 1.0
+# else
+    # rm $TOGGLE
+    # yabai -m query --windows | jq '.[].id' | xargs -I{} yabai -m window {} --opacity 0.90
+# fi
+
 TOGGLE=$HOME/.config/.toggle
 if [ ! -e $TOGGLE ]; then
     touch $TOGGLE
-    yabai -m query --windows | jq '.[].id' | xargs -I{} yabai -m window {} --opacity 1.0
+    yabai -m query --windows --window | jq '.[].id' | xargs -I{} yabai -m window {} --opacity 1.0
 else
     rm $TOGGLE
-    yabai -m query --windows | jq '.[].id' | xargs -I{} yabai -m window {} --opacity 0.95
+    yabai -m query --windows --window | jq '.[].id' | xargs -I{} yabai -m window {} --opacity 0.90
 fi
+

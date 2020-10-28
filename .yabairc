@@ -1,5 +1,3 @@
-#!/usr/bin/env zsh
-
 source ~/.config/yabai/toggle.sh
 source ~/.cache/wal/colors.sh
 
@@ -17,6 +15,7 @@ nordActive=81a1c1
 nordActive2=8fbcbb
 nordInactive=4c566a
 gruvInactive=32302f
+gruvActiveBlue=83a598
 gruvPassive=282828
 gruvActive=504945
 
@@ -28,8 +27,8 @@ yabai -m config window_topmost               on
 yabai -m config window_opacity               on
 yabai -m config window_opacity_duration      0.5
 yabai -m config window_shadow                off
-yabai -m config active_window_opacity        0.90
-yabai -m config normal_window_opacity        0.90
+yabai -m config active_window_opacity        1.0
+yabai -m config normal_window_opacity        1.0
 yabai -m config split_ratio                  0.50
 yabai -m config auto_balance                 off
 yabai -m config mouse_modifier               fn
@@ -40,7 +39,7 @@ yabai -m config mouse_action2                resize
 yabai -m config window_border on
 yabai -m config window_border_width 10
 yabai -m config active_window_border_color 0xff$gruvActive
-yabai -m config normal_window_border_color 0xff$gruvInactive
+yabai -m config normal_window_border_color 0xff$gruvPassive
 
 # general space settings
 yabai -m config layout                       bsp
@@ -61,5 +60,6 @@ yabai -m rule --add app=Dashlane manage=off
 yabai -m rule --add app=Übersicht manage=off
 yabai -m rule --add app=BetterTouchTool manage=off
 yabai -m rule --add app=IINA window_opacity off
+yabai -m rule --add app=firefox window_opacity off
 
 echo "yabai configuration loaded.."

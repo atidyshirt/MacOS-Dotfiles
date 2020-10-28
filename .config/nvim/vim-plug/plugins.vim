@@ -15,6 +15,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'dylanaraps/wal.vim'
     Plug 'deviantfero/wpgtk.vim'
     Plug 'morhetz/gruvbox'
+    Plug 'arcticicestudio/nord-vim'
     Plug 'preservim/nerdcommenter'
     Plug 'tpope/vim-surround'
     Plug 'airblade/vim-rooter'
