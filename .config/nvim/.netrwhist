@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =8
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/Users/jordy/Documents/Files/University/ENCE260/Notes'
 let g:netrw_dirhist_8='/Users/jordy/Library/Preferences/BetterDiscord/themes/Duvbox'
 let g:netrw_dirhist_7='/Users/jordy/Documents/Files/University/ENCE260/Notes'
 let g:netrw_dirhist_6='/Users/jordy/scripts/startpage'

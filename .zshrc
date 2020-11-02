@@ -62,6 +62,8 @@ export PATH="/usr/local/lib/python@3.8/site-packages:$PATH"
 export PATH="/Users/jordy/,local/bin:$PATH"
 export PYTHONPATH="/usr/local/opt/python@3.8/libexec/bin:$PYTHONPATH"
 export PYTHONPATH="/usr/local/lib/python@3.8/site-packages:$PYTHONPATH"
+export PATH="/usr/local/opt/binutils/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
 
 
 # Setting Neovim as default editor
@@ -77,5 +79,3 @@ if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] &&
   exec env tmux
 fi
 
-export PATH="/usr/local/opt/binutils/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"

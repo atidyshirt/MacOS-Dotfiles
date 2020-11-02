@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 source ~/.config/yabai/toggle.sh
 source ~/.cache/wal/colors.sh
 
@@ -27,8 +29,8 @@ yabai -m config window_topmost               on
 yabai -m config window_opacity               on
 yabai -m config window_opacity_duration      0.5
 yabai -m config window_shadow                off
-yabai -m config active_window_opacity        1.0
-yabai -m config normal_window_opacity        1.0
+yabai -m config active_window_opacity        0.9
+yabai -m config normal_window_opacity        0.9
 yabai -m config split_ratio                  0.50
 yabai -m config auto_balance                 off
 yabai -m config mouse_modifier               fn
@@ -39,7 +41,7 @@ yabai -m config mouse_action2                resize
 yabai -m config window_border on
 yabai -m config window_border_width 10
 yabai -m config active_window_border_color 0xff$gruvActive
-yabai -m config normal_window_border_color 0xff$gruvPassive
+yabai -m config normal_window_border_color 0xff$gruvInactive
 
 # general space settings
 yabai -m config layout                       bsp
@@ -54,12 +56,17 @@ yabai -m config --space 5 layout             float
 yabai -m config --space 6 layout             float
 
 # Rules for specific apps to launch and be managed by yabai
-yabai -m rule --add app=Spotify space=1
+
+yabai -m rule --add app= Spotify --space 6
+yabai -m rule --add app= discord --space 6
 yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add app=Dashlane manage=off
 yabai -m rule --add app=Übersicht manage=off
 yabai -m rule --add app=BetterTouchTool manage=off
 yabai -m rule --add app=IINA window_opacity off
-yabai -m rule --add app=firefox window_opacity off
+yabai -m rule --add app=mpv window_opacity off
+
+yabai -m signal --add event=window_destroyed action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
+yabai -m signal --add event=application_terminated action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
 
 echo "yabai configuration loaded.."

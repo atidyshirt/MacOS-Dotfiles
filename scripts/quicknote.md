@@ -10,13 +10,8 @@
 
 Assessments on the go:
 
-COSC264 23/10
-
-
 Exams:
 
-ENCE260 29/10 9:30 AM
-COSC264 30/10 2:30 PM
 COSC265 04/11 9:30 AM
 SCIE101 07/11 9:30 AM
 
@@ -29,11 +24,9 @@ SCIE101
 Many
 
 COSC265
-2 lectures
 4 tutorials
 
 ENCE260
-Tutorials
-Practice Exams
 
-    Total: 9
+    Total: 4 + many
+
