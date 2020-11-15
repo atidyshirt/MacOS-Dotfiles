@@ -7,7 +7,7 @@ echo "Installing Homebrew and it's custom packages"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" 
 #Installing Homebrew Depends
 brew tap homebrew/cask-fonts
-brew cask install font-firacode-nerd-font 
+brew cask install font-fira-code-nerd-font
 brew cask install ubersicht
 brew install python@3.8
 brew install pip3
