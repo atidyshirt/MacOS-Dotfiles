@@ -1,21 +1,14 @@
 #!/bin/env sh
 
-# open terminal
-cmd - return : env WAYLAND_DISPLAY= alacritty
+# open apps
+cmd - return  : env WAYLAND_DISPLAY= alacritty
+alt - return : open -na '/Applications/Firefox.app'
+alt - m : open -na /Applications/mpv.app $(pbpaste)
 
 # Launch from scratchpad (all floating)
-cmd - p : /usr/local/opt/python@3.8/libexec/bin/python /Users/jordy/bin/dropdown_terminal alacritty && ~/bin/opacity
-cmd - m : /usr/local/opt/python@3.8/libexec/bin/python /Users/jordy/bin/dropdown Spotify && ~/bin/opacity
-cmd - d : /usr/local/opt/python@3.8/libexec/bin/python /Users/jordy/bin/dropdown Discord && ~/bin/opacity
-
-# Open vscode
-cmd + shift - return : code
-
-# open browser
-alt - return : open -a '/Applications/Firefox.app'
-
-# open mpv from a link in clipboard
-alt - m : open -na /Applications/mpv.app $(pbpaste)
+cmd - p : /usr/local/opt/python@3.8/libexec/bin/python /Users/jordy/bin/dropdown_terminal alacritty && #~/bin/opacity
+cmd - m : /usr/local/opt/python@3.8/libexec/bin/python /Users/jordy/bin/dropdown Spotify && #~/bin/opacity
+cmd - d : /usr/local/opt/python@3.8/libexec/bin/python /Users/jordy/bin/dropdown Discord && #~/bin/opacity
 
 # vim keybinds (focus tmux and yabai with alt key)
 alt - h [
@@ -38,11 +31,6 @@ alt - l [
     "Alacritty" : if [ $(tmux display-message -p '#{pane_at_right}') -ne 1 ]; then tmux select-pane -R; else yabai -m window --focus east || true; fi
 ]
 
-
-shift + cmd - h : yabai -m window --swap west
-shift + cmd - j : yabai -m window --swap south
-shift + cmd - k : yabai -m window --swap north
-shift + cmd - l : yabai -m window --swap east
 
 shift + alt - h : yabai -m window --warp west
 shift + alt- j : yabai -m window --warp south
@@ -100,10 +88,13 @@ ctrl + cmd - 2  : yabai -m window --display 2; yabai -m display --focus 2
 ctrl + cmd - 3  : yabai -m window --display 3; yabai -m display --focus 3
 
 # move window
-shift + ctrl - a : yabai -m window --move rel:-30:0
-shift + ctrl - s : yabai -m window --move rel:0:30
-shift + ctrl - w : yabai -m window --move rel:0:-30
-shift + ctrl - d : yabai -m window --move rel:30:0
+shift + ctrl - a : yabai -m window --move rel:-1:0
+shift + ctrl - s : yabai -m window --move rel:0:1
+shift + ctrl - w : yabai -m window --move rel:0:-1
+shift + ctrl - d : yabai -m window --move rel:1:0
+
+# send window from left to right (for picture in picture)
+shift + ctrl - l : yabai -m window --move rel:1328:0
 
 # increase window size
 shift + alt - a : yabai -m window --resize left:-30:0
@@ -118,17 +109,17 @@ shift + cmd - w : yabai -m window --resize top:0:30
 shift + cmd - d : yabai -m window --resize right:-30:0
 
 # set insertion point in focused container
-ctrl + cmd - h : yabai -m window --insert west
-ctrl + cmd - j : yabai -m window --insert south
-ctrl + cmd - k : yabai -m window --insert north
-ctrl + cmd - l : yabai -m window --insert east
+shift + cmd - h : yabai -m window --insert west
+shift + cmd - j : yabai -m window --insert south
+shift + cmd - k : yabai -m window --insert north
+shift + cmd - l : yabai -m window --insert east
 
 # rotate tree
 alt - r : yabai -m space --rotate 90
 
 # cycle float and tiled windows on space (back and forwards)
-alt - tab : yabai -m window --focus "$(yabai -m query --windows --space | jq -re "[sort_by(.id, .frame) | reverse | .[] | select(.role == \"AXWindow\" and .subrole == \"AXStandardWindow\") | .id] | nth(index($(yabai -m query --windows --window | jq -re ".id")) - 1)")"
-alt + shift - tab : yabai -m window --focus "$(yabai -m query --windows --space | jq -re "[sort_by(.id, .frame) | .[] | select(.role == \"AXWindow\" and .subrole == \"AXStandardWindow\") | .id] | nth(index($(yabai -m query --windows --window | jq -re ".id")) - 1)")"
+alt + shift - tab : yabai -m window --focus "$(yabai -m query --windows --space | jq -re "[sort_by(.id, .frame) | reverse | .[] | select(.role == \"AXWindow\" and .subrole == \"AXStandardWindow\") | .id] | nth(index($(yabai -m query --windows --window | jq -re ".id")) - 1)")"
+alt - tab : yabai -m window --focus "$(yabai -m query --windows --space | jq -re "[sort_by(.id, .frame) | .[] | select(.role == \"AXWindow\" and .subrole == \"AXStandardWindow\") | .id] | nth(index($(yabai -m query --windows --window | jq -re ".id")) - 1)")"
 # mirror tree y-axis
 alt - y : yabai -m space --mirror y-axis
 
@@ -137,17 +128,16 @@ alt - a : yabai -m space --toggle padding; yabai -m space --toggle gap
 
 # toggle window parent zoom
 alt - d : yabai -m window --toggle zoom-parent; \
-    ~/bin/toggle_trans
 
 # toggle window fullscreen zoom
 alt - f : yabai -m window --toggle zoom-fullscreen; \
-    ~/bin/toggle_trans
 
 # toggle window native fullscreen
 shift + alt - f : yabai -m window --toggle native-fullscreen
 
 # toggle window border
-shift + alt - b : ~/bin/toggle_trans
+shift + alt - b : yabai -m window --toggle border
+shift + alt - o : ~/bin/toggle_trans
 
 # toggle window split type
 alt - e : yabai -m window --toggle split
@@ -155,22 +145,25 @@ alt - e : yabai -m window --toggle split
 # float / unfloat window and center on screen
 alt - t : yabai -m window --toggle float; \
           yabai -m window --grid 4:4:1:1:2:2; \
-          ~/bin/opacity
+          # ~/bin/opacity
 
 shift + alt - t : yabai -m window --toggle float;\
           yabai -m window --grid 20:20:1:1:18:18; \
-          ~/bin/opacity
+          # ~/bin/opacity
 
 
 # toggle sticky, float and resize to picture-in-picture size
  alt - p : yabai -m window --toggle sticky; \
            yabai -m window --grid 4:1:2:4:4:0; \
-          ~/bin/opacity
+          # ~/bin/opacity
 
 # toggle back from picture in picture mode
  shift + alt - p : yabai -m window --toggle float; \
-          ~/bin/opacity
+          # ~/bin/opacity
 
+shift + alt - z : yabai -m space --layout bsp
+shift + alt - x : yabai -m space --layout float
+shift + alt - c : yabai -m space --layout stack
 # prevents skhd from monitoring events for listed processes.
 .blacklist [
     "terminal"

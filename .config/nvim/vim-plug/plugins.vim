@@ -12,6 +12,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Easy motion for VSCode
     " Plug 'asvetliakov/vim-easymotion'
   else
+    Plug 'puremourning/vimspector'
+    Plug 'joshdick/onedark.vim'
+    Plug 'szw/vim-maximizer'
     Plug 'dylanaraps/wal.vim'
     Plug 'deviantfero/wpgtk.vim'
     Plug 'morhetz/gruvbox'

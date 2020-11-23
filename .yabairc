@@ -14,8 +14,8 @@ c5="${color5:1}"
 
 #Theme specific colors
 nordActive=81a1c1
-nordActive2=8fbcbb
-nordInactive=4c566a
+nordActive2=7EDDDE
+nordInactive=1B222D
 gruvInactive=32302f
 gruvActiveBlue=83a598
 gruvPassive=282828
@@ -26,11 +26,11 @@ yabai -m config mouse_follows_focus          off
 yabai -m config focus_follows_mouse          off
 yabai -m config window_placement             second_child
 yabai -m config window_topmost               on
-yabai -m config window_opacity               on
+yabai -m config window_opacity               off
 yabai -m config window_opacity_duration      0.5
 yabai -m config window_shadow                off
-yabai -m config active_window_opacity        0.9
-yabai -m config normal_window_opacity        0.9
+yabai -m config active_window_opacity        0.90
+yabai -m config normal_window_opacity        0.90
 yabai -m config split_ratio                  0.50
 yabai -m config auto_balance                 off
 yabai -m config mouse_modifier               fn
@@ -38,35 +38,45 @@ yabai -m config mouse_action1                move
 yabai -m config mouse_action2                resize
 
 # Boarders
-yabai -m config window_border on
-yabai -m config window_border_width 10
-yabai -m config active_window_border_color 0xff$gruvActive
-yabai -m config normal_window_border_color 0xff$gruvInactive
+yabai -m config window_border                on
+yabai -m config window_border_width          8
+yabai -m config active_window_border_color   0xff$c4
+yabai -m config insert_feedback_color        0xff$c2
+yabai -m config normal_window_border_color   0xff$gruvInactive
 
 # general space settings
 yabai -m config layout                       bsp
-yabai -m config top_padding                  10
-yabai -m config bottom_padding               10
-yabai -m config left_padding                 10
-yabai -m config right_padding                10
-yabai -m config window_gap                   10
+yabai -m config top_padding                  40
+yabai -m config bottom_padding               6
+yabai -m config left_padding                 6
+yabai -m config right_padding                6
+yabai -m config window_gap                   6
 
 # Running through float windows
+yabai -m space 1 --label code
+yabai -m space 2 --label main
+yabai -m space 3 --label web
+yabai -m space 4 --label notes
+yabai -m space 5 --label other
+yabai -m space 6 --label scratchpad
+
+yabai -m config --space 1 layout             stack
 yabai -m config --space 5 layout             float
 yabai -m config --space 6 layout             float
 
 # Rules for specific apps to launch and be managed by yabai
-
-yabai -m rule --add app= Spotify --space 6
-yabai -m rule --add app= discord --space 6
+yabai -m rule --add app=Spotify --space 6
+yabai -m rule --add app=Discord --space 6
 yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add app=Dashlane manage=off
+yabai -m rule --add app=Spotify manage=off
+yabai -m rule --add app=Godot manage=off
+yabai -m rule --add app=Discord manage=off
 yabai -m rule --add app=Übersicht manage=off
 yabai -m rule --add app=BetterTouchTool manage=off
-yabai -m rule --add app=IINA window_opacity off
-yabai -m rule --add app=mpv window_opacity off
 
-yabai -m signal --add event=window_destroyed action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
-yabai -m signal --add event=application_terminated action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
+# signals to map focus how I like it
+# yabai -m signal --add event=window_destroyed action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
+# yabai -m signal --add event=application_terminated action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
 
 echo "yabai configuration loaded.."

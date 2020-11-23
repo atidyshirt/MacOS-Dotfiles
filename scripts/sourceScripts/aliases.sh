@@ -11,7 +11,7 @@ alias copy='cp-improved'
 alias remove='rm -rf'
 alias move='mv -f'
 alias send='ffsend upload'
-alias zz='exit' 
+alias zz='exit'
 
 # Updates all package managers at once
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; brew cask cleanup; brew prune; npm update -g npm; npm update -g; sudo gem update --system; gem update; gem cleanup; pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U; meteor update; sudo composer self-update; composer global update;'
@@ -60,12 +60,12 @@ alias wall='cd ~/.wallpaper && sh ~/scripts/themeScripts/wallpapers.sh ./ `ls -d
 alias nwall='cd ~/.wallpaper && sh ~/scripts//themeScripts/nordTheme.sh ./ `ls -d ~/.wallpaper/* | xargs -n 1 basename | fzf` && cd -'
 alias gwall='cd ~/.wallpaper && sh ~/scripts/themeScripts/gruvTheme.sh ./ `ls -d ~/.wallpaper/* | xargs -n 1 basename | fzf` && cd -'
 alias dwall='cd ~/.wallpaper && sh ~/scripts/themeScripts/dracTheme.sh ./ `ls -d ~/.wallpaper/* | xargs -n 1 basename | fzf` && cd -'
-alias fwall='sh ~/scripts/wallpapers.sh ./ '
+alias fwall='sh ~/scripts/themeScripts/wallpapers.sh ./ '
 alias pybar='cd ~/Library/ApplicationSupport/Übersicht/widgets/simple-bar/lib/styles && ./pywal-gen.sh'
 alias refreshbar='osascript -e "tell application id \"tracesOf.Uebersicht\" to refresh"'
 
 # Python Scripts
 alias sortdl='cd ~/scripts && python3 folder_manager.py ~/Downloads && cd'
 
-# This is a private alias file for SSH (because I dont want to give anyone using my dots all my information :) 
+# This is a private alias file for SSH (because I dont want to give anyone using my dots all my information :)
 source ~/.privateAliases.sh

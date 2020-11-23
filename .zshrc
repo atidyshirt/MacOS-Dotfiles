@@ -1,4 +1,7 @@
 # ZSH theme
+setopt PROMPT_SUBST
+export PS1=$'\ek$(basename $(pwd))\e\\> '
+
 ZSH_THEME="bira"
 export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
@@ -54,6 +57,7 @@ export PATH="$HOME/bin:$PATH"
 export PATH="$PATH:/Users/jordy/Development/tools/flutter/bin"
 export NODE_PATH='/usr/local/lib/node_modules'
 export PATH="$PATH:/opt/yarn-[version]/bin"
+export PATH="$HOME/Library/Python/3.8/bin:$PATH"
 export PATH="$PATH:/usr/local/bin/"
 export PATH="/usr/local/share/python@3.8:$PATH"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
@@ -75,7 +79,7 @@ for f in ~/scripts/sourceScripts/*; do
 done
 
 # Running tmux
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec env tmux
-fi
+# if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  # exec env tmux
+# fi
 

@@ -25,6 +25,5 @@ def main():
         else:
             start_subprocess(f'{YABAI} -m window {window["id"]} --opacity 0.9')
 
-
 if __name__ == '__main__':
     main()

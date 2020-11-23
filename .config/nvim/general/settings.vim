@@ -1,9 +1,7 @@
 syntax on                           " Enables syntax highlighing
-set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
 set statusline+=%F
 set pumheight=10                        " Makes popup menu smaller
-set cmdheight=1                         " More space for displaying messages
 set splitbelow                          " Horizontal splits will automatically be below
 set splitright                          " Vertical splits will automatically be to the right
 set tabstop=4                           " Insert 2 spaces for a tab
@@ -26,6 +24,14 @@ set timeoutlen=100                      " By default timeoutlen is 1000 ms
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set noswapfile
 set nohlsearch
+
+" Tags
+set autochdir
+set tags+=./tags;
+set hidden
+set cmdheight=1
+set shortmess=aFc
+
 filetype plugin indent on
 
 " augroup numbertoggle

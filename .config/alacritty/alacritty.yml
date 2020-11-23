@@ -1,4 +1,4 @@
-TERM: alacritty
+TERM: screen-256color
 
 font:
   size: 13.0
@@ -56,33 +56,29 @@ live_config_reload: true
 
 # BEGIN ACE
 colors:
-  # Default colors
   primary:
-    # hard contrast: background = '#1d2021'
-    background: '#282828'
-    # soft contrast: background = '#32302f'
-    foreground: '#ebdbb2'
-
-  # Normal colors
+    background: '0x282828'
+    foreground: '0xb3baba'
+  cursor:
+    text:       '0x282828'
+    cursor:     '0xb3baba'
   normal:
-    black: '#282828'
-    red: '#cc241d'
-    green: '#98971a'
-    yellow: '#d79921'
-    blue: '#458588'
-    magenta: '#b16286'
-    cyan: '#689d6a'
-    white: '#a89984'
-
-  # Bright colors
+    black:      '0x282828'
+    red:        '0x3D6446'
+    green:      '0x4C4F4F'
+    yellow:     '0x616561'
+    blue:       '0x8C6D66'
+    magenta:    '0x6F8A67'
+    cyan:       '0x888D78'
+    white:      '0xb3baba'
   bright:
-    black: '#928374'
-    red: '#fb4934'
-    green: '#b8bb26'
-    yellow: '#fabd2f'
-    blue: '#83a598'
-    magenta: '#d3869b'
-    cyan: '#8ec07c'
-    white: '#ebdbb2'
+    black:      '0x7d8282'
+    red:        '0x3D6446'
+    green:      '0x4C4F4F'
+    yellow:     '0x616561'
+    blue:       '0x8C6D66'
+    magenta:    '0x6F8A67'
+    cyan:       '0x888D78'
+    white:      '0xb3baba'
 
 # END ACE
