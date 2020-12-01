@@ -64,7 +64,7 @@ cp spicetify_data $HOME/spicetify_data
 cp .zshrc $HOME/.zshrc
 cp .skhdrc $HOME/.skhdrc
 cp .Xresources $HOME/.Xresources
-cp wallpapers $HOME/Pictures
+cp .wallpapers $HOME/.wallpapers
 cp .yabairc $HOME/.yabairc 
 
 echo "Starting pywalfox setup"
