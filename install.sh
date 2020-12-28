@@ -29,6 +29,7 @@ brew services restart --all
 #Clone Dotfile Repo 
 echo "Cloning Dotfiles"
 git clone https://github.com/atidyshirt/MacOS-Dotfiles.git 
+
 #Clone bar into default Übersicht location
 git clone git@github.com:Jean-Tinland/simple-bar.git $HOME/Library/Application\ Support/Übersicht/widgets/simple-bar
 cd MacOS-Dotfiles
@@ -64,7 +65,7 @@ cp spicetify_data $HOME/spicetify_data
 cp .zshrc $HOME/.zshrc
 cp .skhdrc $HOME/.skhdrc
 cp .Xresources $HOME/.Xresources
-cp .wallpapers $HOME/.wallpapers
+cp .wallpaper $HOME/.wallpaper
 cp .yabairc $HOME/.yabairc 
 
 echo "Starting pywalfox setup"
